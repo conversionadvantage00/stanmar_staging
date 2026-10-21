@@ -1,0 +1,3372 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style><!--ca-head-->
+<title>Stanmar Motors George | Mercedes-Benz sales, service and quality pre-owned cars</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&amp;family=Noto+Serif+Display:wght@300;400;500&amp;display=swap">
+<!--ca-share-->
+<link rel="icon" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/favicon.png">
+<meta name="description" content="Quality pre-owned Mercedes-Benz and other cars at Stanmar Motors in George. Mercedes-Benz sales, service and commercial vehicles since 1956.">
+<link rel="canonical" href="https://conversionadvantage00.github.io/stanmar_staging/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Stanmar Motors">
+<meta property="og:title" content="Stanmar Motors George | Mercedes-Benz sales, service and quality pre-owned cars">
+<meta property="og:description" content="Quality pre-owned Mercedes-Benz and other cars at Stanmar Motors in George. Mercedes-Benz sales, service and commercial vehicles since 1956.">
+<meta property="og:url" content="https://conversionadvantage00.github.io/stanmar_staging/">
+<meta property="og:image" content="https://conversionadvantage00.github.io/stanmar_staging/img/share-stanmar.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_ZA">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Stanmar Motors George | Mercedes-Benz sales, service and quality pre-owned cars">
+<meta name="twitter:description" content="Quality pre-owned Mercedes-Benz and other cars at Stanmar Motors in George. Mercedes-Benz sales, service and commercial vehicles since 1956.">
+<meta name="twitter:image" content="https://conversionadvantage00.github.io/stanmar_staging/img/share-stanmar.jpg">
+<!--/ca-share-->
+<!--/ca-head-->
+</head><body>
+<style>
+/* Layout: one-page dealer microsite; full-bleed card rails per stock section; vehicle popup = Polestar-style two-column takeover (pinned gallery left, scrolling detail right) */
+:root{
+  color-scheme:light;
+  --bg:#f3f4f7;          /* page ground, cool grey tied to accent */
+  --surface:#ffffff;
+  --ink:#121419;
+  --muted:#5c6371;
+  --faint:#8a909c;
+  --line:#e1e4ea;
+  --line-strong:#c8cdd7;
+  --accent:#3d5ae0;      /* brand accent: set per build */
+  --accent-ink:#ffffff;
+  --accent-soft:color-mix(in srgb, var(--accent) 9%, #ffffff);
+  --ok:#1d7f48; --ok-soft:#e7f5ec;
+  --err:#b42318;
+  --scrim:rgba(14,16,21,.56);
+  --banner:#0b0b0c;
+  --font:"Hanken Grotesk",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  --r-card:16px; --r-ctl:10px;
+  --gap:20px;
+  --cw:min(1240px, calc(100vw - 32px));
+  --pad:max(16px, calc((100vw - 1240px) / 2));
+  --gutter:clamp(16px, 2.5vw, 48px);   /* page edge gap: header, section titles and slides start here (left aligned, not centred) */
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html,body{background:var(--bg);color:var(--ink)}
+body{font-family:var(--font);font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.num{font-variant-numeric:tabular-nums}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ---------- site header ---------- */
+.mock-note{background:var(--accent-soft);color:var(--ink);font-size:13px;padding:8px var(--gutter);display:flex;gap:12px;flex-wrap:wrap;justify-content:space-between}
+.mock-note b{font-weight:600}
+.plc-btn{font:inherit;font-size:12.5px;font-weight:600;border-radius:999px;padding:3px 10px;border:0}
+.plc-btn.bad{background:#b42318;color:#fff;cursor:pointer}
+.plc-btn.ok{background:var(--ok-soft);color:var(--ok)}
+.plc{position:fixed;top:12px;right:12px;bottom:12px;width:min(420px,calc(100vw - 24px));z-index:200;background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:0 20px 60px -20px rgba(0,0,0,.4);display:flex;flex-direction:column}
+.plc-h{padding:16px 18px;border-bottom:1px solid var(--line);display:grid;grid-template-columns:1fr auto;gap:2px 8px}
+.plc-h b{font-size:16px}.plc-h span{grid-column:1;font-size:13px;color:var(--muted)}.plc-h .x-btn{grid-row:1/3;grid-column:2}
+.plc-b{overflow:auto;padding:6px 18px 18px}
+.plc-b h4{font-size:13px;margin:16px 0 6px;display:flex;justify-content:space-between}
+.plc-b h4 i{font-style:normal;color:#b42318}
+.plc-b ul{margin:0;padding-left:18px;font-size:12.5px;color:var(--muted);display:grid;gap:3px}
+.site-head{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(255,255,255,.94);backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
+/* optional hide-on-scroll (driven by settings.header.hideOnScroll) */
+.site-head{transition:transform .32s cubic-bezier(.2,.8,.2,1)}
+.site-head.is-hidden{transform:translateY(calc(-100% - env(safe-area-inset-top,0px) - 1px))}
+.stock{scroll-margin-top:72px}
+.site-head .in{margin:0 var(--gutter);display:flex;align-items:center;gap:24px;height:64px}
+.brand{display:flex;flex-direction:column;line-height:1;text-decoration:none;color:var(--ink)}
+.brand b{font-size:17px;letter-spacing:.14em;font-weight:700}
+.brand{flex:none}
+.brand span{font-size:11px;letter-spacing:.08em;color:var(--muted);margin-top:4px;text-transform:uppercase;white-space:nowrap}
+@media (max-width:520px){.brand span{display:none}.site-nav a{padding:8px 9px;font-size:13px}}
+.site-nav{display:flex;gap:4px;margin-left:auto;overflow-x:auto;scrollbar-width:none}
+.site-nav a{padding:8px 12px;border-radius:999px;text-decoration:none;color:var(--ink);font-size:14px;font-weight:500;white-space:nowrap}
+.site-nav a:hover{background:var(--bg)}
+.head-call{font-size:14px;font-weight:600;white-space:nowrap}
+@media (max-width:720px){.head-call{display:none}.site-head .in{gap:12px}}
+
+/* ---------- stock sections ---------- */
+main{padding-block:28px 64px}
+.stock{padding-block:28px 12px}
+.stock-head{margin:0 var(--gutter) 18px;display:flex;align-items:flex-end;gap:16px;justify-content:space-between}
+/* vehicle count on its own line under the intro (no pre-headings above titles) */
+.stock-head .count{display:block;margin-top:6px;font-size:13px;font-weight:500;color:var(--faint);font-variant-numeric:tabular-nums}
+.stock-head h2{font-size:clamp(24px,3.2vw,34px);line-height:1.1;margin:0;font-weight:600;letter-spacing:-.01em;text-wrap:balance}
+.stock-head p{margin:8px 0 0;color:var(--muted);max-width:60ch}
+.rail-ctl{display:flex;gap:8px;flex:none}
+.rail-btn{width:44px;height:44px;border-radius:50%;border:1px solid var(--line-strong);background:var(--surface);display:grid;place-items:center;transition:opacity .2s}
+.rail-btn:disabled{opacity:.35;cursor:default}
+.rail-btn svg{width:18px;height:18px}
+@media (max-width:720px){.rail-ctl{display:none}}
+
+/* free-scrolling rail: no snap points, native momentum on touch/trackpad, JS inertia for mouse drag */
+.rail{display:flex;gap:var(--gap);overflow-x:auto;overflow-y:hidden;padding:4px var(--gutter) 18px;scroll-padding-inline:var(--gutter);scroll-snap-type:none;scrollbar-width:none;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;cursor:grab}
+.rail::-webkit-scrollbar{display:none}
+.rail.dragging{cursor:grabbing;user-select:none}
+.rail.dragging .card{pointer-events:none}
+.rail > *{flex:0 0 calc((var(--cw) - 3 * var(--gap)) / 3.15)}   /* ~3 cards + a peek: wide enough for 3 stats in a row */
+@media (max-width:1240px){.rail > *{flex-basis:calc((var(--cw) - 2 * var(--gap)) / 2.7)}}
+@media (max-width:1080px){.rail > *{flex-basis:calc((var(--cw) - var(--gap)) / 2.3)}}
+@media (max-width:720px){:root{--gap:12px}.rail > *{flex-basis:calc((100vw - 16px) / 1.15 - var(--gap))}}
+/* rows of carousels (Stanmar): each row scrolls on its own, with side arrows on desktop */
+.rail-row{position:relative}
+.rail-row + .rail-row{margin-top:6px}
+.rail-row{--card-w:calc((var(--cw) - 3 * var(--gap)) / 3.15)}
+@media (max-width:1240px){.rail-row{--card-w:calc((var(--cw) - 2 * var(--gap)) / 2.7)}}
+@media (max-width:1080px){.rail-row{--card-w:calc((var(--cw) - var(--gap)) / 2.3)}}
+/* sits where the photo meets the card text, clear of the photo arrows and the title */
+.rail-side{position:absolute;top:calc(4px + var(--card-w) * .75 - 22px);z-index:4;box-shadow:0 6px 20px -8px rgba(0,0,0,.35);transition:opacity .2s}
+.rail-side.prev{left:max(4px, calc(var(--gutter) - 32px))}
+.rail-side.next{right:max(4px, calc(var(--gutter) - 32px))}
+.rail-side:disabled{opacity:0;pointer-events:none}
+@media (max-width:720px){.rail-side{display:none}}
+
+/* ---------- vehicle card (Sean's design) ---------- */
+.card{position:relative;display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-card);overflow:hidden;cursor:pointer;transition:box-shadow .25s,border-color .25s}
+.card:hover{border-color:var(--line-strong);box-shadow:0 10px 30px -18px rgba(18,20,25,.35)}
+.cm{position:relative;aspect-ratio:4/3;background:#fff;overflow:hidden}
+.cm-track{display:flex;height:100%;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;overscroll-behavior-x:contain}
+.cm-track::-webkit-scrollbar{display:none}
+/* soft lazy images: the spot shows a matching tone, the photo fades in once fully decoded */
+img.lz{opacity:0;transition:opacity .35s ease}
+img.lz.in{opacity:1}
+@media (prefers-reduced-motion:reduce){img.lz{transition:none}}
+.cm-track img{flex:0 0 100%;width:100%;height:100%;object-fit:cover;scroll-snap-align:center;display:block;-webkit-user-drag:none;user-select:none}
+.cm::after{content:"";position:absolute;inset:auto 0 0 0;height:22%;background:linear-gradient(to bottom,rgba(255,255,255,0),#fff);pointer-events:none}
+.cm-arrow{position:absolute;top:50%;width:44px;height:44px;margin-top:-22px;border:0;border-radius:50%;background:rgba(98,104,116,.62);color:#fff;display:grid;align-items:center;z-index:2;transition:background .2s}
+.cm-arrow:hover{background:rgba(60,64,72,.82)}
+.cm-arrow svg{width:16px;height:16px}
+.cm-arrow.prev{left:-22px;justify-items:end;padding-right:6px}
+.cm-arrow.next{right:-22px;justify-items:start;padding-left:6px}
+.cm-dots{position:absolute;left:0;right:0;bottom:10px;display:flex;justify-content:center;gap:5px;z-index:2}
+.cm-dots i{width:6px;height:6px;border-radius:50%;background:rgba(18,20,25,.22);transition:background .2s,width .2s}
+.cm-dots i.on{background:var(--ink);width:16px;border-radius:3px}
+.cmp{position:absolute;top:10px;right:10px;z-index:3;height:34px;padding:0 10px 0 8px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.92);display:flex;align-items:center;gap:6px;font-size:12px;font-weight:600}
+.cmp svg{width:16px;height:16px}
+.cmp[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.cb{display:flex;flex-direction:column;flex:1;padding:18px 22px 22px}
+.c-title{font-size:20px;line-height:1.25;font-weight:700;margin:0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:calc(2 * 1.25em);letter-spacing:-.005em}
+.c-sub{font-size:17px;margin:4px 0 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.c-extra{font-size:13px;color:var(--muted);margin:6px 0 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-height:1.5em}
+.c-extra:empty{visibility:hidden}
+.no-extra .c-extra{display:none}
+.chips{list-style:none;margin:16px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.chips li{border:1px solid var(--accent);border-radius:8px;padding:7px 4px;text-align:center;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.stats{margin:18px 0 0;display:grid;grid-auto-flow:column;grid-auto-columns:1fr;margin-top:auto;padding-top:18px}
+.stats.n3{grid-auto-columns:auto}   /* 3 columns size to their content, so long and short values share the row fairly */
+.stats > div{padding:0 10px;border-left:1px solid var(--line-strong);min-width:0}
+.stats > div:first-child{padding-left:0;border-left:0}
+.stats dt{font-size:12.5px;color:var(--ink);white-space:nowrap;display:flex;align-items:center;gap:4px}
+.stats dd{margin:2px 0 0;font-size:19px;font-weight:600;white-space:nowrap;letter-spacing:-.01em}
+.stats.n1 dd{font-size:22px}
+.tip{border:0;background:none;padding:0 2px;line-height:1;vertical-align:super;font-size:11px;font-weight:700;color:var(--ink)}
+.tip.i{vertical-align:middle;display:inline-grid;place-items:center;width:15px;height:15px;border:1.3px solid currentColor;border-radius:50%;font-size:10px;font-weight:700;font-style:normal;padding:0}
+.c-cta{margin-top:18px;height:46px;border-radius:var(--r-ctl);border:1.5px solid var(--accent);background:var(--surface);font-size:15px;font-weight:500;transition:background .2s,color .2s}
+.c-cta:hover{background:var(--accent);color:var(--accent-ink)}
+.card-tight .stats dd{font-size:16.5px}
+.card{container-type:inline-size}
+/* compact card: same shell, lighter body (used for similar vehicles, optional per section) */
+.card.compact .cb{padding:14px 16px 16px}
+.card.compact .c-title{font-size:16px}
+.card.compact .c-sub{font-size:14px;margin-top:2px}
+.c-meta{font-size:12.5px;color:var(--muted);margin:8px 0 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.c-meta b{color:var(--accent);font-weight:600}
+.c-price{margin-top:auto;padding-top:14px;border-top:1px solid var(--line);margin-top:auto}
+.c-price .m{font-size:19px;font-weight:700;letter-spacing:-.01em;white-space:nowrap}
+.c-price .m small{font-size:13px;font-weight:500;color:var(--muted);margin-left:2px}
+.c-price .p{font-size:13px;color:var(--muted);margin-top:2px;display:flex;align-items:center;gap:4px;white-space:nowrap}
+.card.compact .cmp{width:34px;padding:0;justify-content:center}
+.card.compact .cmp span{display:none}
+.card.compact .cm-arrow{width:36px;height:36px;margin-top:-18px}
+.card.compact .cm-arrow svg{width:13px;height:13px}
+.card.compact .cm-arrow.prev{left:-18px;padding-right:4px}
+.card.compact .cm-arrow.next{right:-18px;padding-left:4px}
+/* guard: a value can never draw over its neighbour */
+.stats dt,.stats dd{overflow:hidden;text-overflow:ellipsis;min-width:0}
+/* stacked stat row: used per rail when three columns don't fit (set by fitStats() in JS).
+   Monthly gets the full line, Purchase price | Mileage share the line below. */
+.stats.stack{grid-auto-flow:row;grid-template-columns:1fr 1fr;row-gap:14px}
+.stats.stack > div:first-child{grid-column:1/-1;padding:0;border-left:0}
+.stats.stack > div:first-child dd{font-size:23px}
+.stats.stack > div:nth-child(2){padding-left:0;border-left:0}
+.stats.stack > div:nth-child(3){padding-left:14px;border-left:1px solid var(--line-strong)}
+@container (max-width:380px){
+  .cb{padding:16px 18px 18px}
+  .chips{gap:8px}
+  .chips li{font-size:12.5px;padding-inline:2px}
+}
+
+/* tooltip */
+.tipbox{position:fixed;z-index:120;max-width:280px;background:var(--ink);color:#fff;font-size:12.5px;line-height:1.45;padding:10px 12px;border-radius:8px;box-shadow:0 10px 30px -10px rgba(0,0,0,.4)}
+
+/* ---------- compare ---------- */
+.ctray{position:fixed;left:50%;bottom:calc(16px + env(safe-area-inset-bottom,0px));transform:translate(-50%,140%);z-index:40;display:flex;align-items:center;gap:12px;background:var(--ink);color:#fff;padding:10px 10px 10px 16px;border-radius:14px;box-shadow:0 16px 40px -12px rgba(0,0,0,.45);transition:transform .35s cubic-bezier(.2,.8,.2,1);max-width:calc(100vw - 32px)}
+.ctray.on{transform:translate(-50%,0)}
+.ctray .thumbs{display:flex;gap:6px}
+.ctray .thumbs img{width:52px;height:39px;object-fit:cover;border-radius:6px;background:#fff}
+.ctray .lbl{font-size:13px;white-space:nowrap}
+.ctray button{height:38px;border-radius:9px;border:0;padding:0 14px;font-weight:600;font-size:14px;white-space:nowrap}
+.ctray .go{background:#fff;color:var(--ink)}
+.ctray .clr{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.3)}
+@media (max-width:520px){.ctray .lbl{display:none}}
+
+/* ---------- generic overlay pieces ---------- */
+.scrim{position:fixed;inset:0;background:var(--scrim);z-index:60;opacity:0;transition:opacity .3s}
+.scrim.on{opacity:1}
+.x-btn{width:40px;height:40px;border-radius:50%;border:0;background:transparent;display:grid;place-items:center;flex:none}
+.x-btn:hover{background:var(--bg)}
+.x-btn svg{width:20px;height:20px}
+
+/* ---------- vehicle popup ---------- */
+.vp{position:fixed;inset:0;z-index:70;background:var(--surface);display:flex;flex-direction:column;transform:translateY(24px);opacity:0;transition:transform .38s cubic-bezier(.2,.8,.2,1),opacity .25s}
+.vp.on{transform:none;opacity:1}
+/* variant A: slide-up panel */
+.vp-scrim{position:fixed;inset:0;z-index:69;background:var(--scrim);opacity:0;transition:opacity .35s}
+.vp-scrim.on{opacity:1}
+.vp.sheet{top:max(48px,7vh);left:max(0px,calc((100vw - 1360px) / 2));right:max(0px,calc((100vw - 1360px) / 2));border-radius:18px 18px 0 0;overflow:hidden;opacity:1;transform:translateY(102%);transition:transform .45s cubic-bezier(.2,.8,.2,1);box-shadow:0 -20px 60px -20px rgba(0,0,0,.35)}
+.vp.sheet.on{transform:none}
+.vp.sheet .vp-bar{padding-top:10px;cursor:grab;touch-action:none;position:relative}
+.sheet-grip{display:none}
+.vp.sheet .sheet-grip{display:block;position:absolute;top:7px;left:50%;width:44px;height:5px;margin-left:-22px;border-radius:3px;background:var(--line-strong)}
+.vp.sheet .vbar{border-radius:0}
+/* variant labelling + inline expand */
+.stock.variant .stock-head h2{color:var(--accent)}
+.stock.variant{background:linear-gradient(to bottom,var(--accent-soft),transparent 70%);padding-top:36px}
+.inl{display:grid;grid-template-rows:0fr;transition:grid-template-rows .45s cubic-bezier(.2,.8,.2,1)}
+.inl.open{grid-template-rows:1fr}
+.inl-clip{overflow:hidden;min-height:0}
+.inl-box{position:relative;margin:4px var(--gutter) 24px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-card);padding:32px;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:40px}
+.inl-x{position:absolute;top:10px;right:10px;z-index:2}
+.inl-t{font-size:26px;font-weight:500;margin:0;line-height:1.15;letter-spacing:-.015em;padding-right:40px}
+.inl-gal .g-main{border-radius:12px}
+.inl-full{border:0;background:none;padding:6px 0;font-size:14px;text-align:left;cursor:pointer}
+.card.is-open{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
+@media (max-width:860px){.inl-box{grid-template-columns:1fr;gap:20px;padding:20px}.vp.sheet{top:5vh}}
+/* desktop: the panel is a centred window at 95% of the screen */
+@media (min-width:861px){
+  /* 80% wide x 95% tall; inner content width follows the panel, not the screen */
+  .vp.sheet{--cw:min(1240px, calc(80vw - 96px));--pad:48px;top:2.5vh;bottom:2.5vh;left:10vw;right:10vw;border-radius:18px;opacity:0;transform:translateY(18px) scale(.985);transition:transform .4s cubic-bezier(.2,.8,.2,1),opacity .28s;box-shadow:0 30px 80px -20px rgba(0,0,0,.45)}
+  .vp.sheet.on{opacity:1;transform:none}
+  .vp.sheet .sheet-grip{display:none}
+  .vp.sheet .vp-bar{padding-top:0;cursor:default}
+}
+/* phones: sticky bar in the popup is slim and quiet, or off */
+@media (max-width:720px){
+  .vbar[data-mobile="off"]{display:none}
+  .vbar[data-mobile="subtle"]{background:rgba(255,255,255,.9);backdrop-filter:saturate(1.4) blur(12px);border-top-color:var(--line)}
+  .vbar[data-mobile="subtle"] .in{height:52px;gap:8px}
+  .vbar[data-mobile="subtle"] .p b{font-size:14px;font-weight:600}
+  .vbar[data-mobile="subtle"] .btn{height:34px;font-size:13px;padding:0 14px;border-radius:999px;border-width:1px}
+  .vbar[data-mobile="subtle"] .wa-sm{width:34px;padding:0}
+  .vbar[data-mobile="subtle"] .wa-sm svg{width:16px;height:16px}
+  .vbar[data-mobile="pill"]{display:none}
+  .vfab[data-mobile="pill"]{display:flex}
+}
+.vp-bar{flex:none;height:60px;display:flex;align-items:center;gap:12px;padding:0 var(--pad);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px);box-sizing:content-box}
+.vp-bar .crumb{font-size:13px;color:var(--muted);display:flex;align-items:center;gap:8px;min-width:0}
+.vp-bar .crumb b{color:var(--ink);font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.vp-bar .crumb button{border:0;background:none;padding:0;color:var(--muted);font-size:13px}
+.vp-bar .crumb button:hover{color:var(--ink);text-decoration:underline}
+.vp-bar .sp{flex:1}
+.share{height:36px;border-radius:999px;border:1px solid var(--line-strong);background:var(--surface);padding:0 14px;font-size:13px;font-weight:500;display:flex;align-items:center;gap:6px}
+.share svg{width:15px;height:15px}
+.vp-scroll{flex:1;overflow-y:auto;overscroll-behavior:contain;padding-bottom:calc(96px + env(safe-area-inset-bottom,0px))}
+.vp-wrap{width:var(--cw);margin:0 auto}
+.vp-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:56px;padding-top:28px}
+.vp-gal{position:sticky;top:20px;align-self:start}
+.g-main{position:relative;aspect-ratio:16/10;background:#eef0f3;overflow:hidden;cursor:zoom-in}
+.g-main img{width:100%;height:100%;object-fit:cover;display:block}
+.g-thumbs{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-top:6px}
+.g-thumbs button{position:relative;aspect-ratio:16/10;border:0;padding:0;background:#eef0f3;overflow:hidden}
+.g-thumbs img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}
+.g-thumbs button:hover img{transform:scale(1.04)}
+.g-more{position:absolute;right:10px;bottom:10px;width:40px;height:40px;border-radius:50%;background:#fff;display:grid;place-items:center;font-size:13px;font-weight:600;box-shadow:0 2px 8px rgba(0,0,0,.15)}
+.g-mob{display:none}
+
+.vi h1{font-size:30px;line-height:1.15;font-weight:500;margin:0;letter-spacing:-.015em;text-wrap:balance}
+.vi .vsub{font-size:17px;color:var(--muted);margin:4px 0 0}
+.vi .lbl{font-size:13px;color:var(--muted)}
+.price-blk{margin-top:22px}
+.price-big{font-size:30px;font-weight:500;letter-spacing:-.015em;line-height:1.15}
+.price-big small{font-size:30px}
+.price-list{font-size:13px;color:var(--muted);margin-top:2px}
+.kstats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;border-block:1px solid var(--line);padding-block:14px;margin-top:20px}
+.kstats dt{font-size:13px;color:var(--muted)}
+.kstats dd{margin:0;font-size:14px;font-weight:500}
+.speclist{margin:22px 0 0;display:grid;gap:12px}
+.speclist dt{font-size:13px;color:var(--muted)}
+.speclist dd{margin:0;font-size:14px}
+.kgrid{margin:22px 0 0;display:grid;grid-template-columns:1fr 1fr;column-gap:24px}
+.kgrid > div{display:flex;justify-content:space-between;gap:12px;padding:11px 0;border-bottom:1px solid var(--line);font-size:14px}
+.kgrid dt{color:var(--muted)}
+.kgrid dd{margin:0;font-weight:600;text-align:right}
+.pack{border-top:1px solid var(--line);padding-block:22px;margin-top:22px}
+.pack + .pack{margin-top:0}
+.pack-h{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.pack-h h2{font-size:22px;font-weight:500;margin:0;letter-spacing:-.01em}
+.readmore{border:0;background:none;padding:0;font-size:13px;font-weight:500;display:flex;align-items:center;gap:6px;white-space:nowrap}
+.readmore i{color:var(--accent);font-style:normal;font-size:18px;line-height:1}
+.pack ul{list-style:none;padding:0;margin:12px 0 0;display:grid;gap:4px;font-size:14px}
+.hl{border-top:1px solid var(--line);padding-top:22px;margin-top:22px}
+.hl h2{font-size:22px;font-weight:500;margin:0;letter-spacing:-.01em}
+.hl-figs{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:10px;margin-top:14px}
+.hl-figs div{background:var(--accent-soft);border-radius:12px;padding:14px}
+.hl-figs b{display:block;font-size:20px;font-weight:700;letter-spacing:-.01em;color:var(--ink)}
+@media (max-width:720px){.hl-figs{gap:8px}.hl-figs div{padding:12px 10px}.hl-figs b{font-size:16px;white-space:nowrap}}
+.hl-figs span{display:block;font-size:12.5px;color:var(--muted);margin-top:2px}
+.hl p{font-size:14px;color:var(--muted);margin:12px 0 0}
+.hl ul{margin:10px 0 0;padding-left:18px;font-size:14px;display:grid;gap:4px}
+.spec-req{display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap;background:var(--bg);border-radius:12px;padding:16px 18px;margin-top:22px}
+.spec-req b{font-size:15px}
+.spec-req p{margin:2px 0 0;font-size:13px;color:var(--muted);max-width:34ch}
+.spec-req .btn{height:44px;font-size:14px}
+.rows{border-block:1px solid var(--line);padding-block:10px;margin-top:22px}
+.rows button{width:100%;display:flex;justify-content:space-between;align-items:center;border:0;background:none;padding:6px 0;font-size:22px;font-weight:500;letter-spacing:-.01em;text-align:left}
+.rows button svg{width:18px;height:18px;transition:transform .2s}
+.rows button:hover svg{transform:translateX(3px)}
+.acts{display:grid;gap:10px;margin-top:24px}
+.btn{height:50px;border-radius:var(--r-ctl);font-size:15px;font-weight:600;display:flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;padding:0 18px;border:1.5px solid var(--accent);background:var(--surface);color:var(--ink);transition:background .2s,color .2s}
+.btn:hover{background:var(--accent-soft)}
+.btn.pri{background:var(--ink);border-color:var(--ink);color:#fff}
+.btn.pri:hover{background:#2a2e37}
+.btn.ac{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn svg{width:18px;height:18px}
+.acts .two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.acts .btn.sm{height:46px;font-size:14px;font-weight:500}
+.wa{border-color:#25d366}
+.wa svg{color:#1a9e4b}
+
+/* full-width popup sections */
+.vsec{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:48px;border-top:1px solid var(--line);padding-block:48px;margin-top:48px}
+.vsec + .vsec{margin-top:0}
+.vsec h2{font-size:28px;line-height:1.15;font-weight:500;margin:0;letter-spacing:-.015em}
+.vsec .lead{color:var(--muted);font-size:14px;margin:10px 0 0;max-width:38ch}
+.seg{display:flex;gap:22px;border-bottom:1px solid var(--line);margin-bottom:22px}
+.seg button{border:0;background:none;padding:0 0 10px;font-size:15px;color:var(--muted);border-bottom:2px solid transparent;margin-bottom:-1px}
+.seg button[aria-selected="true"]{color:var(--ink);border-color:var(--accent)}
+.sl{margin-bottom:22px}
+.sl-top{display:flex;justify-content:space-between;font-size:14px;color:var(--muted);margin-bottom:8px}
+.sl-top b{color:var(--ink);font-weight:500}
+input[type=range]{width:100%;accent-color:var(--ink);height:24px}
+.bd{display:grid;margin-top:8px}
+.bd > div{display:flex;justify-content:space-between;gap:16px;padding:9px 0;border-bottom:1px solid var(--line);font-size:14px}
+.bd > div.tot{font-weight:700;font-size:16px;border-bottom:1.5px solid var(--ink)}
+.bd span:first-child{color:var(--muted)}
+.bd .tot span:first-child{color:var(--ink)}
+.note{font-size:12.5px;color:var(--muted);margin-top:14px;line-height:1.55}
+.fixed-box{background:var(--bg);border-radius:12px;padding:20px}
+.fixed-box .price-big{font-size:26px}
+
+/* forms */
+.form{display:grid;grid-template-columns:1fr 1fr;gap:14px 16px}
+.form .full{grid-column:1/-1}
+.fld label{display:block;font-size:13px;font-weight:500;margin-bottom:6px}
+.fld label em{color:var(--err);font-style:normal}
+.fld input,.fld select,.fld textarea{width:100%;height:46px;border:1px solid var(--line-strong);border-radius:var(--r-ctl);background:var(--surface);padding:0 12px;font-size:15px}
+.fld textarea{height:96px;padding:10px 12px;resize:vertical}
+.fld input:focus,.fld select:focus,.fld textarea:focus{outline:2px solid var(--accent);outline-offset:-1px;border-color:transparent}
+.fld.bad input,.fld.bad select{border-color:var(--err)}
+.fld .err{color:var(--err);font-size:12px;margin-top:4px;display:none}
+.fld.bad .err{display:block}
+.vehicle-pin{grid-column:1/-1;display:flex;gap:12px;align-items:center;background:var(--bg);border-radius:12px;padding:10px}
+.vehicle-pin img{width:72px;height:54px;object-fit:cover;border-radius:8px;background:#fff}
+.vehicle-pin b{display:block;font-size:14px}
+.vehicle-pin span{font-size:13px;color:var(--muted)}
+.radios{display:flex;gap:8px;flex-wrap:wrap}
+.radios label{display:flex;align-items:center;gap:6px;border:1px solid var(--line-strong);border-radius:999px;padding:8px 14px;font-size:14px;cursor:pointer;margin:0;font-weight:400}
+.radios input{accent-color:var(--accent);width:auto;height:auto}
+.consent{grid-column:1/-1;display:grid;gap:10px;font-size:13px;color:var(--muted)}
+.consent label{display:flex;gap:10px;align-items:flex-start;cursor:pointer}
+.consent input{margin-top:2px;accent-color:var(--accent);width:16px;height:16px;flex:none}
+.consent .bad{color:var(--err)}
+.form .submit{grid-column:1/-1}
+.mock-flag{grid-column:1/-1;font-size:12px;color:var(--faint)}
+.lead-success{grid-column:1/-1;background:var(--ok-soft);color:var(--ok);border-radius:12px;padding:18px 20px;display:flex;gap:14px;align-items:flex-start}
+.lead-success svg{width:24px;height:24px;flex:none;margin-top:2px}
+.lead-success b{display:block;color:var(--ink);font-size:16px}
+.lead-success p{margin:4px 0 0;color:var(--ink);font-size:14px}
+.sending .submit{opacity:.6;pointer-events:none}
+
+.person{display:flex;gap:14px;align-items:center;margin-top:22px}
+.person .av{width:56px;height:56px;border-radius:50%;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;font-weight:700;font-size:18px;flex:none}
+.person b{display:block}
+.person span{font-size:13px;color:var(--muted)}
+.loc{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.loc .map{aspect-ratio:16/10;border-radius:12px;background:
+  linear-gradient(90deg,transparent 49.5%,var(--line-strong) 49.5% 50.5%,transparent 50.5%) 0 0/56px 56px,
+  linear-gradient(0deg,transparent 49.5%,var(--line-strong) 49.5% 50.5%,transparent 50.5%) 0 0/56px 56px,#eceff3;position:relative;display:grid;place-items:center}
+.loc .pin{width:18px;height:18px;border-radius:50% 50% 50% 0;background:var(--accent);transform:rotate(-45deg);box-shadow:0 0 0 6px rgba(61,90,224,.18)}
+.hours{display:grid;gap:4px;font-size:14px;margin-top:12px}
+.hours div{display:flex;justify-content:space-between;max-width:280px}
+.link{color:var(--accent);font-weight:600;text-decoration:none}
+.link:hover{text-decoration:underline}
+
+.acc{border-bottom:1px solid var(--line)}
+.acc button{width:100%;display:flex;justify-content:space-between;align-items:center;border:0;background:none;padding:14px 0;font-size:15px;text-align:left}
+.acc button svg{width:16px;height:16px;transition:transform .25s}
+.acc button[aria-expanded="true"] svg{transform:rotate(180deg)}
+.acc .acc-p{font-size:13px;color:var(--muted);padding:0 0 16px;line-height:1.6}
+
+.sim .rail{padding-inline:0;scroll-padding-inline:0}
+.sim .rail > *{flex-basis:calc((var(--cw) * 2 / 3 - 48px - 2 * var(--gap)) / 2.6)}
+
+/* sticky action bar */
+.vbar{position:absolute;left:0;right:0;bottom:0;z-index:5;background:#f6f7f9;border-top:1px solid var(--line);transform:translateY(105%);transition:transform .32s cubic-bezier(.2,.8,.2,1);padding-bottom:env(safe-area-inset-bottom,0px)}
+.vbar.on{transform:none}
+/* mobile floating pill (settings.popup.mobileStickyBar = "pill") */
+.vfab{display:none;position:absolute;right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:6;gap:8px;align-items:center;opacity:0;transform:translateY(16px) scale(.96);pointer-events:none;transition:opacity .25s,transform .3s cubic-bezier(.2,.8,.2,1)}
+.vfab.on{opacity:1;transform:none;pointer-events:auto}
+.fab-enq{height:44px;padding:0 20px;border-radius:999px;border:0;background:var(--ink);color:#fff;font-size:14px;font-weight:600;box-shadow:0 8px 24px -8px rgba(0,0,0,.45)}
+.fab-wa{width:44px;height:44px;border-radius:50%;background:#fff;border:1px solid #25d366;color:#1a9e4b;display:grid;place-items:center;box-shadow:0 8px 24px -10px rgba(0,0,0,.35)}
+.fab-wa svg{width:20px;height:20px}
+.vbar .in{width:var(--cw);margin:0 auto;height:78px;display:flex;align-items:center;gap:12px}
+.vbar .p{margin-right:auto;min-width:0}
+.vbar .p > span{font-size:13px;color:var(--muted)}
+.vbar .p b{display:block;font-size:17px;font-weight:600;white-space:nowrap}
+.vbar .btn{height:44px;white-space:nowrap;flex:none}
+@media (max-width:720px){.vbar .p b{font-size:15px}.vbar .in{gap:8px}}
+.vbar .wa-sm{width:44px;padding:0}
+
+/* drawer */
+.drawer{position:fixed;top:0;right:0;bottom:0;width:min(640px,100vw);z-index:90;background:var(--surface);display:flex;flex-direction:column;transform:translateX(100%);transition:transform .38s cubic-bezier(.2,.8,.2,1);box-shadow:-20px 0 60px -30px rgba(0,0,0,.35);padding-top:env(safe-area-inset-top,0px)}
+.drawer.on{transform:none}
+.dr-head{flex:none;padding:22px 32px 0;display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.dr-head h3{margin:0;font-size:24px;font-weight:500}
+.dr-tabs{flex:none;display:flex;gap:22px;padding:14px 32px 0;border-bottom:1px solid var(--line);overflow-x:auto;scrollbar-width:none}
+.dr-tabs button{border:0;background:none;padding:0 0 10px;font-size:14px;color:var(--muted);border-bottom:2px solid transparent;margin-bottom:-1px;white-space:nowrap}
+.dr-tabs button[aria-selected="true"]{color:var(--ink);border-color:var(--accent)}
+.dr-body{flex:1;overflow-y:auto;padding:22px 32px 48px;overscroll-behavior:contain}
+.dr-intro{font-size:15px;margin:0 0 22px;line-height:1.55}
+.fcard{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);margin-bottom:16px}
+.fcard img{width:100%;height:100%;aspect-ratio:1/1;object-fit:cover;display:block}
+.fcard div{padding:22px;display:flex;flex-direction:column;justify-content:center}
+.fcard h4{margin:0;font-size:19px;font-weight:500}
+.fcard p{margin:8px 0 0;font-size:14px;line-height:1.55;color:var(--muted)}
+.stable > div{display:grid;grid-template-columns:2fr 3fr;gap:16px;padding:12px 0;border-bottom:1px solid var(--line);font-size:14px}
+.stable dt{color:var(--muted)}
+.stable dd{margin:0}
+.fgroup h4{font-size:22px;font-weight:500;margin:6px 0 10px}
+.fgroup h5{font-size:13px;color:var(--muted);font-weight:500;margin:16px 0 6px}
+.fgroup ul{margin:0;padding-left:18px;font-size:14px;display:grid;gap:4px}
+.fgroup + .fgroup{margin-top:26px}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:16px;opacity:0;pointer-events:none;transition:opacity .25s}
+.lb.on{opacity:1;pointer-events:auto}
+.lb-panel{position:relative;background:var(--surface);width:min(1100px,100%);max-height:100%;display:flex;flex-direction:column;padding:48px 22px 18px}
+.lb-panel .x-btn{position:absolute;top:6px;right:8px}
+.lb-stage{position:relative;aspect-ratio:16/10;background:#eef0f3;overflow:hidden;touch-action:pan-y}
+.lb-stage img{width:100%;height:100%;object-fit:contain;display:block;user-select:none;-webkit-user-drag:none}
+.lb-stage.angles{cursor:ew-resize}
+.lb-nav{position:absolute;top:50%;margin-top:-20px;width:40px;height:40px;border-radius:50%;border:0;background:rgba(80,84,94,.62);color:#fff;display:grid;place-items:center}
+.lb-nav svg{width:16px;height:16px}
+.lb-nav.prev{left:12px}.lb-nav.next{right:12px}
+.lb-mode{position:absolute;right:10px;bottom:10px;display:flex;background:#fff;box-shadow:0 1px 4px rgba(0,0,0,.12)}
+.lb-mode button{border:0;background:#fff;padding:8px 12px;font-size:13px}
+.lb-mode button[aria-pressed="true"]{background:var(--ink);color:#fff}
+.lb-hint{position:absolute;left:12px;bottom:12px;font-size:12px;background:rgba(255,255,255,.9);padding:6px 10px;border-radius:999px}
+.lb-thumbs{display:flex;gap:6px;justify-content:center;margin-top:10px;overflow-x:auto;scrollbar-width:none}
+.lb-thumbs button{flex:none;width:72px;aspect-ratio:4/3;border:2px solid transparent;padding:0;background:#eef0f3}
+.lb-thumbs button[aria-current="true"]{border-color:var(--accent)}
+.lb-thumbs img{width:100%;height:100%;object-fit:cover;display:block}
+
+/* compare dialog */
+.cdlg{position:fixed;inset:0;z-index:95;display:grid;place-items:center;padding:16px;opacity:0;pointer-events:none;transition:opacity .25s}
+.cdlg.on{opacity:1;pointer-events:auto}
+.cdlg-panel{background:var(--surface);border-radius:16px;width:min(1000px,100%);max-height:100%;display:flex;flex-direction:column;overflow:hidden}
+.cdlg-head{display:flex;justify-content:space-between;align-items:center;padding:16px 22px;border-bottom:1px solid var(--line)}
+.cdlg-head h3{margin:0;font-size:20px;font-weight:600}
+.cdlg-body{overflow:auto}
+.ctable{border-collapse:collapse;width:100%;min-width:560px;font-size:14px}
+.ctable th,.ctable td{padding:12px 16px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.ctable th{color:var(--muted);font-weight:500;width:160px;position:sticky;left:0;background:var(--surface)}
+.ctable td{font-variant-numeric:tabular-nums}
+.ctable .cimg img{width:100%;max-width:220px;aspect-ratio:4/3;object-fit:cover;border-radius:10px;background:#fff;border:1px solid var(--line)}
+.ctable .cname{font-weight:700;font-size:15px}
+.ctable .best{color:var(--ok);font-weight:700}
+
+/* footer */
+.foot{background:var(--surface);border-top:1px solid var(--line)}
+.foot .in{margin:0 var(--gutter);padding-block:36px;display:grid;grid-template-columns:repeat(3,1fr);gap:24px;font-size:14px}
+.foot h4{margin:0 0 8px;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.foot p{margin:0}
+.ca-band{background:var(--banner);color:#cfd2d8;font-size:12px;text-align:center;padding:9px 16px calc(9px + env(safe-area-inset-bottom,0px))}
+.ca-band b{color:#fff;font-weight:600}
+@media (max-width:720px){.foot .in{grid-template-columns:1fr}}
+
+/* ---------- popup: tablet & mobile ---------- */
+@media (max-width:960px){
+  .vp-grid{grid-template-columns:1fr;gap:0;padding-top:0}
+  .vp-gal{position:static}
+  .vp-gal .g-desk{display:none}
+  .g-mob{display:block}
+  .vi{padding-top:4px}
+  .vi .ttl-desk{display:none}
+  .vsec{grid-template-columns:1fr;gap:20px;padding-block:36px;margin-top:36px}
+  .sim .rail > *{flex-basis:calc((100vw - 32px) / 2.3 - var(--gap))}
+  .loc{grid-template-columns:1fr}
+}
+.g-mob .ttl{padding:18px 0 14px}
+.g-mob .ttl h1{font-size:26px;font-weight:500;margin:0;line-height:1.15}
+.g-mob .ttl p{margin:4px 0 0;color:var(--muted)}
+.gm-stage{position:relative;margin-inline:calc(-1 * max(16px, (100vw - var(--cw)) / 2));background:#eef0f3}
+.gm-track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;aspect-ratio:4/3}
+.gm-track::-webkit-scrollbar{display:none}
+.gm-track img{flex:0 0 100%;width:100%;object-fit:cover;scroll-snap-align:center}
+.gm-arrow{position:absolute;top:50%;margin-top:-18px;width:36px;height:36px;border-radius:50%;border:0;background:rgba(80,84,94,.62);color:#fff;display:grid;place-items:center}
+.gm-arrow svg{width:14px;height:14px}
+.gm-arrow.prev{left:12px}.gm-arrow.next{right:12px}
+.gm-mode{position:absolute;right:12px;bottom:12px;display:flex;background:#fff}
+.gm-mode button{border:0;background:#fff;padding:8px 12px;font-size:13px}
+.gm-thumbs{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;margin-top:6px}
+.gm-thumbs button{flex:0 0 26%;aspect-ratio:4/3;border:2px solid transparent;padding:0;background:#eef0f3}
+.gm-thumbs button[aria-current="true"]{border-color:var(--accent)}
+.gm-thumbs img{width:100%;height:100%;object-fit:cover;display:block}
+@media (max-width:720px){
+  .vp-bar{height:54px}
+  .share span{display:none}
+  .vi .price-big,.vi .price-big small{font-size:26px}
+  .kgrid{grid-template-columns:1fr}
+  .form{grid-template-columns:1fr}
+  .fcard{grid-template-columns:1fr}
+  .fcard img{aspect-ratio:16/10}
+  .dr-head,.dr-tabs,.dr-body{padding-inline:20px}
+  .drawer{width:100vw}
+  .vbar .p > span{display:none}
+  .vbar .btn.sec{display:none}
+  .stable > div{grid-template-columns:1fr 1fr}
+  .sim .rail > *{flex-basis:calc((100vw - 16px) / 1.65 - var(--gap))}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+/* =====================================================================
+   PAGE SECTIONS (client build: Stanmar Motors)
+   Ported from the Fouché build (light mode only) and styled after the
+   Mercedes-Benz retailer pages: black header and footer, serif display
+   headings, MB blue buttons. Card and slide design are unchanged.
+   ===================================================================== */
+:root{--display:"Noto Serif Display",Georgia,"Times New Roman",serif;--photo:#eef0f3;--cta:#0078d6;--cta-hover:#0064b4}
+
+/* headings share the display face */
+.stock-head h2,.pg-head h2,.pg-hero h1,.pg-bnr h2,.pg-about h2,.pg-visit h2,.pg-feat h3{font-family:var(--display);font-weight:400;letter-spacing:-.005em}
+
+/* header: black, white logo, blue booking button */
+.site-head{background:#000;border-bottom:0;color:#fff}
+.site-head .brand{color:#fff}
+.site-head .brand span{color:rgba(255,255,255,.62)}
+.site-head .site-nav a{color:rgba(255,255,255,.86)}
+.site-head .site-nav a:hover{background:rgba(255,255,255,.1);color:#fff}
+.site-head .head-call{color:#fff}
+.brand img{display:block;height:46px;width:auto;max-width:200px}
+.brand:has(img) span{display:none}
+.head-cta{flex:none;height:40px;border-radius:4px;border:0;background:var(--cta);color:#fff;padding:0 18px;font:inherit;font-weight:600;font-size:14px;white-space:nowrap;cursor:pointer}
+.head-cta:hover{background:var(--cta-hover)}
+@media (max-width:720px){.head-cta{height:34px;padding:0 12px;font-size:13px}.brand img{height:38px}.site-nav{display:none}.site-head .in{justify-content:space-between}}
+/* phone menu */
+.head-menu{display:none}
+@media (max-width:720px){
+  .site-head .in{gap:10px}
+  .site-head .head-cta{margin-left:auto}
+  .head-menu{display:grid;place-items:center;flex:none;width:40px;height:40px;margin-right:-8px;border:0;background:none;color:#fff;cursor:pointer;border-radius:6px}
+  .head-menu svg{width:26px;height:26px}
+}
+html.m-lock,html.m-lock body{overflow:hidden}
+.m-drawer{position:fixed;inset:0;z-index:60}
+.m-scrim{position:absolute;inset:0;background:rgba(0,0,0,.55);opacity:0;transition:opacity .28s}
+.m-panel{position:absolute;top:0;right:0;bottom:0;width:min(86vw,360px);background:#000;color:#fff;display:flex;flex-direction:column;overflow-y:auto;transform:translateX(100%);transition:transform .28s cubic-bezier(.2,.8,.2,1);padding:env(safe-area-inset-top,0px) 0 calc(20px + env(safe-area-inset-bottom,0px))}
+.m-drawer.on .m-scrim{opacity:1}
+.m-drawer.on .m-panel{transform:none}
+@media (prefers-reduced-motion:reduce){.m-scrim,.m-panel{transition:none}}
+.m-top{display:flex;align-items:center;justify-content:space-between;height:64px;padding:0 12px 0 20px;border-bottom:1px solid rgba(255,255,255,.12)}
+.m-top img{height:34px;width:auto}
+.m-x{width:44px;height:44px;border:0;background:none;color:#fff;display:grid;place-items:center;cursor:pointer}
+.m-x svg{width:24px;height:24px}
+.m-links{display:flex;flex-direction:column;padding:8px 0}
+.m-links a{display:flex;justify-content:space-between;align-items:center;padding:15px 20px;color:#fff;text-decoration:none;font-size:18px;font-family:var(--display);border-bottom:1px solid rgba(255,255,255,.08)}
+.m-links a span{color:rgba(255,255,255,.45);font-family:var(--font);font-size:20px}
+.m-acts{display:grid;gap:10px;padding:18px 20px 6px}
+.m-cta{height:48px;border:0;border-radius:4px;background:var(--cta);color:#fff;font:inherit;font-weight:600;font-size:15px;cursor:pointer}
+.m-act{height:46px;border:1px solid rgba(255,255,255,.35);border-radius:4px;display:grid;place-items:center;color:#fff;text-decoration:none;font-weight:600;font-size:15px}
+.m-hours{padding:18px 20px 0;color:rgba(255,255,255,.6);font-size:13px}
+.m-hours p{display:flex;justify-content:space-between;gap:12px;margin:0 0 4px}
+
+/* shared section head and buttons */
+.pg-head{margin:0 var(--gutter) 22px;max-width:62ch}
+.pg-head h2{font-size:clamp(28px,3.4vw,40px);line-height:1.1;margin:0;text-wrap:balance}
+.pg-head p{margin:8px 0 0;color:var(--muted)}
+.pg-btn{display:inline-flex;align-items:center;justify-content:center;height:48px;padding:0 22px;border-radius:4px;border:1px solid var(--line-strong);background:transparent;color:var(--ink);font:inherit;font-size:15px;font-weight:600;text-decoration:none;white-space:nowrap;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.pg-btn:hover{border-color:var(--ink)}
+.pg-btn.pri{background:var(--cta);border-color:var(--cta);color:#fff}
+.pg-btn.pri:hover{background:var(--cta-hover);border-color:var(--cta-hover)}
+
+/* hero */
+.pg-hero{position:relative;min-height:min(82vh,780px);display:flex;align-items:flex-end;overflow:hidden;background:#000;color:#fff;isolation:isolate}
+.pg-hero-media{position:absolute;inset:0;z-index:-1}
+.pg-hero-media img,.pg-hero-media video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% 40%}
+.pg-hero-vid{opacity:0;transition:opacity 1.2s}
+.pg-hero-vid.on{opacity:1}
+.pg-hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(0,0,0,.72) 0%,rgba(0,0,0,.35) 45%,rgba(0,0,0,0) 70%),linear-gradient(180deg,rgba(0,0,0,.25) 0%,rgba(0,0,0,0) 28%,rgba(0,0,0,.35) 55%,rgba(0,0,0,.88) 100%)}
+.pg-hero-in{margin:0 var(--gutter);padding-block:120px 44px;max-width:860px}
+.pg-hero h1{font-size:clamp(38px,6vw,76px);line-height:1.04;margin:0;text-wrap:balance}
+.pg-hero p{font-size:clamp(16px,1.6vw,19px);line-height:1.5;margin:18px 0 0;max-width:52ch;color:rgba(255,255,255,.86)}
+.pg-hero-acts{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}
+.pg-hero .pg-btn{color:#fff;border-color:rgba(255,255,255,.55)}
+.pg-hero .pg-btn:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+.pg-hero .pg-btn.pri{border-color:var(--cta)}
+.pg-facts{display:flex;flex-wrap:wrap;gap:12px 40px;margin:36px 0 0;padding-top:18px;border-top:1px solid rgba(255,255,255,.22)}
+.pg-facts div{display:flex;flex-direction:column-reverse}
+.pg-facts dt{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.66);margin-top:4px}
+.pg-facts dd{margin:0;font-family:var(--display);font-size:32px;line-height:1}
+@media (max-width:720px){.pg-hero{min-height:80vh}.pg-hero-in{padding-block:96px 28px}.pg-facts{gap:10px 26px}.pg-facts dd{font-size:26px}.pg-hero-acts .pg-btn{flex:1 1 auto}}
+
+/* model / marque strip */
+.pg-makes{padding-block:48px 8px;scroll-margin-top:72px}
+.pg-make-list{margin:0 var(--gutter);display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));border-top:1px solid var(--line)}
+.pg-make-list a{display:flex;align-items:baseline;justify-content:space-between;gap:10px;padding:16px 4px 16px 0;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink);font-size:16px;font-weight:600;margin-right:24px}
+.pg-make-list a i{font-style:normal;font-size:13px;font-weight:500;color:var(--faint)}
+.pg-make-list a:hover span{text-decoration:underline;text-underline-offset:4px}
+.pg-make-list a[aria-pressed="true"] span{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:5px;color:var(--cta,var(--accent))}
+.pg-filter{margin:20px var(--gutter) 0;padding:12px 16px;border-radius:var(--r-ctl);background:var(--surface);border:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:15px;scroll-margin-top:84px}
+.pg-filter button{border:0;background:none;padding:4px 0;font-weight:600;color:var(--cta,var(--accent));cursor:pointer;white-space:nowrap}
+/* phones: the model list becomes one row of chips you swipe */
+@media (max-width:720px){
+  .pg-make-list{display:flex;gap:8px;overflow-x:auto;border-top:0;margin:0;padding:2px 16px 6px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .pg-make-list::-webkit-scrollbar{display:none}
+  .pg-make-list a{flex:none;margin:0;padding:9px 14px;border:1px solid var(--line-strong);border-radius:999px;font-size:14px;gap:8px;background:var(--surface)}
+  .pg-make-list a[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+  .pg-make-list a[aria-pressed="true"] span{text-decoration:none;color:#fff}
+  .pg-make-list a[aria-pressed="true"] i{color:rgba(255,255,255,.7)}
+}
+
+/* spotlight (not used on Stanmar yet) */
+.pg-spot{padding-block:48px 12px}
+.pg-spot-grid{margin:0 var(--gutter);display:grid;grid-template-columns:1.35fr 1fr;grid-template-rows:1fr 1fr;gap:var(--gap);height:min(64vw,620px)}
+.pg-spot-grid.n1{grid-template-columns:1fr;grid-template-rows:1fr}
+.pg-spot-grid.n2{grid-template-rows:1fr}
+.pg-tile{position:relative;overflow:hidden;border:0;padding:0;border-radius:var(--r-card);background:var(--photo);color:#fff;text-align:left;cursor:pointer;min-height:0}
+.pg-spot-grid.n3 .pg-tile:first-child{grid-row:1/3}
+.pg-tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 78%;transition:transform .8s cubic-bezier(.2,.8,.2,1)}
+.pg-tile:hover img{transform:scale(1.035)}
+.pg-tile::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 38%,rgba(0,0,0,.55) 62%,rgba(0,0,0,.9))}
+.pg-tile-tx{text-shadow:0 1px 12px rgba(0,0,0,.5);position:absolute;left:22px;right:22px;bottom:20px;z-index:1;display:grid;gap:2px}
+.pg-tile-tx small{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.72)}
+.pg-tile-tx b{font-family:var(--display);font-size:clamp(20px,2.2vw,30px);font-weight:400;line-height:1.1}
+.pg-tile-tx span{font-size:14px;color:rgba(255,255,255,.8)}
+.pg-tile-tx em{font-style:normal;font-weight:600;font-size:15px;margin-top:6px}
+@media (max-width:860px){.pg-spot-grid,.pg-spot-grid.n2,.pg-spot-grid.n3{grid-template-columns:1fr;grid-template-rows:none;height:auto}.pg-spot-grid.n3 .pg-tile:first-child{grid-row:auto}.pg-tile{aspect-ratio:4/3}}
+
+/* banners (sit in front of the stock section they name) */
+.pg-bnr{position:relative;margin:36px var(--gutter) 8px;border-radius:var(--r-card);overflow:hidden;min-height:clamp(432px,45.9vw,621px);display:flex;align-items:flex-end;color:#fff;background:#000;isolation:isolate}
+.pg-bnr img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.pg-bnr::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(0,0,0,.82) 0%,rgba(0,0,0,.45) 45%,rgba(0,0,0,0) 78%),linear-gradient(180deg,rgba(0,0,0,0) 50%,rgba(0,0,0,.5))}
+.pg-bnr-in{padding:36px clamp(22px,4vw,48px);max-width:560px;display:grid;gap:12px;justify-items:start}
+.pg-bnr h2{margin:0;font-size:clamp(28px,3.6vw,46px);line-height:1.08;text-wrap:balance}
+.pg-bnr p{margin:0;color:rgba(255,255,255,.86);max-width:44ch}
+.pg-bnr .pg-btn.pri{margin-top:6px}
+@media (max-width:720px){.pg-bnr{min-height:513px}.pg-bnr::before{background:linear-gradient(180deg,rgba(0,0,0,0) 20%,rgba(0,0,0,.85) 100%)}}
+
+/* finance & services tiles */
+.pg-svc{padding-block:64px 24px;scroll-margin-top:72px}
+.pg-svc-grid{margin:0 var(--gutter);display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:var(--gap)}
+.pg-svc-grid article{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-card);padding:26px;display:flex;flex-direction:column;gap:10px;align-items:flex-start}
+.pg-svc-grid h3{margin:0;font-size:20px;font-weight:600}
+.pg-svc-grid p{margin:0 0 8px;color:var(--muted);flex:1}
+
+/* feature blocks: image + text cards (service, commercial vehicles) */
+.pg-feats{padding-block:40px 8px}
+.pg-feat-grid{margin:0 var(--gutter);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:var(--gap)}
+.pg-feat{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-card);overflow:hidden;display:flex;flex-direction:column;scroll-margin-top:72px}
+.pg-feat-img{aspect-ratio:16/9;background:var(--photo);overflow:hidden}
+.pg-feat-img img{width:100%;height:100%;object-fit:cover;display:block}
+.pg-feat-tx{padding:26px;display:flex;flex-direction:column;gap:10px;align-items:flex-start;flex:1}
+.pg-feat h3{margin:0;font-size:clamp(24px,2.4vw,30px);line-height:1.15}
+.pg-feat p{margin:0 0 8px;color:var(--muted);flex:1;max-width:56ch}
+
+/* about */
+.pg-about{margin:72px var(--gutter) 0;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(24px,5vw,72px);align-items:center;scroll-margin-top:72px}
+.pg-about-img{border-radius:var(--r-card);overflow:hidden;aspect-ratio:4/5;background:var(--photo);max-height:640px}
+.pg-about-img img{width:100%;height:100%;object-fit:cover;display:block}
+.pg-emblem{width:92px;height:auto;display:block;margin-bottom:20px}
+.pg-about h2{font-size:clamp(30px,3.6vw,46px);line-height:1.08;margin:0;text-wrap:balance}
+.pg-about p{color:var(--muted);font-size:17px;line-height:1.6;margin:16px 0 0;max-width:56ch}
+.pg-about .pg-facts{border-top-color:var(--line)}
+.pg-about .pg-facts dt{color:var(--muted)}
+@media (max-width:860px){.pg-about{grid-template-columns:1fr}.pg-about-img{aspect-ratio:16/11}}
+
+.pg-team{margin:72px 0 0;scroll-margin-top:72px}
+.pg-team h2{font-family:var(--display);font-weight:400;letter-spacing:-.005em}
+.pg-team-head{margin:0 var(--gutter) 18px;display:flex;align-items:flex-end;justify-content:space-between;gap:16px}
+.pg-team h2{font-size:clamp(30px,3.6vw,46px);line-height:1.08;margin:0}
+.pg-team-head p{color:var(--muted);margin:12px 0 0;max-width:60ch}
+.rail.pg-team-rail > *{flex-basis:calc((var(--cw) - 4 * var(--gap)) / 4.3)}
+@media (max-width:1080px){.rail.pg-team-rail > *{flex-basis:calc((var(--cw) - 2 * var(--gap)) / 2.6)}}
+@media (max-width:720px){.rail.pg-team-rail > *{flex-basis:calc((100vw - 16px) / 1.6 - var(--gap))}}
+.pg-person{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-card);overflow:hidden}
+.pg-person-img{aspect-ratio:1/1;background:#111318;display:grid;place-items:center;overflow:hidden}
+.pg-person-img img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
+.pg-person-ini{font-family:var(--display);color:#fff;font-size:clamp(40px,5vw,56px);letter-spacing:.02em;opacity:.9}
+.pg-person-tx{padding:16px 16px 16px;display:flex;flex-direction:column;gap:4px;min-width:0;flex:1}
+.pg-person h3{margin:0;font-size:16px;font-weight:600}
+.pg-person p{margin:0;color:var(--muted);font-size:13.5px;line-height:1.4}
+.pg-person-act{display:flex;gap:10px;margin-top:auto;padding-top:14px}
+.pg-ib{width:42px;height:42px;border-radius:50%;border:1px solid var(--line-strong);display:grid;place-items:center;color:var(--ink);transition:background .2s,color .2s,border-color .2s}
+.pg-ib:hover{background:var(--cta,var(--accent));border-color:var(--cta,var(--accent));color:#fff}
+.pg-ib svg{width:18px;height:18px}
+
+/* visit us */
+.pg-visit{margin:72px var(--gutter) 0;padding-top:48px;border-top:1px solid var(--line);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:clamp(24px,5vw,72px);scroll-margin-top:72px}
+.pg-visit h2{font-size:clamp(30px,3.6vw,46px);line-height:1.08;margin:0}
+.pg-visit .lead{color:var(--muted);margin:12px 0 0;max-width:46ch}
+.pg-contact{margin:26px 0 0;display:grid}
+.pg-contact > div{display:grid;grid-template-columns:130px 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--line);font-size:15px}
+.pg-contact dt{color:var(--muted)}
+.pg-contact dd{margin:0}
+.pg-contact .hr{display:flex;justify-content:space-between;gap:12px;max-width:320px}
+.pg-contact a.link{color:var(--cta)}
+.pg-visit-form{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-card);padding:clamp(20px,3vw,32px)}
+.pg-visit-form h3{margin:0 0 16px;font-size:20px;font-weight:600}
+@media (max-width:860px){.pg-visit{grid-template-columns:1fr}.pg-contact > div{grid-template-columns:110px 1fr}}
+
+/* footer: black, like the Mercedes-Benz pages */
+.foot{background:#000;border-top:0;color:#fff}
+.foot .in{grid-template-columns:1.3fr repeat(3,1fr);padding-block:48px}
+.foot h4{color:rgba(255,255,255,.6)}
+.foot-legal{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.14);padding-top:20px;margin-top:8px!important;color:rgba(255,255,255,.6);font-size:13px}
+.foot-note{color:rgba(255,255,255,.6);font-size:13px}
+.foot-brand img{height:44px;width:auto;display:block;margin-bottom:12px}
+.foot-brand p{color:rgba(255,255,255,.6);letter-spacing:.1em;text-transform:uppercase;font-size:12px}
+.foot-social{display:flex;gap:16px;margin-top:16px!important;text-transform:none!important;letter-spacing:0!important;font-size:14px!important}
+.foot a{color:#fff}
+.foot p + p{margin-top:4px}
+.foot .ca-band{border-top:1px solid #1d1d1f}
+main{padding-block:0 72px}
+@media (max-width:960px){.foot .in{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.foot .in{grid-template-columns:1fr}}
+
+/* floating WhatsApp */
+.wa-float{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:45;width:56px;height:56px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;box-shadow:0 12px 30px -10px rgba(0,0,0,.6);transition:transform .3s cubic-bezier(.2,.8,.2,1),bottom .3s}
+.wa-float svg{width:28px;height:28px}
+.wa-float.away{transform:scale(0)}
+.ctray.on ~ .wa-float{bottom:calc(90px + env(safe-area-inset-bottom,0px))}
+
+</style>
+
+<!--
+  =====================================================================
+  EDITABLE STOCK DATA
+  Everything a dealer site shows comes from this block: dealer details,
+  finance defaults, sections (and their order), shared model content and
+  every vehicle. Add a car = copy a vehicle object, change its fields and
+  images. A section shows exactly the vehicles listed in its "vehicles".
+  settings.header.hideOnScroll: header slides away when scrolling down and
+             comes back when scrolling up. Set mobile/desktop to true or false.
+  cardStyle: "full" (default card) or "compact" (smaller card: one meta line
+             and a price block, no chips/stat row/button). Set per section with
+             "cardStyle", and for the popup's similar vehicles in settings.
+  label: short section name used in the menu and the popup breadcrumb.
+  settings.sectionCount: line under each section intro, e.g. "6 vehicles".
+             Change singular/plural to "listing"/"listings", or show:false to hide.
+  detailStyle: how a car's details open. "sheet" = slide-up panel on mobile,
+             95% centred panel on desktop (default, settings.popup.detailStyle),
+             "page" = full-screen popup, "inline" = expands inside the page.
+             A section can override it with its own "detailStyle".
+  settings.popup.mobileStickyBar (phones only): "off" = nothing (default),
+             "pill" = small floating Enquire button + WhatsApp, shown once the main
+             buttons scroll away, "subtle" = slim bar, "full" = full bar.
+  priceMode: "calculated" (monthly worked out from finance terms),
+             "fixed" (monthly typed in: monthlyFixed + monthlyNote),
+             "cash" (no monthly shown).
+  finance on a vehicle overrides the dealer defaults for that car only.
+  =====================================================================
+-->
+<script type="application/json" id="site-data">
+{
+  "mobileImages": {
+    "hero-showroom": "#6c6e6c",
+    "banner-vclass": "#7a8b94",
+    "banner-finance": "#547183",
+    "feature-service": "#827267",
+    "feature-commercial": "#9c9996",
+    "about-heritage": "#aeb6be",
+    "at28789631-1": "#c8caca",
+    "2026-mercedes-benz-v-class-v300d-exclusi-v1thc": "#cbdddb",
+    "2026-mercedes-benz-v-class-v300d-exclusi-mihkr": "#cedfdd",
+    "2026-mercedes-benz-v-class-v300d-exclusi-rbrzm": "#c7d8d6",
+    "2026-mercedes-benz-v-class-v300d-exclusi-tnji4": "#999b9b",
+    "2026-mercedes-benz-v-class-v300d-exclusi-2bsia": "#555659",
+    "at28667539-1": "#d4d5d7",
+    "at28667539-2": "#d0d1d2",
+    "at28667539-3": "#cacacc",
+    "at28667539-4": "#cccccf",
+    "at28092479-1": "#c4c7c8",
+    "at28092479-2": "#c5c7c8",
+    "at28092479-3": "#cdced1",
+    "at28092479-4": "#caccce",
+    "at28667128-1": "#c4c5c4",
+    "at28667128-2": "#c6c7c8",
+    "at28667128-3": "#c3c4c5",
+    "at28667128-4": "#c8c9c9",
+    "at28667142-1": "#c7c9ca",
+    "at28667142-2": "#c8cbcd",
+    "at28667142-3": "#c5c8c9",
+    "at28667142-4": "#c0c3c3",
+    "at28506815-1": "#babab8",
+    "at28506815-2": "#cacac9",
+    "at28506815-3": "#c9c9c9",
+    "at28506815-4": "#cfcfce",
+    "at28523348-1": "#c3c3c2",
+    "at28523348-2": "#c5c5c5",
+    "at28523348-3": "#cacaca",
+    "at28523348-4": "#c7c6c5",
+    "at28526207-1": "#c4c5c3",
+    "at28526207-2": "#c3c4c3",
+    "at28526207-3": "#cecccc",
+    "at28526207-4": "#cccccb",
+    "at28526207-5": "#cacaca",
+    "at28526207-6": "#94928f",
+    "at28674642-1": "#c4c4c3",
+    "at28674642-2": "#c6c5c5",
+    "at28674642-3": "#c9c9c9",
+    "at28674642-4": "#c3c5c4",
+    "at28678511-1": "#c7c7c6",
+    "at28678511-2": "#c8c8c8",
+    "at28678511-3": "#cececc",
+    "at28678511-4": "#cecdcc",
+    "at28678511-5": "#d0cece",
+    "at28678511-6": "#9b9b99",
+    "at28715390-1": "#c8c8c8",
+    "at28715390-2": "#c7c7c7",
+    "at28715390-3": "#c7c7c6",
+    "at28715390-4": "#cacac9",
+    "at28741242-1": "#c2c3c2",
+    "at28741242-2": "#c5c5c4",
+    "at28741242-3": "#c3c3c3",
+    "at28741242-4": "#c5c5c5",
+    "at28750925-1": "#c8c8c8",
+    "at28750925-2": "#d0cfce",
+    "at28750925-3": "#c8c8c7",
+    "at28750925-4": "#c9c9c8",
+    "at28761285-1": "#c8c8c7",
+    "at28761285-2": "#cccccc",
+    "at28761285-3": "#cacac9",
+    "at28761285-4": "#cbcac8",
+    "at28764036-1": "#c1c2c2",
+    "at28764036-2": "#c0bfbe",
+    "at28764036-3": "#c1c0c0",
+    "at28764036-4": "#cacbcb",
+    "at28769601-1": "#c7c8c6",
+    "at28769601-2": "#c8c8c8",
+    "at28769601-3": "#cfcecd",
+    "at28769601-4": "#c6c6c5",
+    "at28769601-5": "#cccbca",
+    "at28769601-6": "#cdcccb",
+    "at28771894-1": "#cccdcc",
+    "at28771894-2": "#c8c9c9",
+    "at28771894-3": "#d0d0d1",
+    "at28771894-4": "#cfd0d0",
+    "at28771894-5": "#c9caca",
+    "at28771894-6": "#aeb0b0",
+    "at28771894-7": "#919495",
+    "at28789631-2": "#c5c5c5",
+    "at28789631-3": "#c8c9ca",
+    "at28789631-4": "#c7c8c8",
+    "at28667080-1": "#c1c1c1",
+    "at28667080-2": "#c2c2c3",
+    "at28667080-3": "#c3c3c3",
+    "at28667080-4": "#c2c2c2",
+    "at28667080-5": "#c6c7c7",
+    "at28751712-1": "#c8c8c6",
+    "at28751712-2": "#cfcecc",
+    "at28751712-3": "#cbcccb",
+    "at28751712-4": "#cccccc",
+    "at28790434-1": "#c0c1c2",
+    "at28790434-2": "#c2c3c5",
+    "at28790434-3": "#c1c1c2",
+    "at28790434-4": "#c8c8c9",
+    "at28797569-1": "#c4c4c3",
+    "at28797569-2": "#c5c5c4",
+    "at28797569-3": "#c6c6c5",
+    "at28421568-1": "#c5c5c3",
+    "at28421568-2": "#cbcbca",
+    "at28421568-3": "#cececd",
+    "at28421568-4": "#cbcaca",
+    "at28667055-1": "#cacbcb",
+    "at28667055-2": "#c8c9c9",
+    "at28667055-3": "#cccccd",
+    "at28667055-4": "#c3c3c3",
+    "at28667074-1": "#cacbcc",
+    "at28667074-2": "#c5c5c5",
+    "at28667074-3": "#c2c3c3",
+    "at28667074-4": "#cdced0",
+    "at28528499-1": "#cececd",
+    "at28528499-2": "#cccdcc",
+    "at28528499-3": "#c8c8c7",
+    "at28528499-4": "#d1d1d1",
+    "at28642015-1": "#bebfc0",
+    "at28642015-2": "#c7c8c8",
+    "at28642015-3": "#c7c8ca",
+    "at28642015-4": "#bdbec0",
+    "at28642015-5": "#c5c5c7",
+    "at28641006-1": "#c8c8c6",
+    "at28641006-2": "#d0d0cf",
+    "at28641006-3": "#cececd",
+    "at28641006-4": "#cfcece",
+    "at28618660-1": "#c8c8c6",
+    "at28618660-2": "#cbcbca",
+    "at28618660-3": "#cdcdcc",
+    "at28618660-4": "#cccccc",
+    "at28649419-1": "#c1c1c0",
+    "at28649419-2": "#c7c7c6",
+    "at28649419-3": "#c8c9c8",
+    "at28649419-4": "#c8c8c8",
+    "at28617684-1": "#bebebc",
+    "at28725070-1": "#c3c3c2",
+    "at28725070-2": "#cacaca",
+    "at28725070-3": "#c9c9c8",
+    "at28725070-4": "#c8caca",
+    "at28575852-1": "#bcbcbc",
+    "at28575852-2": "#c1c1c1",
+    "at28575852-3": "#c0c1c1",
+    "at28575852-4": "#c5c5c5"
+  },
+  "meta": {
+    "title": "Stanmar Motors George | Mercedes-Benz sales, service and quality pre-owned cars",
+    "note": "",
+    "label": "",
+    "showChecks": false,
+    "description": "Quality pre-owned Mercedes-Benz and other cars at Stanmar Motors in George. Mercedes-Benz sales, service and commercial vehicles since 1956.",
+    "url": "https://conversionadvantage00.github.io/stanmar_staging/",
+    "shareImage": "share-stanmar",
+    "favicon": "favicon.png"
+  },
+  "theme": {
+    "accent": "#0078D6",
+    "confirmed": true
+  },
+  "settings": {
+    "header": {
+      "hideOnScroll": {
+        "mobile": true,
+        "desktop": false
+      },
+      "mobileMaxWidth": 720,
+      "revealAfterPx": 8
+    },
+    "similarVehicles": {
+      "cardStyle": "compact",
+      "max": 6
+    },
+    "popup": {
+      "detailStyle": "sheet",
+      "mobileStickyBar": "off"
+    },
+    "sectionCount": {
+      "show": true,
+      "singular": "vehicle",
+      "plural": "vehicles"
+    },
+    "rails": {
+      "maxPerRow": 8
+    }
+  },
+  "dealer": {
+    "name": "Stanmar Motors",
+    "short": "STANMAR MOTORS",
+    "tagline": "George · Since 1956",
+    "phone": "044 802 7000",
+    "whatsapp": "27714124008",
+    "email": "info@stanmar.co.za",
+    "address": "Discovery Street, George Industrial, George, 6534",
+    "mapsQuery": "Stanmar Motors Mercedes-Benz, George",
+    "hours": [
+      [
+        "Monday – Friday",
+        "07:30 – 17:30"
+      ],
+      [
+        "Saturday",
+        "09:00 – 12:00"
+      ],
+      [
+        "Sunday & public holidays",
+        "Closed"
+      ]
+    ],
+    "priceNote": "Retail price incl. VAT. Excludes licence and registration.",
+    "finance": {
+      "depositPct": 10,
+      "termMonths": 72,
+      "ratePct": 11.75,
+      "balloonPct": 35,
+      "initiationFee": 1207.5,
+      "monthlyFee": 69,
+      "termOptions": [
+        36,
+        48,
+        60,
+        72,
+        84
+      ],
+      "depositMax": 50,
+      "balloonMax": 40,
+      "provider": "Mercedes-Benz South Africa Limited",
+      "disclaimer": "Monthly payments are estimates for illustration only and do not constitute a quotation as defined in the National Credit Act. Final terms depend on your credit profile and the finance house's approval. Interest rate shown is indicative and linked to prime.",
+      "confirmed": true
+    },
+    "salesperson": {
+      "name": "Jason De Boer",
+      "role": "Certified Pre-Owned Sales Manager",
+      "initials": "JD"
+    },
+    "logo": "stanmar-logo.png",
+    "social": [],
+    "mobile": "071 412 4008",
+    "phoneNote": "Sales, service & parts",
+    "legalName": "Stanmar Motors (Pty) Ltd",
+    "legalNote": "Mercedes-Benz retailer in George since 1956"
+  },
+  "page": {
+    "menu": [
+      [
+        "Pre-owned",
+        "#collection"
+      ],
+      [
+        "Finance",
+        "#finance"
+      ],
+      [
+        "Service",
+        "#service"
+      ],
+      [
+        "Commercial",
+        "#commercial"
+      ],
+      [
+        "About",
+        "#about"
+      ],
+      [
+        "Team",
+        "#team"
+      ],
+      [
+        "Visit us",
+        "#visit"
+      ]
+    ],
+    "headerCta": "Book a test drive",
+    "headerCtaForm": "testdrive",
+    "hero": {
+      "poster": "hero-showroom",
+      "title": "Welcome to Stanmar Motors George.",
+      "text": "Mercedes-Benz sales and service, quality pre-owned cars and commercial vehicles in George since 1956.",
+      "primary": "View pre-owned stock",
+      "secondary": "Book a test drive",
+      "secondaryForm": "testdrive",
+      "showFacts": false
+    },
+    "makes": {
+      "title": "Shop by model",
+      "intro": "Tap a model to see just those cars.",
+      "by": "model"
+    },
+    "banners": [
+      {
+        "before": "pre-owned-mercedes-benz",
+        "image": "banner-vclass",
+        "title": "Room for the whole family",
+        "text": "Four V-Class people carriers in stock, each with less than 10 000 km on the clock.",
+        "cta": "See the V-Class",
+        "href": "#pre-owned-mercedes-benz"
+      },
+      {
+        "before": "pre-owned-other-brands",
+        "image": "banner-finance",
+        "title": "Finance that fits",
+        "text": "Our in-house F&I consultants find the finance that suits you, and we'll value your current car as a trade-in.",
+        "cta": "Apply for finance",
+        "form": "finance"
+      }
+    ],
+    "services": {
+      "title": "Finance, trade-ins and test drives",
+      "intro": "Everything you need to drive away in your next car.",
+      "items": [
+        {
+          "title": "Vehicle finance",
+          "text": "Apply online and our F&I consultants will come back to you with finance options for the car you choose.",
+          "cta": "Apply for finance",
+          "form": "finance"
+        },
+        {
+          "title": "Trade in your car",
+          "text": "Tell us what you drive now and we'll give you a trade-in value towards your next car.",
+          "cta": "Value my trade-in",
+          "form": "tradein"
+        },
+        {
+          "title": "Book a test drive",
+          "text": "Choose a car and a day that suits you, and we'll have it ready when you arrive.",
+          "cta": "Book a test drive",
+          "form": "testdrive"
+        }
+      ]
+    },
+    "features": {
+      "title": "",
+      "intro": "",
+      "items": [
+        {
+          "id": "service",
+          "title": "Book a service",
+          "text": "Keep your Mercedes-Benz in top condition with Mercedes-Benz trained technicians and genuine parts at our George workshop.",
+          "image": "feature-service",
+          "cta": "Book a service",
+          "form": "service"
+        },
+        {
+          "id": "commercial",
+          "title": "Commercial vehicles",
+          "text": "Our Commercial Vehicles department sells and services Mercedes-Benz Vans and Fuso trucks, from the Vito and Sprinter to the full Fuso range.",
+          "image": "feature-commercial",
+          "cta": "Talk to our commercial team",
+          "form": "commercial"
+        }
+      ]
+    },
+    "about": {
+      "title": "Part of George since 1956",
+      "image": "about-heritage",
+      "text": "Founded in 1956, Stanmar Motors sells and services Mercedes-Benz passenger cars, new and pre-owned. Our Commercial Vehicles department sells and services the Mercedes-Benz and Fuso commercial ranges, and our in-house F&I consultants help you finance the car you choose.\n\nUnder the leadership of Dealer Principal Greg Savage, our team is committed to service that fits your needs and to relationships that last.",
+      "showFacts": false
+    },
+    "visit": {
+      "title": "Visit Stanmar Motors",
+      "text": "Come and see us in George, or send us a message and we'll get back to you."
+    },
+    "whatsappFloat": true,
+    "team": {
+      "title": "Meet the team",
+      "intro": "The people behind Stanmar Motors. Email any of us directly, or call us on 044 802 7000.",
+      "people": [
+        {
+          "name": "Greg Savage",
+          "role": "Dealer Principal",
+          "email": "gregs@stanmar.co.za",
+          "image": ""
+        },
+        {
+          "name": "Emil Van Der Merwe",
+          "role": "Certified Aftersales Manager",
+          "email": "emilvdm@stanmar.co.za",
+          "image": ""
+        },
+        {
+          "name": "Jason De Boer",
+          "role": "Certified Pre-Owned Sales Manager",
+          "email": "jasondb@stanmar.co.za",
+          "image": ""
+        },
+        {
+          "name": "Jaco Van Der Westhuizen",
+          "role": "Workshop Foreman",
+          "email": "jacovdw@stanmar.co.za",
+          "image": ""
+        },
+        {
+          "name": "Anton Schonken",
+          "role": "Certified Product Expert",
+          "email": "anthons@stanmar.co.za",
+          "image": ""
+        },
+        {
+          "name": "Damonique Booysen",
+          "role": "Service Advisor",
+          "email": "damoniqueb@stanmar.co.za",
+          "image": ""
+        },
+        {
+          "name": "Olivia Matholla",
+          "role": "Certified Service Advisor",
+          "email": "oliviam@stanmar.co.za",
+          "image": ""
+        },
+        {
+          "name": "Mervyn Williams",
+          "role": "Parts Manager",
+          "email": "mervynw@stanmar.co.za",
+          "image": ""
+        },
+        {
+          "name": "Tanya Kirstein",
+          "role": "Finance & Insurance Manager",
+          "email": "tanyak@stanmar.co.za",
+          "image": ""
+        },
+        {
+          "name": "Celeen Cronje",
+          "role": "Boutique Manager",
+          "email": "celeenc@stanmar.co.za",
+          "image": ""
+        },
+        {
+          "name": "Lorna Hancocks",
+          "role": "Receptionist",
+          "email": "switchboard@stanmar.co.za",
+          "image": ""
+        },
+        {
+          "name": "Troy Nunns",
+          "role": "Service Admin Manager",
+          "email": "troyn@stanmar.co.za",
+          "image": ""
+        }
+      ]
+    }
+  },
+  "sections": [
+    {
+      "id": "pre-owned-mercedes-benz",
+      "label": "Mercedes-Benz",
+      "title": "Pre-owned Mercedes-Benz",
+      "intro": "Quality pre-owned Mercedes-Benz vehicles from Stanmar Motors in George.",
+      "cta": "View details",
+      "vehicles": [
+        "at28789631",
+        "at28776484",
+        "at28751712",
+        "at28715390",
+        "at28575852",
+        "at28790434",
+        "at28092479",
+        "at28764036",
+        "at28528499",
+        "at28642015",
+        "at28506815",
+        "at28761285",
+        "at28526207",
+        "at28641006",
+        "at28771894",
+        "at28725070",
+        "at28617684",
+        "at28750925",
+        "at28797569",
+        "at28523348",
+        "at28618660",
+        "at28649419"
+      ]
+    },
+    {
+      "id": "pre-owned-other-brands",
+      "label": "Other brands",
+      "title": "Pre-owned: other brands",
+      "intro": "Quality pre-owned vehicles from other brands, available now at Stanmar Motors in George.",
+      "cta": "View details",
+      "vehicles": [
+        "at28769601",
+        "at28667142",
+        "at28674642",
+        "at28741242",
+        "at28678511",
+        "at28667128",
+        "at28667539",
+        "at28667080",
+        "at28421568",
+        "at28667055",
+        "at28667074"
+      ]
+    }
+  ],
+  "models": {},
+  "vehicles": [
+    {
+      "id": "at28776484",
+      "slug": "2026-mercedes-benz-v-class-v300d-exclusive",
+      "model": "",
+      "condition": "used",
+      "year": "2026",
+      "title": "Mercedes-Benz V-Class",
+      "sub": "V300d Exclusive",
+      "extra": "",
+      "transmission": "Automatic",
+      "fuel": "Diesel",
+      "price": 2269890,
+      "priceMode": "calculated",
+      "km": 5000,
+      "images": [
+        "2026-mercedes-benz-v-class-v300d-exclusi-v1thc",
+        "2026-mercedes-benz-v-class-v300d-exclusi-mihkr",
+        "2026-mercedes-benz-v-class-v300d-exclusi-rbrzm",
+        "2026-mercedes-benz-v-class-v300d-exclusi-tnji4",
+        "2026-mercedes-benz-v-class-v300d-exclusi-2bsia"
+      ],
+      "colour": "Polar White",
+      "seats": "7",
+      "owners": "1",
+      "history": [
+        [
+          "Service history",
+          "Full franchise service history"
+        ],
+        [
+          "Warranty",
+          "Has warranty"
+        ],
+        [
+          "Previous owners",
+          "1"
+        ]
+      ],
+      "dealerNotes": "This 2026 Mercedes-Benz V300d Exclusive in Polar White offers premium family and executive travel with peace of mind. Backed by a valid warranty and full franchise service history, it has been maintained to Mercedes-Benz standards for reliability and long-term confidence. The efficient 2.0 turbo diesel engine delivers 174 kW and 500 Nm for smooth, effortless performance, averaging around 7.0 l/100 km with up to 1 000 km of range from the 70-litre tank.\n\nInside, the V-Class Exclusive trim elevates comfort with luxurious materials, spacious seating and high-end tech that makes every journey relaxed and connected. Ideal for business shuttles or larger families, it combines strong performance with refined ride comfort and advanced safety features. Enquire now to secure this well-cared-for V300d with full support and after-sales backup."
+    },
+    {
+      "id": "at28761285",
+      "slug": "2024-mercedes-benz-gle-gle450d-4matic-amg-line",
+      "model": "",
+      "condition": "used",
+      "year": "2024",
+      "title": "Mercedes-Benz GLE",
+      "sub": "GLE450d 4Matic AMG Line",
+      "extra": "",
+      "transmission": "Automatic",
+      "fuel": "Diesel",
+      "price": 1649890,
+      "priceMode": "calculated",
+      "km": 25500,
+      "images": [
+        "at28761285-1",
+        "at28761285-2",
+        "at28761285-3",
+        "at28761285-4"
+      ]
+    },
+    {
+      "id": "at28764036",
+      "slug": "2026-mercedes-benz-c-class-c220d-amg-line",
+      "model": "",
+      "condition": "used",
+      "year": "2026",
+      "title": "Mercedes-Benz C-Class",
+      "sub": "C220d AMG Line",
+      "extra": "",
+      "transmission": "Automatic",
+      "fuel": "Diesel",
+      "price": 1049890,
+      "priceMode": "calculated",
+      "km": 5500,
+      "images": [
+        "at28764036-1",
+        "at28764036-2",
+        "at28764036-3",
+        "at28764036-4"
+      ]
+    },
+    {
+      "id": "at28771894",
+      "slug": "2023-mercedes-benz-g-class-g400d",
+      "model": "",
+      "condition": "used",
+      "year": "2023",
+      "title": "Mercedes-Benz G-Class",
+      "sub": "G400d",
+      "extra": "",
+      "transmission": "Automatic",
+      "fuel": "Diesel",
+      "price": 2799890,
+      "priceMode": "calculated",
+      "km": 38000,
+      "images": [
+        "at28771894-1",
+        "at28771894-2",
+        "at28771894-3",
+        "at28771894-4",
+        "at28771894-5",
+        "at28771894-6",
+        "at28771894-7"
+      ]
+    },
+    {
+      "id": "at28769601",
+      "slug": "2024-volkswagen-polo-vivo-hatch-1-6-highline",
+      "model": "",
+      "condition": "used",
+      "year": "2024",
+      "title": "Volkswagen Polo Vivo",
+      "sub": "Hatch 1.6 Highline",
+      "extra": "",
+      "transmission": "Manual",
+      "fuel": "Petrol",
+      "price": 249890,
+      "priceMode": "calculated",
+      "km": 49000,
+      "images": [
+        "at28769601-1",
+        "at28769601-2",
+        "at28769601-3",
+        "at28769601-4",
+        "at28769601-5",
+        "at28769601-6"
+      ]
+    },
+    {
+      "id": "at28751712",
+      "slug": "2026-mercedes-benz-v-class-v300d-exclusive-101",
+      "model": "",
+      "condition": "used",
+      "year": "2026",
+      "title": "Mercedes-Benz V-Class",
+      "sub": "V300d Exclusive",
+      "extra": "",
+      "transmission": "Automatic",
+      "fuel": "Diesel",
+      "price": 2399890,
+      "priceMode": "calculated",
+      "km": 101,
+      "images": [
+        "at28751712-1",
+        "at28751712-2",
+        "at28751712-3",
+        "at28751712-4"
+      ]
+    },
+    {
+      "id": "at28750925",
+      "slug": "2023-mercedes-benz-glc-glc300d-4matic",
+      "model": "",
+      "condition": "used",
+      "year": "2023",
+      "title": "Mercedes-Benz GLC",
+      "sub": "GLC300d 4Matic",
+      "extra": "",
+      "transmission": "Automatic",
+      "fuel": "Diesel",
+      "price": 779890,
+      "priceMode": "calculated",
+      "km": 75668,
+      "images": [
+        "at28750925-1",
+        "at28750925-2",
+        "at28750925-3",
+        "at28750925-4"
+      ]
+    },
+    {
+      "id": "at28667142",
+      "slug": "2026-omoda-c7-1-5t-shs-phev",
+      "model": "",
+      "condition": "used",
+      "year": "2026",
+      "title": "Omoda C7",
+      "sub": "1.5T SHS PHEV",
+      "extra": "",
+      "transmission": "Automatic",
+      "fuel": "Hybrid",
+      "price": 599890,
+      "priceMode": "calculated",
+      "km": 5500,
+      "images": [
+        "at28667142-1",
+        "at28667142-2",
+        "at28667142-3",
+        "at28667142-4"
+      ]
+    },
+    {
+      "id": "at28674642",
+      "slug": "2014-aston-martin-vantage-v8-vantage-roadster-auto",
+      "model": "",
+      "condition": "used",
+      "year": "2014",
+      "title": "Aston Martin Vantage",
+      "sub": "V8 Vantage Roadster Auto",
+      "extra": "",
+      "transmission": "Automatic",
+      "fuel": "Petrol",
+      "price": 939890,
+      "priceMode": "calculated",
+      "km": 30000,
+      "images": [
+        "at28674642-1",
+        "at28674642-2",
+        "at28674642-3",
+        "at28674642-4"
+      ]
+    },
+    {
+      "id": "at28741242",
+      "slug": "2024-toyota-fortuner-2-8gd-6-vx",
+      "model": "",
+      "condition": "used",
+      "year": "2024",
+      "title": "Toyota Fortuner",
+      "sub": "2.8GD-6 VX",
+      "extra": "",
+      "transmission": "Automatic",
+      "fuel": "Diesel",
+      "price": 699890,
+      "priceMode": "calculated",
+      "km": 45000,
+      "images": [
+        "at28741242-1",
+        "at28741242-2",
+        "at28741242-3",
+        "at28741242-4"
+      ]
+    },
+    {
+      "id": "at28092479",
+      "slug": "2025-mercedes-benz-e-class-e220d-amg-line",
+      "model": "",
+      "condition": "used",
+      "year": "2025",
+      "title": "Mercedes-Benz E-Class",
+      "sub": "E220d AMG Line",
+      "extra": "",
+      "transmission": "Automatic",
+      "fuel": "Diesel",
+      "price": 1399890,
+      "priceMode": "calculated",
+      "km": 13000,
+      "images": [
+        "at28092479-1",
+        "at28092479-2",
+        "at28092479-3",
+        "at28092479-4"
+      ]
+    },
+    {
+      "id": "at28523348",
+      "slug": "2021-mercedes-benz-glb-glb220d-4matic",
+      "model": "",
+      "condition": "used",
+      "year": "2021",
+      "title": "Mercedes-Benz GLB",
+      "sub": "GLB220d 4Matic",
+      "extra": "",
+      "transmission": "Automatic",
+      "fuel": "Diesel",
+      "price": 499890,
+      "priceMode": "calculated",
+      "km": 59000,
+      "images": [
+        "at28523348-1",
+        "at28523348-2",
+        "at28523348-3",
+        "at28523348-4"
+      ]
+    },
+    {
+      "id": "at28678511",
+      "slug": "2023-volkswagen-tiguan-2-0tsi-162kw-4motion-r-line",
+      "model": "",
+      "condition": "used",
+      "year": "2023",
+      "title": "Volkswagen Tiguan",
+      "sub": "2.0TSI 162kW 4Motion R-Line",
+      "extra": "",
+      "transmission": "Automatic",
+      "fuel": "Petrol",
+      "price": 624890,
+      "priceMode": "calculated",
+      "km": 48500,
+      "images": [
+        "at28678511-1",
+        "at28678511-2",
+        "at28678511-3",
+        "at28678511-4",
+        "at28678511-5",
+        "at28678511-6"
+      ]
+    },
+    {
+      "id": "at28667128",
+      "slug": "2026-omoda-c7-1-6t-luxury",
+      "model": "",
+      "condition": "used",
+      "year": "2026",
+      "title": "Omoda C7",
+      "sub": "1.6T Luxury",
+      "extra": "",
+      "transmission": "Automatic",
+      "fuel": "Petrol",
+      "price": 479890,
+      "priceMode": "calculated",
+      "km": 5500,
+      "images": [
+        "at28667128-1",
+        "at28667128-2",
+        "at28667128-3",
+        "at28667128-4"
+      ]
+    },
+    {
+      "id": "at28667539",
+      "slug": "2025-omoda-c5-1-6tgdi-290t-gt",
+      "model": "",
+      "condition": "used",
+      "year": "2025",
+      "title": "Omoda C5",
+      "sub": "1.6TGDI 290T GT",
+      "extra": "",
+      "transmission": "Automatic",
+      "fuel": "Petrol",
+      "price": 449890,
+      "priceMode": "calculated",
+      "km": 13000,
+      "images": [
+        "at28667539-1",
+        "at28667539-2",
+        "at28667539-3",
+        "at28667539-4"
+      ]
+    },
+    {
+      "id": "at28506815",
+      "slug": "2026-mercedes-benz-gle-gle450d-4matic-amg-line",
+      "model": "",
+      "condition": "used",
+      "year": "2026",
+      "title": "Mercedes-Benz GLE",
+      "sub": "GLE450d 4Matic AMG Line",
+      "extra": "",
+      "transmission": "Automatic",
+      "fuel": "Diesel",
+      "price": 2149890,
+      "priceMode": "calculated",
+      "km": 8500,
+      "images": [
+        "at28506815-1",
+        "at28506815-2",
+        "at28506815-3",
+        "at28506815-4"
+      ]
+    },
+    {
+      "id": "at28715390",
+      "slug": "2025-mercedes-benz-v-class-v300d-exclusive",
+      "model": "",
+      "condition": "used",
+      "year": "2025",
+      "title": "Mercedes-Benz V-Class",
+      "sub": "V300d Exclusive",
+      "extra": "",
+      "transmission": "Automatic",
+      "fuel": "Diesel",
+      "price": 2199890,
+      "priceMode": "calculated",
+      "km": 8000,
+      "images": [
+        "at28715390-1",
+        "at28715390-2",
+        "at28715390-3",
+        "at28715390-4"
+      ]
+    },
+    {
+      "id": "at28667080",
+      "slug": "2026-omoda-c5-1-5t-230t-style-x",
+      "model": "",
+      "condition": "used",
+      "year": "2026",
+      "title": "Omoda C5",
+      "sub": "1.5T 230T Style X",
+      "extra": "",
+      "transmission": "Automatic",
+      "fuel": "Petrol",
+      "price": 309890,
+      "priceMode": "calculated",
+      "km": 5500,
+      "images": [
+        "at28667080-1",
+        "at28667080-2",
+        "at28667080-3",
+        "at28667080-4",
+        "at28667080-5"
+      ]
+    },
+    {
+      "id": "at28526207",
+      "slug": "2023-mercedes-benz-gle-gle400d-coupe-4matic-amg-line",
+      "model": "",
+      "condition": "used",
+      "year": "2023",
+      "title": "Mercedes-Benz GLE",
+      "sub": "GLE400d Coupe 4Matic AMG Line",
+      "extra": "",
+      "transmission": "Automatic",
+      "fuel": "Diesel",
+      "price": 1499890,
+      "priceMode": "calculated",
+      "km": 19100,
+      "images": [
+        "at28526207-1",
+        "at28526207-2",
+        "at28526207-3",
+        "at28526207-4",
+        "at28526207-5",
+        "at28526207-6"
+      ]
+    },
+    {
+      "id": "at28789631",
+      "slug": "2026-mercedes-benz-vito-119-cdi-tourer-select",
+      "model": "",
+      "condition": "demo",
+      "year": "2026",
+      "title": "Mercedes-Benz Vito",
+      "sub": "119 CDI Tourer Select",
+      "extra": "",
+      "transmission": "Automatic",
+      "fuel": "Diesel",
+      "price": 1388890,
+      "priceMode": "calculated",
+      "km": 4000,
+      "colour": "Grey",
+      "engine": "2.0 turbo diesel, 140 kW",
+      "doors": "5",
+      "seats": "8",
+      "owners": "1",
+      "stock": "28789631",
+      "images": [
+        "at28789631-1",
+        "at28789631-2",
+        "at28789631-3",
+        "at28789631-4"
+      ],
+      "history": [
+        [
+          "Warranty",
+          "Has warranty"
+        ],
+        [
+          "Previous owners",
+          "1"
+        ]
+      ],
+      "dealerNotes": "This 2026 Mercedes-Benz Vito 119 CDI Tourer Select in sleek grey is a modern, well-balanced people mover built for comfort and efficiency. The 2.0 turbo diesel engine delivers 140 kW and 440 Nm, giving confident performance with impressive economy of just 7.2 l/100 km and an average range of up to 972 km from the 70-litre tank. Ideal for family, shuttle or business use, it offers strong pulling power, refined driving manners and low running costs, with low average CO2 emissions of 186 g/km.\n\nInside, the Tourer Select focuses on passenger comfort, premium finishes and practical space, making longer trips more relaxed and professional transfers more appealing. As a 2026 model with warranty, it comes with the peace of mind of factory backing, multipoint inspections and dealer support. Enquire now to secure this Vito while it is available."
+    },
+    {
+      "id": "at28790434",
+      "slug": "2021-mercedes-benz-s-class-s400d-l-4matic",
+      "model": "",
+      "condition": "used",
+      "year": "2021",
+      "title": "Mercedes-Benz S-Class",
+      "sub": "S400d L 4Matic",
+      "extra": "",
+      "transmission": "Automatic",
+      "fuel": "Diesel",
+      "price": 1649890,
+      "priceMode": "calculated",
+      "km": 13000,
+      "images": [
+        "at28790434-1",
+        "at28790434-2",
+        "at28790434-3",
+        "at28790434-4"
+      ]
+    },
+    {
+      "id": "at28797569",
+      "slug": "2024-mercedes-benz-glb-glb250-amg-line",
+      "model": "",
+      "condition": "used",
+      "year": "2024",
+      "title": "Mercedes-Benz GLB",
+      "sub": "GLB250 AMG Line",
+      "extra": "",
+      "transmission": "Automatic",
+      "fuel": "Petrol",
+      "price": 719890,
+      "priceMode": "calculated",
+      "km": 22000,
+      "images": [
+        "at28797569-1",
+        "at28797569-2",
+        "at28797569-3"
+      ]
+    },
+    {
+      "id": "at28421568",
+      "slug": "2023-volkswagen-t-cross-1-0tsi-85kw-comfortline",
+      "model": "",
+      "condition": "used",
+      "year": "2023",
+      "title": "Volkswagen T-Cross",
+      "sub": "1.0TSI 85kW Comfortline",
+      "extra": "",
+      "transmission": "Automatic",
+      "fuel": "Petrol",
+      "price": 314890,
+      "priceMode": "calculated",
+      "km": 75000,
+      "images": [
+        "at28421568-1",
+        "at28421568-2",
+        "at28421568-3",
+        "at28421568-4"
+      ]
+    },
+    {
+      "id": "at28667055",
+      "slug": "2026-omoda-c9-1-5t-phev-explore-awd",
+      "model": "",
+      "condition": "used",
+      "year": "2026",
+      "title": "Omoda C9",
+      "sub": "1.5T PHEV Explore AWD",
+      "extra": "",
+      "transmission": "Automatic",
+      "fuel": "Hybrid",
+      "price": 899890,
+      "priceMode": "calculated",
+      "km": 5500,
+      "images": [
+        "at28667055-1",
+        "at28667055-2",
+        "at28667055-3",
+        "at28667055-4"
+      ]
+    },
+    {
+      "id": "at28667074",
+      "slug": "2025-jaecoo-j7-1-5t-shs",
+      "model": "",
+      "condition": "used",
+      "year": "2025",
+      "title": "Jaecoo J7",
+      "sub": "1.5T SHS",
+      "extra": "",
+      "transmission": "Automatic",
+      "fuel": "Hybrid",
+      "price": 599890,
+      "priceMode": "calculated",
+      "km": 10500,
+      "images": [
+        "at28667074-1",
+        "at28667074-2",
+        "at28667074-3",
+        "at28667074-4"
+      ]
+    },
+    {
+      "id": "at28528499",
+      "slug": "2024-mercedes-amg-cla-cla45-s-4matic",
+      "model": "",
+      "condition": "used",
+      "year": "2024",
+      "title": "Mercedes-AMG CLA",
+      "sub": "CLA45 S 4Matic+",
+      "extra": "",
+      "transmission": "Automatic",
+      "fuel": "Petrol",
+      "price": 1199890,
+      "priceMode": "calculated",
+      "km": 32500,
+      "images": [
+        "at28528499-1",
+        "at28528499-2",
+        "at28528499-3",
+        "at28528499-4"
+      ]
+    },
+    {
+      "id": "at28642015",
+      "slug": "2021-mercedes-amg-a-class-a45-s-hatch-4matic",
+      "model": "",
+      "condition": "used",
+      "year": "2021",
+      "title": "Mercedes-AMG A-Class",
+      "sub": "A45 S Hatch 4Matic+",
+      "extra": "",
+      "transmission": "Automatic",
+      "fuel": "Petrol",
+      "price": 949890,
+      "priceMode": "calculated",
+      "km": 45000,
+      "images": [
+        "at28642015-1",
+        "at28642015-2",
+        "at28642015-3",
+        "at28642015-4",
+        "at28642015-5"
+      ]
+    },
+    {
+      "id": "at28641006",
+      "slug": "2022-mercedes-benz-gls-gls400d-4matic-amg-line",
+      "model": "",
+      "condition": "used",
+      "year": "2022",
+      "title": "Mercedes-Benz GLS",
+      "sub": "GLS400d 4Matic AMG Line",
+      "extra": "",
+      "transmission": "Automatic",
+      "fuel": "Diesel",
+      "price": 1479890,
+      "priceMode": "calculated",
+      "km": 58500,
+      "images": [
+        "at28641006-1",
+        "at28641006-2",
+        "at28641006-3",
+        "at28641006-4"
+      ]
+    },
+    {
+      "id": "at28618660",
+      "slug": "2025-mercedes-benz-gla-gla200d-amg-line",
+      "model": "",
+      "condition": "used",
+      "year": "2025",
+      "title": "Mercedes-Benz GLA",
+      "sub": "GLA200d AMG Line",
+      "extra": "",
+      "transmission": "Automatic",
+      "fuel": "Diesel",
+      "price": 899890,
+      "priceMode": "calculated",
+      "km": 3000,
+      "images": [
+        "at28618660-1",
+        "at28618660-2",
+        "at28618660-3",
+        "at28618660-4"
+      ]
+    },
+    {
+      "id": "at28649419",
+      "slug": "2026-mercedes-benz-gla-gla200d-amg-line",
+      "model": "",
+      "condition": "used",
+      "year": "2026",
+      "title": "Mercedes-Benz GLA",
+      "sub": "GLA200d AMG Line",
+      "extra": "",
+      "transmission": "Automatic",
+      "fuel": "Diesel",
+      "price": 999890,
+      "priceMode": "calculated",
+      "km": 101,
+      "images": [
+        "at28649419-1",
+        "at28649419-2",
+        "at28649419-3",
+        "at28649419-4"
+      ]
+    },
+    {
+      "id": "at28617684",
+      "slug": "2026-mercedes-benz-glc-glc220d-4matic-amg-line",
+      "model": "",
+      "condition": "used",
+      "year": "2026",
+      "title": "Mercedes-Benz GLC",
+      "sub": "GLC220d 4Matic AMG Line",
+      "extra": "",
+      "transmission": "Automatic",
+      "fuel": "Diesel",
+      "price": 1239890,
+      "priceMode": "calculated",
+      "km": 6000,
+      "images": [
+        "at28617684-1"
+      ]
+    },
+    {
+      "id": "at28725070",
+      "slug": "2026-mercedes-benz-glc-glc300d-coupe-4matic-amg-line",
+      "model": "",
+      "condition": "used",
+      "year": "2026",
+      "title": "Mercedes-Benz GLC",
+      "sub": "GLC300d Coupe 4Matic AMG Line",
+      "extra": "",
+      "transmission": "Automatic",
+      "fuel": "Diesel",
+      "price": 1629890,
+      "priceMode": "calculated",
+      "km": 600,
+      "images": [
+        "at28725070-1",
+        "at28725070-2",
+        "at28725070-3",
+        "at28725070-4"
+      ]
+    },
+    {
+      "id": "at28575852",
+      "slug": "2026-mercedes-benz-v-class-v300d-executive",
+      "model": "",
+      "condition": "used",
+      "year": "2026",
+      "title": "Mercedes-Benz V-Class",
+      "sub": "V300d Executive",
+      "extra": "",
+      "transmission": "Automatic",
+      "fuel": "Diesel",
+      "price": 2269890,
+      "priceMode": "calculated",
+      "km": 3500,
+      "images": [
+        "at28575852-1",
+        "at28575852-2",
+        "at28575852-3",
+        "at28575852-4"
+      ]
+    }
+  ]
+}
+</script>
+
+<div class="mock-note" id="mock-note" hidden=""></div>
+
+<header class="site-head">
+  <div class="in">
+    <a class="brand" href="#top" id="brand"></a>
+    <nav class="site-nav" id="site-nav" aria-label="Sections"></nav>
+    <span class="head-call num" id="head-call"></span>
+    <button class="head-cta" id="head-cta" hidden=""></button>
+  </div>
+</header>
+<div id="pg-hero"></div>
+
+<main id="top">
+  <div id="pg-top"></div>
+  <div id="sections"></div>
+  <div id="pg-bottom"></div>
+</main>
+
+<footer class="foot">
+  <div class="in" id="foot"></div>
+  <div class="ca-band">Powered by <b>CA Microsites</b>, a Conversion Advantage platform</div>
+</footer>
+
+<!-- compare tray -->
+<div class="ctray" id="ctray" aria-live="polite">
+  <div class="thumbs" id="ctray-thumbs"></div>
+  <span class="lbl" id="ctray-lbl"></span>
+  <button class="go" id="ctray-go">Compare</button>
+  <button class="clr" id="ctray-clr">Clear</button>
+</div>
+
+<div class="scrim" id="scrim" hidden=""></div>
+
+<!-- vehicle popup -->
+<div class="vp-scrim" id="vp-scrim" hidden=""></div>
+<div class="vp" id="vp" role="dialog" aria-modal="true" aria-labelledby="vp-title" hidden="">
+  <div class="vp-bar"><span class="sheet-grip" aria-hidden="true"></span>
+    <div class="crumb"><button id="vp-back">← <span id="vp-sec"></span></button><span aria-hidden="true">›</span><b id="vp-crumb"></b></div>
+    <div class="sp"></div>
+    <button class="share" id="vp-share" aria-label="Copy link to this vehicle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10 14a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"></path><path d="M14 10a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"></path></svg><span id="vp-share-t">Copy link</span></button>
+    <button class="x-btn" id="vp-close" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6l12 12M18 6L6 18"></path></svg></button>
+  </div>
+  <div class="vp-scroll" id="vp-scroll"></div>
+  <div class="vbar" id="vbar" data-mobile="off"></div>
+  <div class="vfab" id="vfab" data-mobile="off"></div>
+</div>
+
+<!-- drawer -->
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="dr-title" hidden="">
+  <div class="dr-head"><h3 id="dr-title"></h3><button class="x-btn" id="dr-close" aria-label="Close panel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6l12 12M18 6L6 18"></path></svg></button></div>
+  <div class="dr-tabs" id="dr-tabs" role="tablist"></div>
+  <div class="dr-body" id="dr-body"></div>
+</aside>
+
+<!-- gallery lightbox -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo gallery" hidden="">
+  <div class="lb-panel">
+    <button class="x-btn" id="lb-close" aria-label="Close gallery"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6l12 12M18 6L6 18"></path></svg></button>
+    <div class="lb-stage" id="lb-stage">
+      <img id="lb-img" alt="">
+      <button class="lb-nav prev" id="lb-prev" aria-label="Previous photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M15 5l-7 7 7 7"></path></svg></button>
+      <button class="lb-nav next" id="lb-next" aria-label="Next photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 5l7 7-7 7"></path></svg></button>
+      <span class="lb-hint" id="lb-hint" hidden="">Drag to turn the car</span>
+      <div class="lb-mode"><button id="lb-m-gal" aria-pressed="true">Gallery</button><button id="lb-m-ang" aria-pressed="false">Angles</button></div>
+    </div>
+    <div class="lb-thumbs" id="lb-thumbs"></div>
+  </div>
+</div>
+
+<!-- compare dialog -->
+<div class="cdlg" id="cdlg" role="dialog" aria-modal="true" aria-labelledby="cdlg-title" hidden="">
+  <div class="cdlg-panel">
+    <div class="cdlg-head"><h3 id="cdlg-title">Compare vehicles</h3><button class="x-btn" id="cdlg-close" aria-label="Close compare"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6l12 12M18 6L6 18"></path></svg></button></div>
+    <div class="cdlg-body" id="cdlg-body"></div>
+  </div>
+</div>
+
+<div class="tipbox" id="tipbox" role="tooltip" hidden=""></div>
+<a class="wa-float" id="wa-float" hidden="" target="_blank" rel="noopener" aria-label="Chat to us on WhatsApp"></a>
+
+<script>
+(function(){
+"use strict";
+window.__CA_SRC = window.__CA_SRC || (((document.head.innerHTML.match(new RegExp('<!' + '--ca-head-->([\\s\\S]*?)<!' + '--/ca-head-->')) || [])[1] || '') + document.body.innerHTML);   // page source as written, used by the editor to save
+const DATA = JSON.parse(document.getElementById('site-data').textContent);
+const D = DATA.dealer;
+
+/* ---------- theme + brand (from data) ---------- */
+if (DATA.theme && DATA.theme.accent) document.documentElement.style.setProperty('--accent', DATA.theme.accent);
+document.getElementById('brand').innerHTML = D.logo
+  ? `<img src="${(/\.[a-z0-9]{3,4}$/i.test(D.logo) ? 'img/' + D.logo : 'img/' + D.logo + '.jpg').replace(/"/g,'')}" alt="${String(D.name).replace(/[&<>"]/g,'')}">${D.tagline ? `<span>${String(D.tagline).replace(/[&<>]/g,'')}</span>` : ''}`
+  : `<b>${String(D.short || D.name).replace(/[&<>]/g,'')}</b>${D.tagline ? `<span>${String(D.tagline).replace(/[&<>]/g,'')}</span>` : ''}`;
+
+/* ---------- PRE-LAUNCH CHECK ----------------------------------------------------
+   Lists everything that must be fixed before a site goes live. The same function
+   runs in the publish step, which refuses to publish while anything is listed.
+   Placeholder wording below must match the default template's placeholder text. */
+const PLACEHOLDERS = new Set(['Car name','Vehicle model','Section title','Section intro text','Section label','Dealer name','DEALER NAME','Brands sold',
+  'Street address, Suburb, City, 0000','000 000 0000','27000000000','email@dealer.co.za','Exterior colour','Interior colour/trim','Wheel size & style','Gearbox type','Fuel type',
+  'Extra copy line (optional)','Pack name','Pack intro text.','Feature item','Feature title','Feature description text.','Spec label','Spec value','Feature group','Feature sub-group','Pack name',
+  'Service or plan','Plan term','Highlight title','Highlight text.','Figure label','00','Year','00,000','STOCK-000','Dealer notes text.','Salesperson name','Salesperson role','SN',
+  'Finance provider name','Engine size','Brand name','000 kW','0.0 s','0.0 l/100 km','History item','History detail','Location search text','00:00 – 00:00','Day(s)','Fixed offer terms.','Price note text.','0']);
+function prelaunchCheck(data){
+  const issues = [];
+  const add = (where, what) => issues.push({where, what});
+  const walk = (node, path, where) => {
+    if (typeof node === 'string') { const s = node.trim(); if (PLACEHOLDERS.has(s) || PLACEHOLDERS.has(s.replace(/ \d+$/, '')) || /^placeholder-/.test(s)) add(where, `${path}: "${node}"`); return; }
+    if (Array.isArray(node)) { node.forEach((x, i) => walk(x, path, where)); return; }
+    if (node && typeof node === 'object') Object.entries(node).forEach(([k, v]) => walk(v, path ? path + ' › ' + k : k, where));
+  };
+  walk(data.dealer, '', 'Dealer details');
+  (data.sections || []).forEach((s, i) => {
+    const where = `Section ${i + 1} (${s.title})`;
+    walk({title:s.title, intro:s.intro, label:s.label}, '', where);
+    const lim = 3 * (+(((data.settings || {}).rails || {}).maxPerRow) || 5);   // 15 by default; 3 rows of maxPerRow when rows are on (Stanmar: 24)
+    if ((s.vehicles || []).length > lim) add(where, `${s.vehicles.length} vehicles: a section holds up to ${lim}`);
+    if (!(s.vehicles || []).length) add(where, 'has no vehicles');
+  });
+  Object.entries(data.models || {}).forEach(([k, m]) => walk(m, '', `Model content "${k}"`));
+  (data.vehicles || []).forEach((v, n) => {
+    const where = `Vehicle ${n + 1}: ${v.title}${v.stock ? ' · ' + v.stock : ''}`;
+    const {id, slug, model, condition, priceMode, finance, ...rest} = v;
+    walk(rest, '', where);
+    if (!v.price) add(where, 'price not set');
+    if (!(v.images || []).length) add(where, 'no photos');
+    if (v.condition !== 'new' && (v.km == null || v.km === '' || typeof v.km === 'string')) add(where, 'mileage not set');
+    if (v.priceMode === 'fixed' && !v.monthlyFixed) add(where, 'fixed monthly payment not set');
+    [['title','car name'],['sub','model line'],['year','year'],['transmission','gearbox'],['fuel','fuel type']].forEach(([k, l]) => {
+      if (v[k] == null || String(v[k]).trim() === '') add(where, l + ' is empty'); });
+    if (!(data.sections || []).some(s => (s.vehicles || []).includes(v.id))) add(where, 'not in any section, so it does not show on the site');
+    if ((data.vehicles || []).filter(x => x.slug === v.slug).length > 1) add(where, `link name "${v.slug}" is used by another car`);
+  });
+  { const mob = data.mobileImages || {}, keys = new Set();
+    (data.vehicles || []).forEach(v => (v.images || []).forEach(k => { if (!/^(data:|blob:|https?:)/.test(k)) keys.add(String(k).replace(/\.(jpe?g|png|webp)$/i, '')); }));
+    const n = [...keys].filter(k => !mob[k]).length;
+    if (n) add('Phone images', `${n} car photo${n > 1 ? 's have' : ' has'} no phone copy, so phones load the full-size photo`); }
+  { const m = data.meta || {};
+    if (!String(m.description || '').trim()) add('Sharing', 'no page description (Google and link previews)');
+    if (!String(m.url || '').trim()) add('Sharing', 'live site address not set (needed for link previews)');
+    if (!m.shareImage) add('Sharing', 'no share image (the picture shown when the link is sent on WhatsApp or social)'); }
+  if (data.page) {
+    const pg = data.page, W = 'Page sections', secIds = new Set((data.sections || []).map(s => s.id)), vIds = new Set((data.vehicles || []).map(v => v.id));
+    walk(pg, '', W);
+    if (pg.hero && !pg.hero.video && !pg.hero.poster) add(W, 'hero has no video or image');
+    ((pg.spotlight || {}).items || []).forEach(x => { const id = Array.isArray(x) ? x[0] : x && x.id; if (!vIds.has(id)) add(W, `spotlight car "${id || 'none chosen'}" is not in the stock list`); });
+    (pg.banners || []).forEach((b, i) => { if (b.before && !secIds.has(b.before)) add(W, `banner ${i + 1} sits before section "${b.before}", which doesn't exist`); if (!b.image) add(W, `banner ${i + 1} has no image`); });
+    ((pg.features || {}).items || []).forEach((x, i) => { if (!x.image) add(W, `feature block ${i + 1} has no image`); if (!x.title) add(W, `feature block ${i + 1} has no title`); });
+  }
+  if (!(data.dealer.finance && data.dealer.finance.confirmed)) add('Finance defaults', 'finance terms not confirmed for this client (set "confirmed": true once checked)');
+  if (data.meta && data.meta.master) add('Template', 'this is the master template: export a working copy and build from that');
+  if (!(data.theme && data.theme.confirmed)) add('Brand theme', 'accent colour not set for this client (set "confirmed": true once done)');
+  // collapse repeats ("Feature item" x12) into one line with a count
+  const seen = new Map();
+  issues.forEach(i => { const k = i.where + '\u0000' + i.what; seen.set(k, seen.has(k) ? {...seen.get(k), n: seen.get(k).n + 1} : {...i, n: 1}); });
+  return [...seen.values()].map(i => ({where: i.where, what: i.n > 1 ? `${i.what} ×${i.n}` : i.what}));
+}
+(function prelaunchUI(){
+  const meta = DATA.meta || {}, bar = document.getElementById('mock-note');
+  if (!meta.note && !meta.showChecks) return;
+  const issues = meta.showChecks ? prelaunchCheck(DATA) : [];
+  bar.hidden = false;
+  bar.innerHTML = `<span>${meta.note || ''}</span><span>${meta.label ? meta.label + ' · ' : ''}${meta.showChecks ? (issues.length
+      ? `<button class="plc-btn bad" id="plc-open">Pre-launch check: ${issues.length} to fix</button>`
+      : `<span class="plc-btn ok">Pre-launch check: all clear</span>`) : ''}</span>`;
+  if (!issues.length) return;
+  const groups = {}; issues.forEach(i => (groups[i.where] = groups[i.where] || []).push(i.what));
+  const panel = document.createElement('aside'); panel.className = 'plc'; panel.hidden = true;
+  panel.setAttribute('role','dialog'); panel.setAttribute('aria-label','Pre-launch check');
+  panel.innerHTML = `<div class="plc-h"><b>Pre-launch check</b><span>${issues.length} items must be fixed before this site can go live</span><button class="x-btn" id="plc-close" aria-label="Close">✕</button></div>
+    <div class="plc-b">${Object.entries(groups).map(([g, list]) => `<section><h4>${g.replace(/[&<>]/g,'')} <i>${list.length}</i></h4><ul>${list.map(x => `<li>${x.replace(/[&<>]/g,'')}</li>`).join('')}</ul></section>`).join('')}</div>`;
+  document.body.appendChild(panel);
+  document.getElementById('plc-open').onclick = () => { panel.hidden = !panel.hidden; };
+  document.getElementById('plc-close').onclick = () => { panel.hidden = true; };
+  if (location.hash === '#prelaunch') panel.hidden = false;
+})();
+const V = Object.fromEntries(DATA.vehicles.map(v => [v.id, v]));
+const SEC_OF = {}; DATA.sections.forEach(s => s.vehicles.forEach(id => { if(!SEC_OF[id]) SEC_OF[id] = s; }));
+const IMG = k => (window.__CA_IMGMAP || {})[k] || (/^(data:|blob:|https?:|\/|\.)/.test(k) ? k : /\.[a-z0-9]{3,4}$/i.test(k) ? 'img/' + k : 'img/' + k + '.jpg');
+/* ---------- images: phone copies + soft lazy loading ----------
+   Phones (max 767px wide) get small WebP copies from img/m/: card 750 wide, gallery 1080 wide, site images max 900 on the short side.
+   Only photos listed in DATA.mobileImages (key -> soft tone) have copies; anything else, or a missing file, falls back to the original.
+   Use these for EVERY image a build adds (hero, banners, tiles...): LZ() for anything below the first screen, SRC() for the rest. */
+const PHONE = matchMedia('(max-width:767px)');
+const MOBI = DATA.mobileImages || {};
+const imgKey = k => String(k).replace(/\.(jpe?g|png|webp)$/i, '');
+const SRC = (k, kind) => (PHONE.matches && MOBI[imgKey(k)] && !(window.__CA_IMGMAP || {})[k]) ? 'img/m/' + kind + '/' + imgKey(k) + '.webp' : IMG(k);
+const tone = k => MOBI[imgKey(k)] || '';
+const LZ = (k, kind, attrs) => `<img class="lz" data-src="${SRC(k, kind)}" data-orig="${IMG(k)}" data-tone="${tone(k)}" decoding="async" ${attrs || ''}>`;
+// a phone copy that fails to load falls back to the original photo
+document.addEventListener('error', e => { const i = e.target; if (i && i.tagName === 'IMG' && i.dataset.orig && !i.dataset.fb && i.getAttribute('src') !== i.dataset.orig) { i.dataset.fb = '1'; i.src = i.dataset.orig; } }, true);
+function lzLoad(img){
+  if (!img || !img.dataset.src || img.dataset.lzOn) return;
+  img.dataset.lzOn = '1';
+  const p = img.parentElement; if (p && p.tagName !== 'BUTTON' && img.dataset.tone && !p.style.backgroundColor) p.style.backgroundColor = img.dataset.tone;
+  img.addEventListener('load', () => (img.decode ? img.decode().catch(() => {}) : Promise.resolve()).then(() => img.classList.add('in')));
+  img.src = img.dataset.src;
+}
+const lzAll = root => root && root.querySelectorAll('img.lz').forEach(lzLoad);
+const lzShown = root => root && root.querySelectorAll('img.lz').forEach(i => { if (i.getClientRects().length) lzLoad(i); });   // skip hidden ones (e.g. the desktop gallery on a phone)
+// load a rail's first photos from the current scroll position to 3 screen-widths ahead, and keep doing so as it scrolls
+function primeRail(r){
+  if (!r || r.dataset.primed) return; r.dataset.primed = '1';
+  let t = 0;
+  const run = () => { t = 0; const x0 = r.firstElementChild ? r.firstElementChild.offsetLeft : 0, lim = r.scrollLeft + r.clientWidth * 3;
+    for (const c of r.children) { if (c.offsetLeft - x0 > lim) break; lzLoad(c.querySelector('.cm-track img')); } };
+  r.addEventListener('scroll', () => { if (!t) t = requestAnimationFrame(run); }, {passive:true});
+  run();
+}
+// start loading about 1.5 screens before something scrolls into view
+const nearIO = new IntersectionObserver(es => es.forEach(e => { if (!e.isIntersecting) return; nearIO.unobserve(e.target);
+  e.target.classList.contains('rail') ? primeRail(e.target) : lzLoad(e.target); }), {rootMargin:'150% 0px 150% 0px'});
+const lzWatch = root => { root.querySelectorAll('.rail').forEach(r => nearIO.observe(r)); root.querySelectorAll('img.lz').forEach(i => { if (!i.closest('.rail')) nearIO.observe(i); }); };
+const CNT = Object.assign({show:true, singular:'vehicle', plural:'vehicles'}, (DATA.settings||{}).sectionCount);
+const countText = n => CNT.show ? n + ' ' + (n === 1 ? CNT.singular : CNT.plural) : '';
+const POP = Object.assign({detailStyle:'sheet', mobileStickyBar:'off'}, (DATA.settings||{}).popup);
+const SIM = Object.assign({cardStyle:'compact', max:6}, (DATA.settings||{}).similarVehicles);
+const $ = (s, r=document) => r.querySelector(s);
+const $$ = (s, r=document) => [...r.querySelectorAll(s)];
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* ---------- money & finance ---------- */
+const grp = n => typeof n === 'string' ? n : Math.round(n).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+const R = (n, cents=false) => {
+  if (n == null || isNaN(n)) return '—';
+  if (n === 0) return cents ? 'R0,000.00' : 'R000,000';   // placeholder price (default template)
+  if (!cents) return 'R ' + grp(n);
+  const neg = n < 0; n = Math.abs(n);
+  const whole = Math.floor(n + 1e-9), c = Math.round((n - whole) * 100);
+  return (neg?'-':'') + 'R ' + grp(whole + (c === 100 ? 1 : 0)) + '.' + String(c === 100 ? 0 : c).padStart(2, '0');
+};
+const condLabel = c => ({new:'New', demo:'Demo', used:'Pre-owned'})[c];
+function termsFor(v){ return Object.assign({}, D.finance, v.finance || {}); }
+function calc(price, t){
+  if (!price) return { deposit:0, balloon:0, principal:0, inst:0, monthly:0, total:0 };
+  const deposit = price * t.depositPct / 100;
+  const balloon = price * t.balloonPct / 100;
+  const principal = price - deposit + t.initiationFee;
+  const r = t.ratePct / 1200, n = t.termMonths;
+  const inst = r ? (principal - balloon / Math.pow(1 + r, n)) * r / (1 - Math.pow(1 + r, -n)) : (principal - balloon) / n;
+  const monthly = inst + t.monthlyFee;
+  return { deposit, balloon, principal, inst, monthly, total: deposit + monthly * n + balloon };
+}
+function monthlyOf(v){
+  if (v.priceMode === 'cash') return null;
+  if (v.priceMode === 'fixed') return v.monthlyFixed;
+  return calc(v.price, termsFor(v)).monthly;
+}
+function basisText(v, t){
+  if (v.priceMode === 'fixed') return v.monthlyNote || 'Fixed dealer offer.';
+  t = t || termsFor(v); const f = calc(v.price, t);
+  return `Based on ${t.termMonths} months, ${t.depositPct}% deposit (${R(f.deposit)}), ${t.ratePct}% interest and a ${t.balloonPct}% balloon (${R(f.balloon)}). Includes a ${R(t.monthlyFee)} monthly service fee and ${R(t.initiationFee, true)} initiation fee.`;
+}
+
+/* ---------- icons ---------- */
+const ic = {
+  l:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M15 5l-7 7 7 7"/></svg>',
+  r:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M9 5l7 7-7 7"/></svg>',
+  chev:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 5l7 7-7 7"/></svg>',
+  down:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 9l6 6 6-6"/></svg>',
+  cmp:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 4L3 8l4 4"/><path d="M3 8h13"/><path d="M17 12l4 4-4 4"/><path d="M21 16H8"/></svg>',
+  wa:'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3a.5.5 0 0 0 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.5-.3z"/></svg>',
+  ok:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M7.5 12.5l3 3 6-6.5"/></svg>'
+};
+const waLink = (v) => 'https://wa.me/' + D.whatsapp + '?text=' + encodeURIComponent(v ? `Hi ${D.name}, I'm interested in the ${v.title} ${v.sub} (stock ${v.stock}) at ${R(v.price)}. ${location.href.split('#')[0]}#v-${v.slug}` : `Hi ${D.name}, I have a question.`);
+
+/* ---------- optional: header hides on scroll down, reveals on scroll up ---------- */
+(function headerOnScroll(){
+  const cfg = (DATA.settings && DATA.settings.header) || {};
+  const hos = cfg.hideOnScroll || {};
+  if (!hos.mobile && !hos.desktop) return;               // feature off for this build
+  const head = $('.site-head');
+  const mq = matchMedia(`(max-width:${cfg.mobileMaxWidth || 720}px)`);
+  const enabled = () => mq.matches ? !!hos.mobile : !!hos.desktop;
+  const DELTA = cfg.revealAfterPx || 8;                  // ignore tiny jitters
+  let lastY = scrollY, ticking = false;
+  const update = () => {
+    ticking = false;
+    const y = Math.max(0, scrollY);
+    if (!enabled() || y < head.offsetHeight || document.documentElement.style.overflow === 'hidden') {
+      head.classList.remove('is-hidden'); lastY = y; return;
+    }
+    if (Math.abs(y - lastY) < DELTA) return;
+    head.classList.toggle('is-hidden', y > lastY);       // down = hide, up = show
+    lastY = y;
+  };
+  addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, {passive:true});
+  mq.addEventListener('change', update);
+  head.addEventListener('focusin', () => head.classList.remove('is-hidden'));   // keyboard users can always reach it
+  head.addEventListener('click', e => { if (e.target.closest('a[href^="#"]')) setTimeout(() => { lastY = scrollY; }, 700); });
+})();
+
+/* ---------- header, page sections, footer ---------- */
+/* ---------- page sections around the stock (data.page) ----------
+   Client-build code (ported from the Fouché build, extended for Stanmar).
+   Header menu + button, hero, model/marque strip, spotlight, banners (placed in
+   front of the section they name), finance & services tiles, feature blocks
+   (e.g. service, commercial vehicles), about, visit us, footer and the floating
+   WhatsApp button. Missing or empty = not shown. Images follow the template's
+   image rules: SRC() on the first screen, LZ() below it, phone copies in img/m/site/. */
+const PG = DATA.page || {};
+const MAKES = ['Mercedes-Maybach','Mercedes-AMG','Mercedes-Benz','Land Rover','Range Rover','Rolls-Royce','Aston Martin','Alfa Romeo'];
+const makeOf = v => { if (v.make) return v.make; const t = String(v.title || ''); const m = MAKES.find(x => t.startsWith(x)); return m || t.split(' ')[0]; };
+const marque = m => /^Mercedes/.test(m) ? 'Mercedes-Benz' : m === 'Range Rover' ? 'Land Rover' : m;
+const sinceYear = (String(D.tagline || '').match(/(19|20)\d\d/) || [])[0];
+function factsHTML(){
+  const n = DATA.vehicles.length, mk = new Set(DATA.vehicles.map(v => marque(makeOf(v)))).size;
+  const f = [[n, n === 1 ? 'car in stock' : 'cars in stock'], [mk, mk === 1 ? 'brand' : 'brands']];
+  if (sinceYear) f.push([sinceYear, 'established']);
+  return `<dl class="pg-facts">${f.map(x => `<div><dt>${esc(x[1])}</dt><dd class="num">${esc(x[0])}</dd></div>`).join('')}</dl>`;
+}
+const pgBtn = (b, cls) => b.form ? `<button class="${cls}" data-pgform="${esc(b.form)}">${esc(b.cta)}</button>` : b.href ? `<a class="${cls}" href="${esc(b.href)}">${esc(b.cta)}</a>` : '';
+
+/* header */
+$('#site-nav').innerHTML = (PG.menu && PG.menu.length ? PG.menu.map(m => `<a href="${esc(m[1])}">${esc(m[0])}</a>`).join('')
+  : DATA.sections.map(s => `<a href="#${s.id}">${esc(s.label)}</a>`).join('') + `<a href="#contact">Contact</a>`);
+$('#head-call').hidden = true;   // build standard: no phone number in the header
+if (PG.headerCta) { const b = $('#head-cta'); b.hidden = false; b.textContent = PG.headerCta; b.dataset.pgform = PG.headerCtaForm || 'viewing'; }
+
+/* phones: hamburger + slide-out menu (build standard; added for Stanmar). Built at runtime, so it never ends up in saved pages. */
+(function(){
+  const links = PG.menu && PG.menu.length ? PG.menu : DATA.sections.map(s => [s.label, '#' + s.id]).concat([['Contact', '#contact']]);
+  const btn = document.createElement('button');
+  btn.className = 'head-menu'; btn.type = 'button'; btn.setAttribute('aria-label', 'Open menu'); btn.setAttribute('aria-expanded', 'false'); btn.setAttribute('aria-controls', 'm-drawer');
+  btn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>';
+  $('.site-head .in').appendChild(btn);
+  const tel = 'tel:' + String(D.phone || '').replace(/[^\d+]/g, '').replace(/^0/, '+27');
+  const dr = document.createElement('div');
+  dr.className = 'm-drawer'; dr.id = 'm-drawer'; dr.hidden = true;
+  dr.innerHTML = `<div class="m-scrim" data-close></div>
+    <nav class="m-panel" aria-label="Menu">
+      <div class="m-top">${D.logo ? `<img src="${IMG(D.logo)}" alt="${esc(D.name)}">` : `<b>${esc(D.name)}</b>`}<button type="button" class="m-x" data-close aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+      <div class="m-links">${links.map(m => `<a href="${esc(m[1])}">${esc(m[0])}<span aria-hidden="true">›</span></a>`).join('')}</div>
+      <div class="m-acts">
+        ${PG.headerCta ? `<button type="button" class="m-cta" data-pgform="${esc(PG.headerCtaForm || 'viewing')}">${esc(PG.headerCta)}</button>` : ''}
+        ${D.phone ? `<a class="m-act" href="${tel}">Call ${esc(D.phone)}</a>` : ''}
+        ${D.whatsapp ? `<a class="m-act" href="${waLink(null)}" target="_blank" rel="noopener">WhatsApp us</a>` : ''}
+      </div>
+      ${D.hours && D.hours.length ? `<div class="m-hours">${D.hours.map(x => `<p><span>${esc(x[0])}</span><span>${esc(x[1])}</span></p>`).join('')}</div>` : ''}
+    </nav>`;
+  document.body.appendChild(dr);
+  let last = null;
+  const open = () => { last = document.activeElement; dr.hidden = false; requestAnimationFrame(() => dr.classList.add('on')); btn.setAttribute('aria-expanded', 'true'); document.documentElement.classList.add('m-lock'); $('.m-x', dr).focus(); };
+  const close = (focusBack = true) => { dr.classList.remove('on'); btn.setAttribute('aria-expanded', 'false'); document.documentElement.classList.remove('m-lock');
+    setTimeout(() => { if (!dr.classList.contains('on')) dr.hidden = true; }, 280); if (focusBack && last) last.focus(); };
+  btn.addEventListener('click', open);
+  dr.addEventListener('click', e => {
+    if (e.target.closest('[data-close]')) return close();
+    const a = e.target.closest('a[href^="#"]'); if (a) close(false);
+    if (e.target.closest('.m-cta')) close(false);   // the form opens via the page's own [data-pgform] wiring
+  });
+  addEventListener('keydown', e => { if (e.key === 'Escape' && dr.classList.contains('on')) close(); });
+  matchMedia('(min-width:721px)').addEventListener('change', e => { if (e.matches && dr.classList.contains('on')) close(false); });
+})();
+
+/* hero */
+if (PG.hero && (PG.hero.video || PG.hero.poster)) {
+  const H = PG.hero;
+  $('#pg-hero').innerHTML = `<section class="pg-hero" aria-label="${esc(D.name)}">
+    <div class="pg-hero-media">${H.poster ? `<img src="${SRC(H.poster, 'site')}" data-orig="${IMG(H.poster)}" alt="" class="pg-hero-poster" fetchpriority="high">` : ''}${H.video ? `<video class="pg-hero-vid" muted loop playsinline preload="metadata" ${H.poster ? `poster="${SRC(H.poster, 'site')}"` : ''} aria-hidden="true"></video>` : ''}</div>
+    <div class="pg-hero-in">
+      <h1>${esc(H.title)}</h1>
+      ${H.text ? `<p>${esc(H.text)}</p>` : ''}
+      <div class="pg-hero-acts">${H.primary ? `<a class="pg-btn pri" href="#collection">${esc(H.primary)}</a>` : ''}${H.secondary ? `<button class="pg-btn" data-pgform="${esc(H.secondaryForm || 'viewing')}">${esc(H.secondary)}</button>` : ''}</div>
+      ${H.showFacts ? factsHTML() : ''}
+    </div>
+  </section>`;
+}
+
+/* model or marque strip + spotlight (above the stock) */
+(function(){
+  let top = '';
+  const byModel = PG.makes && PG.makes.by === 'model';
+  const groups = {};
+  DATA.sections.forEach(s => s.vehicles.forEach(id => { const v = V[id]; if (!v) return; const m = byModel ? String(v.title || '').trim() : marque(makeOf(v)); (groups[m] = groups[m] || {n:0, secs:{}}); groups[m].n++; groups[m].secs[s.id] = (groups[m].secs[s.id] || 0) + 1; }));
+  const list = Object.entries(groups).sort((a, b) => b[1].n - a[1].n || a[0].localeCompare(b[0]));
+  if (PG.makes && PG.makes.title && list.length) top += `<section class="pg-makes" id="collection" aria-labelledby="h-collection">
+    <div class="pg-head"><h2 id="h-collection">${esc(PG.makes.title)}</h2>${PG.makes.intro ? `<p>${esc(PG.makes.intro)}</p>` : ''}</div>
+    <nav class="pg-make-list" aria-label="${byModel ? 'Models' : 'Brands'}">${list.map(([m, g]) => { const to = Object.entries(g.secs).sort((a, b) => b[1] - a[1])[0][0];
+      const short = byModel ? m.replace(/^Mercedes-Benz\s+/, '').replace(/^Mercedes-AMG\s+/, 'AMG ') : m;
+      return `<a href="#${esc(to)}" data-model="${esc(m)}" aria-pressed="false"><span>${esc(short)}</span><i class="num">${g.n}</i></a>`; }).join('')}</nav>
+  </section>
+  <div class="pg-filter" id="pg-filter" hidden><span>Showing <b></b></span><button type="button" class="link">Show all cars ×</button></div>`;
+  const sp = PG.spotlight;
+  const items = sp ? (sp.items || []).map(x => Array.isArray(x) ? {id:x[0], label:x[1]} : x).filter(x => V[x.id]) : [];
+  if (items.length) top += `<section class="pg-spot" aria-labelledby="h-spot">
+    <div class="pg-head"><h2 id="h-spot">${esc(sp.title)}</h2>${sp.intro ? `<p>${esc(sp.intro)}</p>` : ''}</div>
+    <div class="pg-spot-grid n${items.length}">${items.map(x => { const v = V[x.id];
+      return `<button class="pg-tile" data-spot="${esc(v.id)}" aria-label="${esc(v.year + ' ' + v.title + ' ' + v.sub + ', view details')}">
+        ${LZ(x.image || v.images[0], x.image ? 'site' : 'card', 'alt=""')}
+        <span class="pg-tile-tx">${x.label ? `<small>${esc(x.label)}</small>` : ''}<b>${esc(v.title)}</b><span>${esc(v.year)} · ${esc(v.sub)}</span><em class="num">${R(v.price)}</em></span>
+      </button>`; }).join('')}</div>
+  </section>`;
+  $('#pg-top').innerHTML = top;
+})();
+
+/* banners: rendered with the sections (see below) */
+function bannerHTML(b){
+  return `<section class="pg-bnr" aria-label="${esc(b.title)}">
+    ${LZ((b.imageWide && !PHONE.matches) ? b.imageWide : b.image, 'site', 'alt=""')}
+    <div class="pg-bnr-in"><h2>${esc(b.title)}</h2>${b.text ? `<p>${esc(b.text)}</p>` : ''}${pgBtn(b, 'pg-btn pri')}</div>
+  </section>`;
+}
+
+/* finance & services, feature blocks, about, visit us */
+(function(){
+  let out = '';
+  const sv = PG.services;
+  if (sv && (sv.items || []).length) out += `<section class="pg-svc" id="finance" aria-labelledby="h-svc">
+    <div class="pg-head"><h2 id="h-svc">${esc(sv.title)}</h2>${sv.intro ? `<p>${esc(sv.intro)}</p>` : ''}</div>
+    <div class="pg-svc-grid">${sv.items.map(x => `<article><h3>${esc(x.title)}</h3><p>${esc(x.text)}</p>${pgBtn(x, 'pg-btn')}</article>`).join('')}</div>
+  </section>`;
+  const ft = PG.features;
+  if (ft && (ft.items || []).length) out += `<section class="pg-feats" aria-label="${esc(ft.title || 'More from ' + D.name)}">
+    ${ft.title ? `<div class="pg-head"><h2>${esc(ft.title)}</h2>${ft.intro ? `<p>${esc(ft.intro)}</p>` : ''}</div>` : ''}
+    <div class="pg-feat-grid">${ft.items.map(x => `<article class="pg-feat" ${x.id ? `id="${esc(x.id)}"` : ''}>
+      ${x.image ? `<div class="pg-feat-img">${LZ(x.image, 'site', 'alt=""')}</div>` : ''}
+      <div class="pg-feat-tx"><h3>${esc(x.title)}</h3><p>${esc(x.text)}</p>${pgBtn(x, 'pg-btn pri')}</div>
+    </article>`).join('')}</div>
+  </section>`;
+  const ab = PG.about;
+  if (ab && ab.title) out += `<section class="pg-about" id="about" aria-labelledby="h-about">
+    ${ab.image ? `<div class="pg-about-img">${LZ(ab.image, 'site', 'alt=""')}</div>` : ''}
+    <div class="pg-about-tx">${ab.emblem ? `<img class="pg-emblem" src="${IMG(ab.emblem)}" alt="Established ${esc(sinceYear || '')}">` : ''}
+      <h2 id="h-about">${esc(ab.title)}</h2>${String(ab.text || '').split(/\n\s*\n/).map(p => `<p>${esc(p)}</p>`).join('')}${ab.showFacts ? factsHTML() : ''}</div>
+  </section>`;
+  const tm = PG.team;
+  if (tm && tm.title && (tm.people || []).length) {
+    const telOf = n => 'tel:' + String(n || '').replace(/[^\d+]/g, '').replace(/^0/, '+27');
+    const ini = n => String(n || '').split(/\s+/).filter(Boolean).map(w => w[0]).filter((c, i, a) => i === 0 || i === a.length - 1).join('').toUpperCase();
+    out += `<section class="pg-team" id="team" aria-labelledby="h-team">
+    <div class="pg-team-head"><div><h2 id="h-team">${esc(tm.title)}</h2>${tm.intro ? `<p>${esc(tm.intro)}</p>` : ''}</div>
+      <div class="rail-ctl"><button class="rail-btn" data-dir="-1" aria-label="Scroll team left">${ic.l}</button><button class="rail-btn" data-dir="1" aria-label="Scroll team right">${ic.r}</button></div></div>
+    <div class="rail pg-team-rail">${tm.people.map(x => `<article class="pg-person">
+      <div class="pg-person-img">${x.image ? LZ(x.image, 'site', `alt="${esc(x.name)}"`) : `<span class="pg-person-ini" aria-hidden="true">${esc(ini(x.name))}</span>`}</div>
+      <div class="pg-person-tx"><h3>${esc(x.name)}</h3><p>${esc(x.role || '')}</p>
+        <div class="pg-person-act">${x.email ? `<a class="pg-ib" href="mailto:${esc(x.email)}" aria-label="Email ${esc(x.name)}" title="${esc(x.email)}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m3 7 9 6 9-6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></a>` : ''}<a class="pg-ib" href="${telOf(x.phone || D.phone)}" aria-label="Call ${esc(x.name)}" title="${esc(x.phone || D.phone)}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 3.5 9.4 3l1.5 4-2 1.5a12 12 0 0 0 6.6 6.6l1.5-2 4 1.5-.5 2.8a2 2 0 0 1-2.1 1.6A17 17 0 0 1 5 5.6a2 2 0 0 1 1.6-2.1Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></a></div>
+      </div>
+    </article>`).join('')}</div>
+  </section>`;
+  }
+  const vi = PG.visit;
+  if (vi && vi.title) out += `<section class="pg-visit" id="visit" aria-labelledby="h-visit">
+    <div class="pg-visit-info">
+      <h2 id="h-visit">${esc(vi.title)}</h2>${vi.text ? `<p class="lead">${esc(vi.text)}</p>` : ''}
+      <dl class="pg-contact">
+        <div><dt>Showroom</dt><dd>${esc(D.address)}<br><a class="link" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(D.mapsQuery || D.address)}" target="_blank" rel="noopener">Get directions →</a></dd></div>
+        <div><dt>Phone</dt><dd class="num">${[D.phone, D.phoneAlt].filter(Boolean).map(esc).join('<br>')}</dd></div>
+        ${D.whatsapp ? `<div><dt>WhatsApp</dt><dd class="num">${esc(D.mobile || D.whatsapp)}<br><a class="link" href="${waLink(null)}" target="_blank" rel="noopener">Chat on WhatsApp →</a></dd></div>` : ''}
+        ${D.email ? `<div><dt>Email</dt><dd>${esc(D.email)}</dd></div>` : ''}
+        <div><dt>Trading hours</dt><dd class="num">${D.hours.map(x => `<span class="hr"><span>${esc(x[0])}</span><span>${esc(x[1])}</span></span>`).join('')}</dd></div>
+      </dl>
+    </div>
+    <div class="pg-visit-form"><h3>Send us a message</h3>${formHTML('contact', null)}</div>
+  </section>`;
+  $('#pg-bottom').innerHTML = out;
+})();
+
+/* footer */
+$('#foot').innerHTML = `
+  <div id="contact" class="foot-brand">${D.logo ? `<img src="${IMG(D.logo)}" alt="${esc(D.name)}">` : `<h4>${esc(D.name)}</h4>`}<p>${esc(D.tagline || '')}</p>
+    ${(D.social || []).length ? `<p class="foot-social">${D.social.map(s => `<a href="${esc(s[1])}" target="_blank" rel="noopener">${esc(s[0])}</a>`).join('')}</p>` : ''}</div>
+  <div><h4>Showroom</h4><p>${esc(D.address)}</p><p style="margin-top:8px"><a class="link" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(D.mapsQuery || D.address)}" target="_blank" rel="noopener">Get directions →</a></p></div>
+  <div><h4>Contact</h4>${D.phoneNote ? `<p class="foot-note">${esc(D.phoneNote)}</p>` : ''}<p class="num"><a href="tel:${String(D.phone).replace(/[^\d+]/g, '').replace(/^0/, '+27')}">${[D.phone, D.phoneAlt].filter(Boolean).map(esc).join(' / ')}</a></p>${D.mobile ? `<p class="num"><a href="${waLink(null)}" target="_blank" rel="noopener">${esc(D.mobile)}</a> (WhatsApp, sales)</p>` : ''}${D.email ? `<p><a href="mailto:${esc(D.email)}">${esc(D.email)}</a></p>` : ''}</div>
+  <div><h4>Trading hours</h4>${D.hours.map(x => `<p class="num">${esc(x[0])}: ${esc(x[1])}</p>`).join('')}</div>
+  ${D.legalName ? `<p class="foot-legal">${esc(D.legalName)}${D.legalNote ? ' · ' + esc(D.legalNote) : ''}</p>` : ''}`;
+
+/* floating WhatsApp */
+if (PG.whatsappFloat && D.whatsapp) { const f = $('#wa-float'); f.hidden = false; f.href = waLink(null); f.innerHTML = ic.wa; }
+
+function wirePage(){
+  $$('[data-pgform]').forEach(b => b.addEventListener('click', () => { openFormDrawer(b.dataset.pgform, null); }));
+  $$('[data-spot]').forEach(b => b.addEventListener('click', () => openVehicle(b.dataset.spot, false, 'sheet')));
+  $$('#pg-bottom form').forEach(wireForm);
+  const vid = $('.pg-hero-vid');
+  if (vid && PG.hero) {
+    const small = matchMedia('(max-width:720px)').matches;
+    const src = small && PG.hero.videoMobile ? PG.hero.videoMobile : PG.hero.video;
+    if (src && !reduce) { vid.src = IMG(src); vid.addEventListener('playing', () => vid.classList.add('on'), {once:true}); vid.play().catch(() => {});
+      new IntersectionObserver(es => es.forEach(e => e.isIntersecting ? vid.play().catch(() => {}) : vid.pause())).observe(vid); }
+  }
+}
+
+/* ---------- card ---------- */
+function statsHTML(v){
+  const m = monthlyOf(v), cols = [];
+  const tip1 = `<button class="tip" data-tip="${esc(basisText(v))}" aria-label="How this monthly payment is worked out">1</button>`;
+  const tipI = `<button class="tip i" data-tip="${esc(D.priceNote)}" aria-label="About this price">i</button>`;
+  if (m != null) cols.push(`<div><dt>Monthly payment</dt><dd class="num">${R(m, true)}${tip1}</dd></div>`);
+  cols.push(`<div><dt>Purchase price ${tipI}</dt><dd class="num">${R(v.price)}</dd></div>`);
+  if (v.condition !== 'new') cols.push(`<div><dt>Mileage</dt><dd class="num">${grp(v.km)} km</dd></div>`);
+  return `<dl class="stats n${cols.length}">${cols.join('')}</dl>`;
+}
+function compactBody(v){
+  const m = monthlyOf(v);
+  const meta = [`<b>${condLabel(v.condition)}</b>`, v.year, v.condition !== 'new' ? grp(v.km) + ' km' : esc(v.transmission)].filter(Boolean).join(' · ');
+  const tip1 = `<button class="tip" data-tip="${esc(basisText(v))}" aria-label="How this monthly payment is worked out">1</button>`;
+  const tipI = `<button class="tip i" data-tip="${esc(D.priceNote)}" aria-label="About this price">i</button>`;
+  const price = m != null
+    ? `<div class="m num">${R(m, true)}<small>pm</small>${tip1}</div><div class="p num">${R(v.price)} ${tipI}</div>`
+    : `<div class="m num">${R(v.price)}</div><div class="p">Cash price ${tipI}</div>`;
+  return `<h3 class="c-title">${esc(v.title)}</h3><p class="c-sub">${esc(v.sub)}</p><p class="c-meta">${meta}</p><div class="c-price">${price}</div>`;
+}
+function cardHTML(v, cta, style){
+  const imgs = v.images.slice(0, 5);
+  if (style === 'compact') return `<article class="card compact" data-id="${v.id}" tabindex="0" aria-label="${esc(v.title + ' ' + v.sub)}">
+    <div class="cm">
+      <div class="cm-track" style="background:${tone(imgs[0])}">${imgs.map((k,i) => LZ(k, 'card', `alt="${esc(v.title)} ${esc(v.colour)}, photo ${i+1}" draggable="false"`)).join('')}</div>
+      <button class="cm-arrow prev" aria-label="Previous photo">${ic.l}</button>
+      <button class="cm-arrow next" aria-label="Next photo">${ic.r}</button>
+      <div class="cm-dots" aria-hidden="true">${imgs.map((_,i) => `<i class="${i?'':'on'}"></i>`).join('')}</div>
+      <button class="cmp" aria-pressed="false" aria-label="Add to compare" data-cmp="${v.id}">${ic.cmp}<span>Compare</span></button>
+    </div>
+    <div class="cb">${compactBody(v)}</div>
+  </article>`;
+  return `<article class="card ${cols3(v)?'card-tight':''}" data-id="${v.id}" tabindex="0" aria-label="${esc(v.title + ' ' + v.sub)}">
+    <div class="cm">
+      <div class="cm-track" style="background:${tone(imgs[0])}">${imgs.map((k,i) => LZ(k, 'card', `alt="${esc(v.title)} ${esc(v.colour)}, photo ${i+1}" draggable="false"`)).join('')}</div>
+      <button class="cm-arrow prev" aria-label="Previous photo">${ic.l}</button>
+      <button class="cm-arrow next" aria-label="Next photo">${ic.r}</button>
+      <div class="cm-dots" aria-hidden="true">${imgs.map((_,i) => `<i class="${i?'':'on'}"></i>`).join('')}</div>
+      <button class="cmp" aria-pressed="false" data-cmp="${v.id}">${ic.cmp}<span>Compare</span></button>
+    </div>
+    <div class="cb">
+      <h3 class="c-title">${esc(v.title)}</h3>
+      <p class="c-sub">${esc(v.sub)}</p>
+      <p class="c-extra">${esc(v.extra || '')}</p>
+      <ul class="chips"><li>${esc(v.transmission)}</li><li>${esc(v.fuel)}</li><li>${condLabel(v.condition)}</li></ul>
+      ${statsHTML(v)}
+      ${cta ? `<button class="c-cta" tabindex="-1">${esc(cta)}</button>` : ''}
+    </div>
+  </article>`;
+}
+const cols3 = v => monthlyOf(v) != null && v.condition !== 'new';
+
+/* ---------- sections ---------- */
+// Stanmar: a section with more cars than settings.rails.maxPerRow shows several rows, each its own carousel
+// (cars split evenly, in section order). Phones always get one swipe row.
+function railRows(list, anyExtra, s){
+  const max = +((DATA.settings || {}).rails || {}).maxPerRow || 0;
+  const n = (!max || PHONE.matches || list.length <= max) ? 1 : Math.ceil(list.length / max);
+  const cls = 'rail' + (anyExtra ? '' : ' no-extra'), base = Math.floor(list.length / n), extra = list.length % n;
+  const start = r => r * base + Math.min(r, extra);   // e.g. 22 cars in 3 rows: 8, 7, 7
+  if (n === 1) return `<div class="${cls}">${list.map(v => cardHTML(v, s.cta, s.cardStyle)).join('')}</div>`;
+  return Array.from({length:n}, (_, r) => `<div class="rail-row">
+      <button class="rail-btn rail-side prev" data-dir="-1" aria-label="Scroll row ${r + 1} left">${ic.l}</button>
+      <div class="${cls}">${list.slice(start(r), start(r + 1)).map(v => cardHTML(v, s.cta, s.cardStyle)).join('')}</div>
+      <button class="rail-btn rail-side next" data-dir="1" aria-label="Scroll row ${r + 1} right">${ic.r}</button>
+    </div>`).join('');
+}
+$('#sections').innerHTML = DATA.sections.map(s => {
+  const list = s.vehicles.map(id => V[id]).filter(Boolean);
+  const anyExtra = list.some(v => v.extra);
+  const bnr = PG.banners ? PG.banners.filter(b => b.before === s.id).map(bannerHTML).join('') : '';
+  return bnr + `<section class="stock ${s.detailStyle ? 'variant' : ''}" id="${s.id}" data-detail="${esc(s.detailStyle || POP.detailStyle)}" aria-labelledby="h-${s.id}">
+    <div class="stock-head">
+      <div><h2 id="h-${s.id}">${esc(s.title)}</h2><p>${esc(s.intro)}</p><span class="count">${countText(list.length)}</span></div>
+      <div class="rail-ctl"><button class="rail-btn" data-dir="-1" aria-label="Scroll ${esc(s.title)} left">${ic.l}</button><button class="rail-btn" data-dir="1" aria-label="Scroll ${esc(s.title)} right">${ic.r}</button></div>
+    </div>
+    ${railRows(list, anyExtra, s)}
+  ${s.detailStyle === 'inline' ? '<div class="inl" aria-live="polite"><div class="inl-clip"></div></div>' : ''}
+  </section>`;
+}).join('');
+
+/* ---------- momentum rail ---------- */
+function rail(el){
+  // Free scroll. Touch and trackpads use the browser's own momentum.
+  // Mouse drag gets JS inertia: velocity from the last ~100 ms of movement,
+  // then an exponential glide that eases out and stops wherever it lands.
+  let down=false, sx=0, ss=0, moved=0, raf=0, samples=[];
+  const FRICTION = 0.955;            // per 16 ms frame; closer to 1 = longer glide
+  const endDrag = () => el.classList.remove('dragging');
+  const glide = vel => {
+    let prev = performance.now();
+    const step = now => {
+      const dt = Math.min(40, now - prev); prev = now;
+      el.scrollLeft -= vel * dt;
+      vel *= Math.pow(FRICTION, dt / 16);
+      const max = el.scrollWidth - el.clientWidth;
+      const atEdge = (el.scrollLeft <= 0 && vel > 0) || (el.scrollLeft >= max - 1 && vel < 0);
+      if (Math.abs(vel) > 0.02 && !atEdge) raf = requestAnimationFrame(step); else endDrag();
+    };
+    raf = requestAnimationFrame(step);
+  };
+  el.addEventListener('pointerdown', e => {
+    cancelAnimationFrame(raf); endDrag();            // any touch stops a glide in place
+    if (e.pointerType !== 'mouse' || e.button !== 0) return;
+    if (e.target.closest('button,a,input')) return;
+    down = true; moved = 0; sx = e.clientX; ss = el.scrollLeft;
+    samples = [{x:e.clientX, t:performance.now()}];
+  });
+  window.addEventListener('pointermove', e => {
+    if (!down) return;
+    const dx = e.clientX - sx; moved = Math.max(moved, Math.abs(dx));
+    if (moved > 5 && !el.classList.contains('dragging')) el.classList.add('dragging');
+    if (!el.classList.contains('dragging')) return;
+    el.scrollLeft = ss - dx;
+    const now = performance.now(); samples.push({x:e.clientX, t:now});
+    while (samples.length > 2 && now - samples[0].t > 100) samples.shift();
+  });
+  window.addEventListener('pointerup', () => {
+    if (!down) return; down = false;
+    if (!el.classList.contains('dragging')) return;
+    const now = performance.now(), a = samples[0], b = samples[samples.length-1];
+    let vel = (b && a && b.t > a.t && now - b.t < 60) ? (b.x - a.x) / (b.t - a.t) : 0;   // px per ms
+    vel = Math.max(-6, Math.min(6, vel));
+    if (reduce || Math.abs(vel) < 0.05) endDrag(); else glide(vel);
+    el.dataset.justDragged = '1'; setTimeout(() => delete el.dataset.justDragged, 50);
+  });
+  el.addEventListener('wheel', () => cancelAnimationFrame(raf), {passive:true});
+  el.addEventListener('click', e => { if (el.dataset.justDragged || moved > 5) { e.stopPropagation(); e.preventDefault(); moved = 0; } }, true);
+  return el;
+}
+function railButtons(sec){
+  const el = $('.rail', sec), bs = $$('.rail-btn', sec);
+  const upd = () => { bs[0].disabled = el.scrollLeft < 4; bs[1].disabled = el.scrollLeft > el.scrollWidth - el.clientWidth - 4; };
+  bs.forEach(b => b.addEventListener('click', () => {
+    const card = el.children[0]; const stepW = card ? card.getBoundingClientRect().width + parseFloat(getComputedStyle(el).columnGap || 20) : 300;
+    const n = Math.max(1, Math.floor(el.clientWidth / stepW) - 1);
+    el.scrollBy({left: +b.dataset.dir * stepW * n, behavior: reduce ? 'auto' : 'smooth'});
+  }));
+  el.addEventListener('scroll', upd, {passive:true}); upd(); addEventListener('resize', upd);
+}
+$$('.stock').forEach(s => { const rows = $$('.rail-row', s); if (rows.length) { $('.rail-ctl', s).hidden = true; rows.forEach(r => { rail($('.rail', r)); railButtons(r); }); } else { rail($('.rail', s)); railButtons(s); } });
+$$('.pg-team').forEach(s => { rail($('.rail', s)); railButtons(s); });
+
+/* ---------- shop by model: filter the stock to one model (Stanmar) ---------- */
+(function(){
+  const nav = $('.pg-make-list'); if (!nav || !(PG.makes && PG.makes.by === 'model')) return;
+  const bar = $('#pg-filter'), keyOf = id => String((V[id] || {}).title || '').trim();
+  let active = null;
+  const refresh = r => { r.scrollLeft = 0; r.dispatchEvent(new Event('scroll')); };
+  function apply(model){
+    active = model;
+    $$('a[data-model]', nav).forEach(a => a.setAttribute('aria-pressed', String(a.dataset.model === model)));
+    let first = null;
+    $$('.stock').forEach(s => {
+      let shown = 0;
+      $$('.card', s).forEach(c => { const on = !model || keyOf(c.dataset.id) === model; c.hidden = !on; if (on) shown++; });
+      $$('.rail-row', s).forEach(r => { r.hidden = !$$('.card', r).some(c => !c.hidden); });
+      s.hidden = !shown;
+      const cnt = $('.count', s), total = $$('.card', s).length;
+      if (cnt) cnt.textContent = model ? countText(shown) + ' of ' + total : countText(total);
+      $$('.rail', s).forEach(refresh);
+      if (shown && !first) first = s;
+    });
+    $$('.pg-bnr').forEach(b => { b.hidden = !!model; });
+    bar.hidden = !model; if (model) $('b', bar).textContent = model;
+    fitStats();
+    return first;
+  }
+  nav.addEventListener('click', e => {
+    const a = e.target.closest('a[data-model]'); if (!a) return;
+    e.preventDefault();
+    const sec = apply(active === a.dataset.model ? null : a.dataset.model);
+    (active ? bar : nav).scrollIntoView({behavior: reduce ? 'auto' : 'smooth', block:'start'});
+  });
+  $('button', bar).addEventListener('click', () => { apply(null); nav.scrollIntoView({behavior: reduce ? 'auto' : 'smooth', block:'start'}); });
+})();
+
+/* ---------- stat row fit: 3 columns if every value fits, else stack the whole rail ---------- */
+function fitStats(scope){
+  $$('.rail', scope || document).forEach(r => {
+    const rows = $$('.stats.n3', r); if (!rows.length) return;
+    rows.forEach(s => s.classList.remove('stack'));
+    const over = rows.some(s => $$('dd, dt', s).some(e => e.scrollWidth > e.clientWidth + 1));
+    if (over) rows.forEach(s => s.classList.add('stack'));
+  });
+}
+let fitT; addEventListener('resize', () => { clearTimeout(fitT); fitT = setTimeout(() => fitStats(), 120); });
+fitStats();
+document.fonts && document.fonts.ready.then(() => fitStats());
+
+/* ---------- card photo carousel ---------- */
+function wireCard(card){
+  const tr = $('.cm-track', card), dots = $$('.cm-dots i', card);
+  const more = () => lzAll(tr);   // photos 2-5 load only once someone shows interest: touch on the photo, hover, swipe, arrow or keyboard focus
+  tr.addEventListener('touchstart', more, {passive:true, once:true}); card.addEventListener('mouseenter', more, {once:true});
+  tr.addEventListener('scroll', more, {passive:true, once:true}); card.addEventListener('focusin', more, {once:true});
+  const go = d => { const w = tr.clientWidth; tr.scrollTo({left: Math.round(tr.scrollLeft / w + d) * w, behavior: reduce ? 'auto' : 'smooth'}); };
+  $('.cm-arrow.prev', card).addEventListener('click', e => { e.stopPropagation(); go(-1); });
+  $('.cm-arrow.next', card).addEventListener('click', e => { e.stopPropagation(); go(1); });
+  tr.addEventListener('scroll', () => { const i = Math.round(tr.scrollLeft / tr.clientWidth); dots.forEach((d,j) => d.classList.toggle('on', i === j)); }, {passive:true});
+  const openCard = () => {
+    const sec = card.closest('.stock'), style = sec ? sec.dataset.detail : null;
+    if (style === 'inline') openInline(sec, card.dataset.id);
+    else openVehicle(card.dataset.id, false, style === 'sheet' ? 'sheet' : (card.closest('#vp') ? undefined : 'page'));
+  };
+  card.addEventListener('click', e => { if (e.target.closest('.tip,.cmp,.cm-arrow')) return; openCard(); });
+  card.addEventListener('keydown', e => { if (e.key === 'Enter' && e.target === card) openCard(); });
+}
+$$('#sections .card').forEach(wireCard);
+wirePage();
+lzWatch(document);
+
+/* ---------- tooltips ---------- */
+const tipbox = $('#tipbox'); let tipFor = null;
+function showTip(btn){
+  tipbox.textContent = btn.dataset.tip; tipbox.hidden = false; tipFor = btn;
+  const r = btn.getBoundingClientRect(), w = tipbox.offsetWidth, h = tipbox.offsetHeight;
+  let x = Math.min(Math.max(8, r.left + r.width/2 - w/2), innerWidth - w - 8);
+  let y = r.top - h - 8; if (y < 8) y = r.bottom + 8;
+  tipbox.style.left = x + 'px'; tipbox.style.top = y + 'px';
+}
+const hideTip = () => { tipbox.hidden = true; tipFor = null; };
+document.addEventListener('click', e => {
+  const t = e.target.closest('.tip');
+  if (t) { e.stopPropagation(); e.preventDefault(); tipFor === t ? hideTip() : showTip(t); return; }
+  if (!e.target.closest('#tipbox')) hideTip();
+}, true);
+document.addEventListener('mouseover', e => { const t = e.target.closest('.tip'); if (t && matchMedia('(hover:hover)').matches) showTip(t); });
+document.addEventListener('mouseout', e => { if (e.target.closest('.tip') && matchMedia('(hover:hover)').matches) hideTip(); });
+addEventListener('scroll', hideTip, true);
+
+/* ---------- compare ---------- */
+let cmp = [];
+function syncCmp(){
+  $$('[data-cmp]').forEach(b => { const on = cmp.includes(b.dataset.cmp); b.setAttribute('aria-pressed', on); $('span', b) && ($('span', b).textContent = on ? 'Added' : 'Compare'); });
+  $('#ctray').classList.toggle('on', cmp.length > 0);
+  $('#ctray-thumbs').innerHTML = cmp.map(id => `<img src="${SRC(V[id].images[0], 'card')}" data-orig="${IMG(V[id].images[0])}" alt="${esc(V[id].title)}">`).join('');
+  $('#ctray-lbl').textContent = cmp.length + ' of 3 selected';
+  $('#ctray-go').disabled = cmp.length < 2; $('#ctray-go').style.opacity = cmp.length < 2 ? .5 : 1;
+}
+document.addEventListener('click', e => {
+  const b = e.target.closest('[data-cmp]'); if (!b) return;
+  e.stopPropagation(); const id = b.dataset.cmp;
+  if (cmp.includes(id)) cmp = cmp.filter(x => x !== id);
+  else { if (cmp.length >= 3) cmp.shift(); cmp.push(id); }
+  syncCmp();
+}, true);
+$('#ctray-clr').onclick = () => { cmp = []; syncCmp(); };
+$('#ctray-go').onclick = () => {
+  const vs = cmp.map(id => V[id]);
+  const rows = [
+    ['Purchase price', v => v.price, v => R(v.price), 'min'],
+    ['Monthly payment', v => monthlyOf(v), v => monthlyOf(v) != null ? R(monthlyOf(v), true) : 'Cash price only', 'min'],
+    ['Condition', null, v => condLabel(v.condition)],
+    ['Year', null, v => v.year],
+    ['Mileage', v => v.condition==='new'?null:v.km, v => v.condition==='new' ? '0 km' : grp(v.km) + ' km', 'min'],
+    ['Transmission', null, v => v.transmission],
+    ['Fuel', null, v => v.fuel],
+    ['Power', null, v => statOf(content(v),'Power') || '—', null, 'Power'],
+    ['0 – 100 km/h', null, v => statOf(content(v),'0 – 100') || '—', null, '0 – 100'],
+    ['Colour', null, v => v.colour]
+  ];
+
+  let html = `<table class="ctable"><tbody>
+    <tr><th></th>${vs.map(v => `<td class="cimg"><img src="${SRC(v.images[0], 'card')}" data-orig="${IMG(v.images[0])}" alt=""><div class="cname">${esc(v.title)}</div><div style="color:var(--muted)">${esc(v.sub)}</div></td>`).join('')}</tr>`;
+  rows.forEach((row, ri) => {
+    let [label, numf, fmt, rule, need] = row;
+    if (need && !vs.some(v => statOf(content(v), need))) return;   // nobody has it: drop the row
+    let best = null;
+    if (numf && rule) { const nums = vs.map(numf).filter(x => x != null); if (nums.length > 1) best = Math.min(...nums); }
+    html += `<tr><th>${esc(label)}</th>${vs.map(v => { const n = numf ? numf(v) : null; return `<td class="${best!=null && n===best ? 'best' : ''}">${esc(fmt(v))}</td>`; }).join('')}</tr>`;
+  });
+  html += `<tr><th></th>${vs.map(v => `<td><button class="btn" data-open="${v.id}" style="height:42px;width:100%">View details</button></td>`).join('')}</tr></tbody></table>`;
+  $('#cdlg-body').innerHTML = html;
+  openLayer('#cdlg');
+};
+$('#cdlg-close').onclick = () => closeLayer('#cdlg');
+$('#cdlg-body').addEventListener('click', e => { const b = e.target.closest('[data-open]'); if (b) { closeLayer('#cdlg'); openVehicle(b.dataset.open); } });
+
+/* ---------- layer stack (popup, drawer, lightbox, compare) ---------- */
+const stack = [];
+function openLayer(sel){
+  const el = $(sel); el.hidden = false; stack.push(sel);
+  document.documentElement.style.overflow = 'hidden';
+  if (sel === '#drawer') { const s = $('#scrim'); s.hidden = false; s.style.zIndex = 85; requestAnimationFrame(() => s.classList.add('on')); }
+  if (sel === '#lb' || sel === '#cdlg') { const s = $('#scrim'); s.hidden = false; s.style.zIndex = sel === '#lb' ? 99 : 94; requestAnimationFrame(() => s.classList.add('on')); }
+  requestAnimationFrame(() => requestAnimationFrame(() => el.classList.add('on')));
+  el.setAttribute('tabindex', '-1'); el.style.outline = 'none';
+  setTimeout(() => el.focus({preventScroll:true}), 60);
+}
+function closeLayer(sel){
+  const el = $(sel); el.classList.remove('on');
+  const i = stack.lastIndexOf(sel); if (i > -1) stack.splice(i, 1);
+  const needScrim = stack.find(s => s !== '#vp');
+  const s = $('#scrim');
+  if (!needScrim) { s.classList.remove('on'); setTimeout(() => { if (!stack.find(x => x !== '#vp')) s.hidden = true; }, 300); }
+  else s.style.zIndex = needScrim === '#drawer' ? 85 : needScrim === '#lb' ? 99 : 94;
+  setTimeout(() => { if (!el.classList.contains('on')) el.hidden = true; }, 400);
+  if (!stack.length) document.documentElement.style.overflow = '';
+}
+$('#scrim').addEventListener('click', () => { const top = stack[stack.length-1]; if (top && top !== '#vp') top === '#drawer' ? closeDrawer() : closeLayer(top); });
+document.addEventListener('keydown', e => {
+  if (e.key !== 'Escape' || !stack.length) return;
+  const top = stack[stack.length-1];
+  if (top === '#vp') closeVehicle(); else if (top === '#drawer') closeDrawer(); else closeLayer(top);
+});
+
+/* ---------- content resolver: every block reads from here; missing = empty = hidden ---------- */
+function parseExtras(t){
+  // dealer/AutoTrader-style extras: "ABS,Cruise Control, Rear PDC ..." -> clean, de-duplicated list
+  const seen = new Set();
+  return String(t||'').split(/[,;\n|]+/).map(s => s.trim().replace(/\s{2,}/g,' ').replace(/\.$/,'')).filter(s => {
+    const k = s.toLowerCase(); if (s.length < 2 || seen.has(k)) return false; seen.add(k); return true; });
+}
+function content(v){
+  const base = DATA.models[v.model] || {}, own = v.content || {};
+  const pick = k => own[k] !== undefined ? own[k] : base[k];
+  const c = {
+    make: pick('make') || v.make || '',
+    stats: pick('stats') || [], specs: pick('specs') || [], packs: pick('packs') || [],
+    features: Object.assign({}, pick('features') || {}), services: pick('services') || [],
+    highlights: [...(base.highlights || []), ...(v.highlights || [])]
+  };
+  if (v.extrasText) { const list = parseExtras(v.extrasText); if (list.length) c.features['Equipment'] = {'From the dealer\'s stock listing': list}; }
+  return c;
+}
+function statOf(c, label){ const f = (c.stats.concat(c.specs)).find(s => s[0].toLowerCase().startsWith(label.toLowerCase())); return f ? f[1] : null; }
+function keyStats(v, c){
+  const pool = [];
+  if (v.condition !== 'new' && v.km != null) pool.push(['Mileage', grp(v.km) + ' km']);
+  if (v.condition === 'used' && v.year) pool.push(['Year', v.year]);
+  c.stats.forEach(s => pool.push(s));
+  if (v.condition !== 'used' && v.year) pool.push(['Model year', v.year]);
+  pool.push(['Transmission', v.transmission], ['Fuel', v.fuel], ['Engine', v.engine], ['Colour', v.colour]);
+  const seen = new Set();
+  return pool.filter(s => s && s[1] != null && s[1] !== '' && !seen.has(s[0]) && seen.add(s[0])).slice(0, 3);
+}
+function infoTabs(v, c){
+  const tabs = [];
+  if (c.specs.length) tabs.push({key:'spec', label:'Specification'});
+  if (Object.keys(c.features).length || v.dealerNotes) tabs.push({key:'feat', label:'Features'});
+  if (v.condition === 'used' ? (v.history||[]).length : c.services.length) tabs.push({key:'third', label: v.condition === 'used' ? 'History & warranty' : 'Services'});
+  return tabs;
+}
+
+/* ---------- vehicle popup ---------- */
+let cur = null, terms = null;
+function similar(v){
+  return DATA.vehicles.filter(x => x.id !== v.id && (x.model === v.model || x.condition === v.condition)).slice(0, SIM.max || 6);
+}
+let curMode = 'page';
+function openVehicle(id, fromHash, mode){
+  const v = V[id]; if (!v) return;
+  const vp = $('#vp'), open = vp.classList.contains('on');
+  if (mode || !open) curMode = mode || (POP.detailStyle === 'sheet' ? 'sheet' : 'page');
+  if (!open) { vp.classList.toggle('sheet', curMode === 'sheet'); vp.style.transform = ''; }
+  if (curMode === 'sheet' && !open) { const s = $('#vp-scrim'); s.hidden = false; requestAnimationFrame(() => s.classList.add('on')); }
+  cur = v; terms = termsFor(v);
+  const m = content(v), sec = SEC_OF[id];
+  $('#vp-sec').textContent = sec ? sec.label : 'Vehicles';
+  $('#vp-crumb').textContent = 'Vehicle details';
+  $('#vp-scroll').innerHTML = vpHTML(v, m);
+  if (!$('#vp').classList.contains('on')) openLayer('#vp');
+  const sc = $('#vp-scroll'); sc.scrollTop = 0; requestAnimationFrame(() => { sc.scrollTop = 0; });   // reset after unhiding: a hidden scroller ignores scrollTop and keeps the last car's depth
+  wireVehicle(v, m);
+  if (!fromHash) try { history.replaceState(null, '', '#v-' + v.slug); } catch(_) {}
+  document.title = v.title + ' ' + v.sub + ' · ' + D.name;
+}
+function closeVehicle(){
+  closeLayer('#vp'); cur = null;
+  setTimeout(() => { const vp = $('#vp'); if (!vp.classList.contains('on')) $('#vp-scroll').scrollTop = 0; }, 300);
+  setTimeout(() => { if (!$('#vp').classList.contains('on')) $('#vp-scroll').innerHTML = ''; }, 450);   // frees the closed car's photos from memory
+  const s = $('#vp-scrim'); s.classList.remove('on'); setTimeout(() => { s.hidden = true; }, 350);
+  setTimeout(() => { const vp = $('#vp'); if (!vp.classList.contains('on')) { vp.classList.remove('sheet'); vp.style.transform = ''; } }, 420);
+  try { history.replaceState(null, '', location.pathname + location.search); } catch(_) {}
+  document.title = (DATA.meta && DATA.meta.title) || D.name;
+}
+$('#vp-close').onclick = closeVehicle;
+$('#vp-scrim').addEventListener('click', closeVehicle);
+(function sheetDrag(){
+  const vp = $('#vp'), bar = $('.vp-bar', vp); let y0 = null, dy = 0;
+  bar.addEventListener('pointerdown', e => { if (!vp.classList.contains('sheet') || !matchMedia('(max-width:860px)').matches || e.target.closest('button,a')) return; y0 = e.clientY; dy = 0; bar.setPointerCapture(e.pointerId); vp.style.transition = 'none'; });
+  bar.addEventListener('pointermove', e => { if (y0 == null) return; dy = Math.max(0, e.clientY - y0); vp.style.transform = `translateY(${dy}px)`; });
+  const end = () => { if (y0 == null) return; y0 = null; vp.style.transition = ''; if (dy > 120) closeVehicle(); else vp.style.transform = ''; };
+  bar.addEventListener('pointerup', end); bar.addEventListener('pointercancel', end);
+})();
+$('#vp-back').onclick = () => { const s = cur && SEC_OF[cur.id]; closeVehicle(); if (s) setTimeout(() => document.getElementById(s.id).scrollIntoView({behavior: reduce?'auto':'smooth'}), 60); };
+$('#vp-share').onclick = async () => {
+  const url = location.href;
+  try { await navigator.clipboard.writeText(url); $('#vp-share-t').textContent = 'Link copied'; }
+  catch(_) { $('#vp-share-t').textContent = url.split('#')[1] ? '#' + url.split('#')[1] : url; }
+  setTimeout(() => $('#vp-share-t').textContent = 'Copy link', 2200);
+};
+
+function priceBlockHTML(v){
+  const m = monthlyOf(v);
+  if (m == null) return `<div class="lbl">Purchase price <button class="tip i" data-tip="${esc(D.priceNote)}" aria-label="About this price">i</button></div>
+    <div class="price-big num">${R(v.price)}</div><div class="price-list">Cash or finance on request</div>`;
+  return `<div class="lbl">Price<button class="tip" data-tip="${esc(basisText(v))}" data-live-tip aria-label="How this monthly payment is worked out">1</button></div>
+    <div class="price-big num"><span data-live-monthly>${R(m, true)}</span> per month</div>
+    <div class="price-list num">Purchase price: ${R(v.price)}</div>`;
+}
+function vpHTML(v, m){
+  const isUsed = v.condition === 'used';
+  const kstats = keyStats(v, m);
+  const shown = new Set(kstats.map(s => s[0] === 'Model year' ? 'Year' : s[0]));   // never repeat a fact already in the top strip
+  const n = v.images.length;
+  const galDesk = `<div class="g-desk">
+      <div class="g-main" data-lb="0">${LZ(v.images[0], 'gallery', `alt="${esc(v.title)}, ${esc(v.colour)}"`)}</div>
+      <div class="g-thumbs">${v.images.slice(1,4).map((k,i) => `<button data-lb="${i+1}" aria-label="Open photo ${i+2}">${LZ(k, 'card', 'alt=""')}</button>`).join('')}</div>
+    </div>`;
+  const galMob = `<div class="g-mob">
+      <div class="ttl"><h1>${esc(v.title)}</h1><p>${esc(v.sub)}</p></div>
+      <div class="gm-stage">
+        <div class="gm-track" id="gm-track">${v.images.map((k,i) => LZ(k, 'gallery', `alt="${esc(v.title)} photo ${i+1}"`)).join('')}</div>
+        <button class="gm-arrow prev" aria-label="Previous photo">${ic.l}</button><button class="gm-arrow next" aria-label="Next photo">${ic.r}</button>
+        <div class="gm-mode"><button data-lb="0">Gallery</button><button data-lb-ang>Angles</button></div>
+      </div>
+      <div class="gm-thumbs" id="gm-thumbs">${v.images.map((k,i) => `<button data-gm="${i}" aria-current="${i===0}" aria-label="Show photo ${i+1}">${LZ(k, 'card', 'alt=""')}</button>`).join('')}</div>
+    </div>`;
+
+  const specSummary = isUsed
+    ? `<dl class="kgrid">${[['Year',v.year],['Mileage',grp(v.km)+' km'],['Transmission',v.transmission],['Fuel',v.fuel],['Engine',v.engine],['Power',statOf(m,'Power')],['Colour',v.colour],['Interior',v.interior],['Doors',v.doors],['Seats',v.seats],['Previous owners',v.owners],['Stock no.',v.stock]].filter(r => r[1] != null && r[1] !== '' && !shown.has(r[0])).map(r => `<div><dt>${esc(r[0])}</dt><dd>${esc(r[1])}</dd></div>`).join('')}</dl>`
+    : `<dl class="speclist">${[['Model year',v.year],['Exterior',v.colour],['Interior',v.interior],['Wheels',v.wheels],['Included packs',m.packs.map(p=>p.title).join(', ')],['Transmission',v.transmission],['Fuel',v.fuel],['Stock no.',v.stock]].filter(r=>r[1] && !shown.has(r[0]) && !(r[0]==='Model year' && shown.has('Year'))).map(r => `<div><dt>${esc(r[0])}</dt><dd>${esc(r[1])}</dd></div>`).join('')}</dl>`;
+
+  const packs = isUsed ? '' : m.packs.map((p,i) => `<div class="pack"><div class="pack-h"><h2>${esc(p.title)}</h2>${(p.detail||[]).length ? `<button class="readmore" data-pack="${i}">Read more <i>+</i></button>` : ''}</div>${(p.items||[]).length ? `<ul>${p.items.map(x => `<li>${esc(x)}</li>`).join('')}</ul>` : ''}</div>`).join('');
+  const tabs = infoTabs(v, m);
+  const infoRows = tabs.length
+    ? `<div class="rows">${tabs.map(t => `<button data-spec="${t.key}">${esc(t.label)} ${ic.chev}</button>`).join('')}</div>`
+    : '';
+  const specReq = !m.specs.length && !Object.keys(m.features).length
+    ? `<div class="spec-req"><div><b>Full specifications</b><p>We'll send you the full spec sheet and equipment list for this ${esc(m.make || 'vehicle')}.</p></div><button class="btn" data-go="specsheet">Request the full spec sheet</button></div>`
+    : '';
+  const highlights = m.highlights.map(hl => `<div class="hl"><h2>${esc(hl.title)}</h2>
+      ${(hl.figures||[]).length ? `<div class="hl-figs">${hl.figures.map(f => `<div><b class="num">${esc(f[0])}</b><span>${esc(f[1])}</span></div>`).join('')}</div>` : ''}
+      ${hl.text ? `<p>${esc(hl.text)}</p>` : ''}
+      ${(hl.items||[]).length ? `<ul>${hl.items.map(x => `<li>${esc(x)}</li>`).join('')}</ul>` : ''}</div>`).join('');
+
+  const finSection = financeHTML(v);
+  return `<div class="vp-wrap">
+    <div class="vp-grid">
+      <div class="vp-gal">${galDesk}${galMob}</div>
+      <div class="vi">
+        <div class="ttl-desk"><h1 id="vp-title">${esc(v.title)}</h1><p class="vsub">${esc(v.sub)} · ${condLabel(v.condition)}</p></div>
+        <div class="price-blk" id="price-blk">${priceBlockHTML(v)}</div>
+        ${kstats.length ? `<dl class="kstats">${kstats.map(s => `<div><dt>${esc(s[0])}</dt><dd class="num">${esc(s[1])}</dd></div>`).join('')}</dl>` : ''}
+        ${specSummary}
+        ${highlights}
+        ${packs}
+        ${infoRows}
+        ${specReq}
+        <div class="acts">
+          <button class="btn pri" data-go="enquire">Enquire now</button>
+          <div class="two"><button class="btn sm" data-form="testdrive">Book a test drive</button><button class="btn sm" data-form="finance">Apply for finance</button></div>
+          <div class="two"><button class="btn sm" data-form="tradein">Value my trade-in</button><a class="btn sm wa" href="${waLink(v)}" target="_blank" rel="noopener">${ic.wa} WhatsApp</a></div>
+        </div>
+      </div>
+    </div>
+
+    ${finSection}
+
+    <section class="vsec" id="vs-enquire">
+      <div><h2>Enquire about this ${esc(m.make || 'vehicle')}</h2><p class="lead">Your details go straight to our sales team. We reply within one business hour during trading hours.</p>
+        <div class="person"><div class="av">${esc(D.salesperson.initials)}</div><div><b>${esc(D.salesperson.name)}</b><span>${esc(D.salesperson.role)} · ${esc(D.name)}</span></div></div>
+        <p style="margin-top:16px"><a class="link" href="${waLink(v)}" target="_blank" rel="noopener">Chat on WhatsApp instead →</a></p>
+      </div>
+      <div id="enq-wrap">${formHTML('enquire', v)}</div>
+    </section>
+
+    <section class="vsec">
+      <div><h2>Visit us</h2><p class="lead">See this car in person. Call ahead and we'll have it ready for you.</p></div>
+      <div class="loc">
+        <div class="map" aria-hidden="true"><span class="pin"></span></div>
+        <div><b>${esc(D.name)}</b><p style="margin:6px 0 0">${esc(D.address)}</p>
+          <div class="hours num">${D.hours.map(h => `<div><span>${esc(h[0])}</span><span>${esc(h[1])}</span></div>`).join('')}</div>
+          <p class="num" style="margin-top:12px">Phone: ${esc(D.phone)}</p>
+          <p style="margin-top:12px"><a class="link" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(D.mapsQuery)}" target="_blank" rel="noopener">Get directions →</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="vsec sim">
+      <div><h2>Similar vehicles</h2><p class="lead">Other cars you might like from our stock.</p></div>
+      <div class="rail">${similar(v).map(x => cardHTML(x, '', SIM.cardStyle)).join('')}</div>
+    </section>
+
+    <section class="vsec">
+      <div><h2>Disclaimers</h2></div>
+      <div>
+        ${[['1 Price disclaimer', D.priceNote + ' Prices are subject to change without notice and the vehicle is subject to availability. E&OE.'],
+           ['2 Finance disclaimer', D.finance.disclaimer + ' Finance provided by ' + D.finance.provider + '.'],
+           ['Image disclaimer', 'Images are for illustration and may show optional equipment. Colours may vary on screen.']].map((d,i) => `
+          <div class="acc"><button aria-expanded="false" aria-controls="acc-${i}">${esc(d[0])} ${ic.down}</button><div class="acc-p" id="acc-${i}" hidden>${esc(d[1])}</div></div>`).join('')}
+      </div>
+    </section>
+  </div>`;
+}
+
+function financeHTML(v){
+  if (v.priceMode === 'cash') return `<section class="vsec"><div><h2>Financing</h2><p class="lead">This vehicle is advertised at its cash price. Finance is available on application.</p></div>
+    <div class="fixed-box"><div class="lbl">Purchase price</div><div class="price-big num">${R(v.price)}</div><p class="note">Apply and our finance team will send you options from the major banks.</p><button class="btn ac" data-form="finance" style="margin-top:14px">Apply for finance</button></div></section>`;
+  if (v.priceMode === 'fixed') return `<section class="vsec"><div><h2>Financing</h2><p class="lead">This is a fixed dealer finance offer.</p></div>
+    <div class="fixed-box"><div class="lbl">Monthly payment</div><div class="price-big num">${R(v.monthlyFixed, true)} <small style="font-size:18px;color:var(--muted)">per month</small></div><p class="note">${esc(v.monthlyNote)}</p><p class="note num">Purchase price: ${R(v.price)}</p><button class="btn ac" data-form="finance" style="margin-top:14px">Apply for finance</button></div></section>`;
+  const t = terms;
+  const depSteps = Math.round(t.depositMax / 5), balSteps = Math.round(t.balloonMax / 5);
+  return `<section class="vsec" id="vs-finance">
+    <div><h2>Financing</h2><p class="lead">Adjust the deposit, term and balloon to see your estimated monthly payment. Interest is indicative at ${t.ratePct}%.</p></div>
+    <div>
+      <div class="seg" role="tablist"><button role="tab" aria-selected="true">Balloon finance</button><button role="tab" aria-selected="false" data-noballoon>Instalment sale</button></div>
+      <div class="sl"><div class="sl-top"><span>Deposit</span><b class="num" id="o-dep"></b></div><input type="range" id="s-dep" min="0" max="${depSteps}" step="1" value="${Math.round(t.depositPct/5)}" aria-label="Deposit"></div>
+      <div class="sl"><div class="sl-top"><span>Term</span><b class="num" id="o-term"></b></div><input type="range" id="s-term" min="0" max="${t.termOptions.length-1}" step="1" value="${Math.max(0,t.termOptions.indexOf(t.termMonths))}" aria-label="Term"></div>
+      <div class="sl" id="sl-bal"><div class="sl-top"><span>Balloon payment</span><b class="num" id="o-bal"></b></div><input type="range" id="s-bal" min="0" max="${balSteps}" step="1" value="${Math.round(t.balloonPct/5)}" aria-label="Balloon"></div>
+      <div class="bd num" id="bd"></div>
+      <p class="note">${esc(D.finance.disclaimer)}</p>
+    </div>
+  </section>`;
+}
+
+function formHTML(type, v){
+  const pin = !v ? '' : `<div class="vehicle-pin"><img src="${SRC(v.images[0], 'card')}" data-orig="${IMG(v.images[0])}" alt=""><div><b>${esc(v.title)} ${esc(v.sub)}</b><span class="num">${R(v.price)} · Stock ${esc(v.stock)}</span></div></div>`;
+  const f = (id, label, type='text', req=true, extra='') => `<div class="fld ${extra}"><label for="${id}">${label}${req?' <em>*</em>':''}</label><input id="${id}" name="${id.split('-').pop()}" type="${type}" ${req?'required':''} ${type==='tel'?'inputmode="tel" autocomplete="tel"':''} ${type==='email'?'autocomplete="email"':''}><div class="err"></div></div>`;
+  const P = type + '-';
+  const base = f(P+'first','First name') + f(P+'last','Last name') + f(P+'mobile','Mobile number','tel') + f(P+'email','Email address','email');
+  let body = '';
+  if (type === 'enquire') body = base +
+    `<div class="fld full"><label>Preferred contact method</label><div class="radios">${['Phone call','WhatsApp','Email'].map((x,i) => `<label><input type="radio" name="contact" value="${x}" ${i?'':'checked'}> ${x}</label>`).join('')}</div></div>
+     <div class="fld"><label for="${P}trade">Trade-in?</label><select id="${P}trade" name="trade"><option>No</option><option>Yes</option></select></div>
+     <div class="fld"><label for="${P}fin">Finance required?</label><select id="${P}fin" name="fin"><option>Yes</option><option>No</option><option>Not sure yet</option></select></div>
+     <div class="fld full"><label for="${P}msg">Message</label><textarea id="${P}msg" name="msg" placeholder="Anything you'd like us to know?"></textarea></div>`;
+  const carPick = (label) => `<div class="fld full"><label for="${P}car">${label}</label><select id="${P}car" name="car"><option value="">Not sure yet</option>${DATA.vehicles.map(x => `<option value="${esc(x.id)}">${esc(x.year + ' ' + x.title + ' ' + x.sub)}</option>`).join('')}</select></div>`;
+  if (type === 'testdrive') body = base + (v ? '' : carPick('Car you\'d like to drive')) +
+    `<div class="fld"><label for="${P}date">Preferred date <em>*</em></label><input id="${P}date" name="date" type="date" required><div class="err"></div></div>
+     <div class="fld"><label for="${P}time">Time of day</label><select id="${P}time" name="time"><option>Morning</option><option>Midday</option><option>Afternoon</option></select></div>`;
+  if (type === 'finance') body = base +
+    `<div class="fld"><label for="${P}emp">Employment status <em>*</em></label><select id="${P}emp" name="emp" required><option value="">Select</option><option>Permanently employed</option><option>Self-employed</option><option>Contract</option><option>Pensioner</option></select><div class="err"></div></div>
+     <div class="fld"><label for="${P}dep">Deposit available</label><select id="${P}dep" name="dep"><option>None</option><option>Under R50,000</option><option>R50,000 – R100,000</option><option>Over R100,000</option></select></div>
+     <div class="fld full"><p class="note" style="margin:0">Document upload (ID, payslips, bank statements): to be decided. Placeholder until we settle how documents are collected.</p></div>`;
+  if (type === 'tradein') body = base +
+    `<div class="fld"><label for="${P}make">Make and model <em>*</em></label><input id="${P}make" name="make" required><div class="err"></div></div>
+     <div class="fld"><label for="${P}year">Year <em>*</em></label><input id="${P}year" name="year" inputmode="numeric" required><div class="err"></div></div>
+     <div class="fld"><label for="${P}km">Mileage (km) <em>*</em></label><input id="${P}km" name="km" inputmode="numeric" required><div class="err"></div></div>
+     <div class="fld"><label for="${P}fin2">Still financed?</label><select id="${P}fin2" name="financed"><option>No</option><option>Yes</option></select></div>
+     <div class="fld full"><label for="${P}photos">Photos of your car</label><input id="${P}photos" name="photos" type="file" accept="image/*" multiple style="padding-top:11px"></div>`;
+  if (type === 'viewing') body = base + (v ? '' : carPick('Car you\'d like to see')) +
+    `<div class="fld"><label for="${P}date">Preferred date <em>*</em></label><input id="${P}date" name="date" type="date" required><div class="err"></div></div>
+     <div class="fld"><label for="${P}time">Time of day</label><select id="${P}time" name="time"><option>Morning</option><option>Midday</option><option>Afternoon</option></select></div>`;
+  if (type === 'service') body = base +
+    `<div class="fld"><label for="${P}model">Vehicle model <em>*</em></label><input id="${P}model" name="model" required placeholder="e.g. C 220 d"><div class="err"></div></div>
+     <div class="fld"><label for="${P}reg">Registration number</label><input id="${P}reg" name="reg"></div>
+     <div class="fld"><label for="${P}km">Mileage (km)</label><input id="${P}km" name="km" inputmode="numeric"></div>
+     <div class="fld"><label for="${P}kind">Type of work</label><select id="${P}kind" name="kind"><option>Scheduled service</option><option>Repair or diagnosis</option><option>Tyres and brakes</option><option>Other</option></select></div>
+     <div class="fld"><label for="${P}date">Preferred date <em>*</em></label><input id="${P}date" name="date" type="date" required><div class="err"></div></div>
+     <div class="fld"><label for="${P}wait">While we work</label><select id="${P}wait" name="wait"><option>I'll drop the car off</option><option>I'd like to wait</option><option>I need a courtesy option</option></select></div>
+     <div class="fld full"><label for="${P}msg">Anything we should know?</label><textarea id="${P}msg" name="msg"></textarea></div>`;
+  if (type === 'commercial') body = base +
+    `<div class="fld full"><label for="${P}need">I'm interested in <em>*</em></label><select id="${P}need" name="need" required><option value="">Select</option><option>Mercedes-Benz Vans: Sprinter</option><option>Mercedes-Benz Vans: Vito</option><option>Fuso trucks</option><option>Fleet or business purchase</option><option>Servicing a commercial vehicle</option><option>Something else</option></select><div class="err"></div></div>
+     <div class="fld full"><label for="${P}company">Company (optional)</label><input id="${P}company" name="company"></div>
+     <div class="fld full"><label for="${P}msg">Tell us more</label><textarea id="${P}msg" name="msg" placeholder="Vehicle, quantity, how you'll use it"></textarea></div>`;
+  if (type === 'contact') body = base +
+    `<div class="fld full"><label for="${P}msg">How can we help? <em>*</em></label><textarea id="${P}msg" name="msg" required placeholder="Tell us what you're looking for"></textarea><div class="err"></div></div>`;
+  const btn = {enquire:'Send enquiry', testdrive:'Request test drive', finance:'Submit application', tradein:'Get my valuation', viewing:'Request a viewing', service:'Request a booking', commercial:'Send enquiry', contact:'Send message'}[type];
+  return `<form class="form" data-type="${type}" ${v ? `data-vid="${esc(v.id)}"` : ''} novalidate>${pin}${body}
+    <div class="consent">
+      <label><input type="checkbox" name="popia" required> <span>I consent to ${esc(D.name)} processing my personal information to respond to this request, in line with the Privacy Notice. <em style="color:var(--err);font-style:normal">*</em></span></label>
+      <label><input type="checkbox" name="marketing"> <span>Send me offers and news by email, SMS or WhatsApp. I can opt out at any time.</span></label>
+    </div>
+    <button class="btn pri submit" type="submit">${btn}</button>
+    <p class="mock-flag">Mockup: nothing is sent. On success, a trackable element <code>#lead-success</code> is added to the page.</p>
+  </form>`;
+}
+
+/* ---------- popup wiring ---------- */
+function wireVehicle(v, m){
+  const root = $('#vp-scroll');
+  // galleries
+  $$('[data-lb]', root).forEach(b => b.addEventListener('click', () => openLB(+b.dataset.lb)));
+  $$('[data-lb-ang]', root).forEach(b => b.addEventListener('click', () => openLB(0, true)));
+  const gm = $('#gm-track', root), gmt = $$('#gm-thumbs button', root);
+  if (gm) {
+    gm.addEventListener('scroll', () => { const i = Math.round(gm.scrollLeft / gm.clientWidth); gmt.forEach((b,j) => b.setAttribute('aria-current', i===j)); }, {passive:true});
+    gmt.forEach(b => b.addEventListener('click', () => gm.scrollTo({left: +b.dataset.gm * gm.clientWidth, behavior: reduce?'auto':'smooth'})));
+    $('.gm-arrow.prev', root).onclick = () => gm.scrollBy({left:-gm.clientWidth, behavior: reduce?'auto':'smooth'});
+    $('.gm-arrow.next', root).onclick = () => gm.scrollBy({left: gm.clientWidth, behavior: reduce?'auto':'smooth'});
+  }
+  // packs & spec rows -> drawer
+  $$('[data-pack]', root).forEach(b => b.addEventListener('click', () => openPacks(v, m, +b.dataset.pack)));
+  $$('[data-spec]', root).forEach(b => b.addEventListener('click', () => openSpecs(v, m, b.dataset.spec)));
+  $$('[data-go="specsheet"]', root).forEach(b => b.addEventListener('click', () => { goEnquire(); const t = $('#enquire-msg'); if (t) t.value = 'Please send me the full specification sheet and equipment list for this vehicle.'; }));
+  // actions
+  $$('[data-go="enquire"]', root).forEach(b => b.addEventListener('click', goEnquire));
+  $$('[data-form]', root).forEach(b => b.addEventListener('click', () => openFormDrawer(b.dataset.form, v)));
+  // accordions
+  $$('.acc button', root).forEach(b => b.addEventListener('click', () => { const on = b.getAttribute('aria-expanded') === 'true'; b.setAttribute('aria-expanded', !on); $('#' + b.getAttribute('aria-controls')).hidden = on; }));
+  // finance sliders
+  if (v.priceMode === 'calculated') wireFinance(v);
+  // forms
+  $$('form', root).forEach(wireForm);
+  // similar rail
+  const sr = $('.sim .rail', root); rail(sr); $$('.card', sr).forEach(wireCard);
+  requestAnimationFrame(() => lzShown($('.vp-gal', root) || root));
+  if (sr) { const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { io.disconnect(); primeRail(sr); } }), {root: $('#vp-scroll'), rootMargin:'150% 0px 150% 0px'}); io.observe(sr); }
+  requestAnimationFrame(() => fitStats(root));
+  syncCmp();
+  // sticky bar
+  renderBar(v); watchBar();
+}
+function goEnquire(){
+  const t = $('#vs-enquire'); const sc = $('#vp-scroll');
+  sc.scrollTo({top: t.offsetTop - 12, behavior: reduce?'auto':'smooth'});
+  setTimeout(() => { const f = $('#enquire-first'); f && f.focus({preventScroll:true}); }, reduce ? 0 : 500);
+}
+
+function wireFinance(v){
+  const sDep = $('#s-dep'), sTerm = $('#s-term'), sBal = $('#s-bal'), bd = $('#bd');
+  let noBalloon = false; const balBefore = terms.balloonPct;
+  const segBtns = $$('#vs-finance .seg button');
+  segBtns.forEach((b,i) => b.addEventListener('click', () => {
+    segBtns.forEach(x => x.setAttribute('aria-selected', x === b)); noBalloon = i === 1;
+    $('#sl-bal').hidden = noBalloon; if (!noBalloon) sBal.value = Math.round(balBefore/5); upd();
+  }));
+  function upd(){
+    terms.depositPct = +sDep.value * 5;
+    terms.termMonths = terms.termOptions[+sTerm.value];
+    terms.balloonPct = noBalloon ? 0 : +sBal.value * 5;
+    const f = calc(v.price, terms);
+    $('#o-dep').textContent = `${terms.depositPct}% · ${R(f.deposit)}`;
+    $('#o-term').textContent = `${terms.termMonths} months`;
+    $('#o-bal').textContent = `${terms.balloonPct}% · ${R(f.balloon)}`;
+    bd.innerHTML = [
+      ['Monthly payment', R(f.monthly, true), 'tot'],
+      ['Purchase price', R(v.price)],
+      ['Deposit', R(f.deposit)],
+      ['Initiation fee (financed)', R(terms.initiationFee, true)],
+      ['Amount financed', R(f.principal, true)],
+      ['Balloon payment', R(f.balloon)],
+      ['Term', terms.termMonths + ' months'],
+      ['Interest rate (indicative)', terms.ratePct + '%'],
+      ['Monthly service fee', R(terms.monthlyFee, true)],
+      ['Estimated total cost', R(f.total)]
+    ].map(r => `<div class="${r[2]||''}"><span>${r[0]}</span><span>${r[1]}</span></div>`).join('');
+    // one live price everywhere in the popup
+    $$('[data-live-monthly]').forEach(e => e.textContent = R(f.monthly, true));
+    $$('[data-live-tip]').forEach(e => e.dataset.tip = basisText(v, terms));
+  }
+  [sDep, sTerm, sBal].forEach(s => s.addEventListener('input', upd));
+  upd();
+}
+
+/* sticky bar: shows once the main price scrolls away, hides at the enquiry form */
+let barIO = null;
+function renderBar(v){
+  const m = monthlyOf(v);
+  $('#vbar').innerHTML = `<div class="in">
+    <div class="p"><span>${m!=null ? 'Price<sup>1</sup>' : 'Purchase price'}</span><b class="num">${m!=null ? `<span data-live-monthly>${R(m,true)}</span> per month` : R(v.price)}</b></div>
+    <a class="btn sec wa" href="${waLink(v)}" target="_blank" rel="noopener">${ic.wa} WhatsApp</a>
+    <a class="btn wa wa-sm" href="${waLink(v)}" target="_blank" rel="noopener" aria-label="WhatsApp us" style="display:none">${ic.wa}</a>
+    <button class="btn pri" data-bar-enq>Enquire now</button>
+  </div>`;
+  $('[data-bar-enq]').onclick = goEnquire;
+  $('#vbar').dataset.mobile = POP.mobileStickyBar;
+  const fab = $('#vfab'); fab.dataset.mobile = POP.mobileStickyBar;
+  fab.innerHTML = `<a class="fab-wa" href="${waLink(v)}" target="_blank" rel="noopener" aria-label="WhatsApp us about this car">${ic.wa}</a><button class="fab-enq" data-fab-enq>Enquire</button>`;
+  $('[data-fab-enq]', fab).onclick = goEnquire;
+  if (matchMedia('(max-width:720px)').matches) $('.vbar .wa-sm').style.display = 'flex';
+}
+function watchBar(){
+  barIO && barIO.disconnect();
+  const bar = $('#vbar'), sc = $('#vp-scroll');
+  const price = $('#price-blk'), enq = $('#vs-enquire'), acts = $('.vi .acts', sc), fab = $('#vfab');
+  let priceVis = true, enqVis = false;
+  barIO = new IntersectionObserver(es => {
+    es.forEach(e => { if (e.target === price) priceVis = e.isIntersecting; if (e.target === enq) enqVis = e.isIntersecting; });
+    bar.classList.toggle('on', !priceVis && !enqVis);
+  }, {root: sc, threshold: 0});
+  barIO.observe(price); barIO.observe(enq);
+  // pill: show only after the main buttons have scrolled up out of view; hide once the enquiry form is on screen.
+  // Uses positions on every scroll frame, so a fast flick past the buttons can't be missed.
+  let tick = false;
+  const pill = () => {
+    tick = false; if (!acts || !enq) return;
+    const box = sc.getBoundingClientRect(), a = acts.getBoundingClientRect(), f = enq.getBoundingClientRect();
+    fab.classList.toggle('on', a.bottom < box.top + 8 && f.top > box.bottom - 40);
+  };
+  sc.onscroll = () => { if (!tick) { tick = true; requestAnimationFrame(pill); } };
+  pill();
+}
+
+/* ---------- variant B: inline expand ---------- */
+function inlineHTML(v){
+  const m = content(v), ks = keyStats(v, m), shown = new Set(ks.map(s => s[0] === 'Model year' ? 'Year' : s[0]));
+  const facts = [['Year',v.year],['Mileage',v.condition!=='new'&&v.km!=null?grp(v.km)+' km':null],['Transmission',v.transmission],['Fuel',v.fuel],['Engine',v.engine],['Colour',v.colour],['Interior',v.interior],['Stock no.',v.stock]].filter(r => r[1] != null && r[1] !== '' && !shown.has(r[0]));
+  const tabs = infoTabs(v, m);
+  return `<div class="inl-box">
+    <button class="x-btn inl-x" data-inl-close aria-label="Close details"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <div class="inl-gal">
+      <div class="g-main" data-lb="0">${LZ(v.images[0], 'gallery', `alt="${esc(v.title)}"`)}</div>
+      ${v.images.length > 1 ? `<div class="g-thumbs">${v.images.slice(1,4).map((k,i) => `<button data-lb="${i+1}" aria-label="Open photo ${i+2}">${LZ(k, 'card', 'alt=""')}</button>`).join('')}</div>` : ''}
+    </div>
+    <div class="vi inl-info">
+      <h3 class="inl-t">${esc(v.title)}</h3><p class="vsub">${esc(v.sub)} · ${condLabel(v.condition)}</p>
+      <div class="price-blk">${priceBlockHTML(v).replace(' data-live-tip','').replace('<span data-live-monthly>','<span>')}</div>
+      ${ks.length ? `<dl class="kstats">${ks.map(s => `<div><dt>${esc(s[0])}</dt><dd class="num">${esc(s[1])}</dd></div>`).join('')}</dl>` : ''}
+      ${facts.length ? `<dl class="kgrid">${facts.map(r => `<div><dt>${esc(r[0])}</dt><dd>${esc(r[1])}</dd></div>`).join('')}</dl>` : ''}
+      ${tabs.length ? `<div class="rows">${tabs.map(t => `<button data-spec="${t.key}">${esc(t.label)} ${ic.chev}</button>`).join('')}</div>` : ''}
+      <div class="acts">
+        <button class="btn pri" data-form="enquire">Enquire now</button>
+        <div class="two"><button class="btn sm" data-form="testdrive">Book a test drive</button><button class="btn sm" data-form="finance">Apply for finance</button></div>
+        <div class="two"><button class="btn sm" data-form="tradein">Value my trade-in</button><a class="btn sm wa" href="${waLink(v)}" target="_blank" rel="noopener">${ic.wa} WhatsApp</a></div>
+        <button class="link inl-full" data-full="${v.id}">See full details, finance calculator and more →</button>
+      </div>
+    </div>
+  </div>`;
+}
+function openInline(sec, id){
+  const wrap = $('.inl', sec), clip = $('.inl-clip', wrap), v = V[id];
+  const already = wrap.classList.contains('open') && wrap.dataset.id === id;
+  $$('.card.is-open', sec).forEach(c => c.classList.remove('is-open'));
+  if (already) { closeInline(sec); return; }
+  cur = v; terms = termsFor(v);
+  clip.innerHTML = inlineHTML(v); wrap.dataset.id = id; lzAll(clip);
+  $$('.card[data-id="' + id + '"]', sec).forEach(c => c.classList.add('is-open'));
+  requestAnimationFrame(() => wrap.classList.add('open'));
+  const m = content(v);
+  $$('[data-lb]', clip).forEach(b => b.addEventListener('click', () => { cur = v; openLB(+b.dataset.lb); }));
+  $$('[data-spec]', clip).forEach(b => b.addEventListener('click', () => openSpecs(v, m, b.dataset.spec)));
+  $$('[data-form]', clip).forEach(b => b.addEventListener('click', () => { cur = v; openFormDrawer(b.dataset.form, v); }));
+  $('[data-full]', clip).addEventListener('click', () => openVehicle(id, false, 'page'));
+  $('[data-inl-close]', clip).addEventListener('click', () => closeInline(sec));
+  setTimeout(() => { const r = wrap.getBoundingClientRect(); if (r.top < 60 || r.top > innerHeight * .55) wrap.scrollIntoView({behavior: reduce ? 'auto' : 'smooth', block: 'start'}); }, 120);
+}
+function closeInline(sec){
+  const wrap = $('.inl', sec); wrap.classList.remove('open'); delete wrap.dataset.id;
+  $$('.card.is-open', sec).forEach(c => c.classList.remove('is-open'));
+  setTimeout(() => { if (!wrap.classList.contains('open')) $('.inl-clip', wrap).innerHTML = ''; }, 460);
+}
+
+/* ---------- drawers ---------- */
+function openDrawer(title, tabs, idx){
+  $('#dr-title').textContent = title;
+  const tb = $('#dr-tabs');
+  tb.innerHTML = tabs.length > 1 ? tabs.map((t,i) => `<button role="tab" aria-selected="${i===idx}" data-t="${i}">${esc(t.label)}</button>`).join('') : '';
+  tb.hidden = tabs.length < 2;
+  const show = i => { $$('button', tb).forEach(b => b.setAttribute('aria-selected', +b.dataset.t === i)); $('#dr-body').innerHTML = tabs[i].html; $('#dr-body').scrollTop = 0; tabs[i].after && tabs[i].after(); };
+  $$('button', tb).forEach(b => b.onclick = () => show(+b.dataset.t));
+  show(idx);
+  if (!$('#drawer').classList.contains('on')) openLayer('#drawer');
+}
+function closeDrawer(){ closeLayer('#drawer'); }
+$('#dr-close').onclick = closeDrawer;
+
+function openPacks(v, m, i){
+  const ci = v.images[0].replace(/-[a-d]$/, '');
+  const rich = m.packs.filter(p => (p.detail||[]).length);
+  i = Math.max(0, rich.indexOf(m.packs[i]));
+  openDrawer('Packs', rich.map(p => ({label: p.title, html:
+    `<p class="dr-intro">${esc(p.intro)}</p>` + p.detail.map(d => `<div class="fcard"><img src="${IMG(String(d.img).length > 1 ? d.img : ci + '-' + d.img)}" alt=""><div><h4>${esc(d.title)}</h4><p>${esc(d.text)}</p></div></div>`).join('') +
+    `<div class="fgroup"><h5>Included in ${esc(p.title)}</h5><ul>${p.items.map(x => `<li>${esc(x)}</li>`).join('')}</ul></div>`})), i);
+}
+function openSpecs(v, m, key){
+  const isUsed = v.condition === 'used';
+  const build = {
+    spec: () => `<dl class="stable">${m.specs.map(s => `<div><dt>${esc(s[0])}</dt><dd>${esc(s[1])}</dd></div>`).join('')}</dl>`,
+    feat: () => Object.entries(m.features).map(([g, subs]) => `<div class="fgroup"><h4>${esc(g)}</h4>${Object.entries(subs).map(([s, items]) => `<h5>${esc(s)}</h5><ul>${items.map(x => `<li>${esc(x)}</li>`).join('')}</ul>`).join('')}</div>`).join('') +
+      (v.dealerNotes ? `<div class="fgroup"><h4>Dealer notes</h4><p style="font-size:14px;margin:0">${esc(v.dealerNotes)}</p></div>` : ''),
+    third: () => isUsed
+      ? `<dl class="stable">${(v.history||[]).map(s => `<div><dt>${esc(s[0])}</dt><dd>${esc(s[1])}</dd></div>`).join('')}</dl><p class="note">History is supplied by the dealer. Ask us for the service book and inspection report.</p>`
+      : `<dl class="stable">${m.services.map(s => `<div><dt>${esc(s[0])}</dt><dd>${esc(s[1])}</dd></div>`).join('')}</dl>`
+  };
+  const tabs = infoTabs(v, m).map(t => ({label: t.label, key: t.key, html: build[t.key]()}));
+  openDrawer(v.title, tabs, Math.max(0, tabs.findIndex(t => t.key === key)));
+}
+function openFormDrawer(type, v){
+  const titles = {enquire:'Enquire about this vehicle', testdrive:'Book a test drive', finance:'Apply for finance', tradein:'Value my trade-in', viewing:'Book a viewing', service:'Book a service', commercial:'Commercial vehicles', contact:'Send us a message'};
+  openDrawer(titles[type], [{label:'', html: formHTML(type, v), after: () => $$('#dr-body form').forEach(wireForm)}], 0);
+}
+
+/* ---------- forms ---------- */
+function wireForm(form){
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    let ok = true;
+    $$('.fld', form).forEach(f => f.classList.remove('bad'));
+    $$('[required]', form).forEach(inp => {
+      let msg = '';
+      if (inp.type === 'checkbox') { const l = inp.closest('label'); l.classList.toggle('bad', !inp.checked); if (!inp.checked) ok = false; return; }
+      const val = inp.value.trim();
+      if (!val) msg = 'Please fill this in.';
+      else if (inp.type === 'email' && !/^\S+@\S+\.\S+$/.test(val)) msg = 'Enter an email address like name@example.co.za.';
+      else if (inp.type === 'tel' && !/^(\+27|0)[\s\d]{9,12}$/.test(val.replace(/[()-]/g,''))) msg = 'Enter a South African mobile number, e.g. 082 123 4567.';
+      if (msg) { ok = false; const f = inp.closest('.fld'); f.classList.add('bad'); $('.err', f).textContent = msg; }
+    });
+    if (!ok) { const first = $('.bad input, .bad select, label.bad input', form); first && first.focus(); return; }
+    form.classList.add('sending'); $('.submit', form).textContent = 'Sending…';
+    setTimeout(() => {
+      const type = form.dataset.type, v = form.dataset.vid ? V[form.dataset.vid] : null;
+      const name = $('[name="first"]', form).value.trim();
+      const thanks = {enquire:'Thanks, ' + name + '. Your enquiry is with our sales team.', testdrive:'Thanks, ' + name + '. We\'ll confirm your test drive shortly.', finance:'Thanks, ' + name + '. Our finance team will be in touch.', tradein:'Thanks, ' + name + '. We\'ll send your valuation soon.', viewing:'Thanks, ' + name + '. We\'ll confirm your viewing shortly.', service:'Thanks, ' + name + '. Our service team will confirm your booking.', commercial:'Thanks, ' + name + '. Our commercial vehicles team will be in touch.', contact:'Thanks, ' + name + '. We\'ll get back to you soon.'}[type];
+      // Trackable success element: only exists after a confirmed submission.
+      const old = document.getElementById('lead-success'); old && old.removeAttribute('id');
+      form.outerHTML = `<div class="form"><div class="lead-success" id="lead-success" role="status" data-lead-type="${type}" data-vehicle="${esc(v ? v.slug : '')}" data-stock="${esc(v ? v.stock || '' : '')}">${ic.ok}<div><b>${esc(thanks)}</b><p>We usually reply within one business hour.${v && v.stock ? ' Reference: ' + esc(v.stock) : ''}</p></div></div></div>`;
+      (window.dataLayer = window.dataLayer || []).push(Object.assign({event:'lead_success', lead_type:type}, v ? {vehicle:v.slug, stock:v.stock, condition:v.condition, price:v.price} : {}));
+    }, 900);
+  });
+  $$('input,select', form).forEach(i => i.addEventListener('input', () => { const f = i.closest('.fld'); f && f.classList.remove('bad'); const l = i.closest('label'); l && l.classList.remove('bad'); }));
+}
+
+/* ---------- lightbox ---------- */
+let lbi = 0, lbAng = false;
+function lbRender(){
+  const imgs = cur.images, angleSet = imgs.slice(0, 2);
+  const set = lbAng ? angleSet : imgs;
+  lbi = (lbi + set.length) % set.length;
+  const lbImg = $('#lb-img'); delete lbImg.dataset.fb; lbImg.dataset.orig = IMG(set[lbi]); lbImg.src = SRC(set[lbi], 'gallery'); lbImg.alt = cur.title + ' photo ' + (lbi + 1);
+  $('#lb-thumbs').innerHTML = set.map((k,i) => `<button data-i="${i}" aria-current="${i===lbi}" aria-label="Photo ${i+1}"><img src="${SRC(k, 'card')}" data-orig="${IMG(k)}" alt=""></button>`).join('');
+  $$('#lb-thumbs button').forEach(b => b.onclick = () => { lbi = +b.dataset.i; lbRender(); });
+  $('#lb-m-gal').setAttribute('aria-pressed', !lbAng); $('#lb-m-ang').setAttribute('aria-pressed', lbAng);
+  $('#lb-stage').classList.toggle('angles', lbAng); $('#lb-hint').hidden = !lbAng;
+}
+function openLB(i, ang){ lbi = i; lbAng = !!ang; lbRender(); openLayer('#lb'); }
+$('#lb-close').onclick = () => closeLayer('#lb');
+$('#lb-prev').onclick = () => { lbi--; lbRender(); };
+$('#lb-next').onclick = () => { lbi++; lbRender(); };
+$('#lb-m-gal').onclick = () => { lbAng = false; lbi = 0; lbRender(); };
+$('#lb-m-ang').onclick = () => { lbAng = true; lbi = 0; lbRender(); };
+document.addEventListener('keydown', e => { if (stack[stack.length-1] !== '#lb') return; if (e.key === 'ArrowLeft') { lbi--; lbRender(); } if (e.key === 'ArrowRight') { lbi++; lbRender(); } });
+(function(){ // drag/swipe on stage
+  const st = $('#lb-stage'); let x0 = null, acc = 0;
+  st.addEventListener('pointerdown', e => { if (e.target.closest('button')) return; x0 = e.clientX; acc = 0; st.setPointerCapture(e.pointerId); });
+  st.addEventListener('pointermove', e => { if (x0 == null) return; const dx = e.clientX - x0; const step = lbAng ? 60 : 9999;
+    if (Math.abs(dx - acc) > step) { lbi += dx - acc > 0 ? -1 : 1; acc = dx; lbRender(); } });
+  st.addEventListener('pointerup', e => { if (x0 == null) return; const dx = e.clientX - x0; if (!lbAng && Math.abs(dx) > 50) { lbi += dx > 0 ? -1 : 1; lbRender(); } x0 = null; });
+})();
+
+/* ---------- deep links ---------- */
+function fromHash(){
+  const h = location.hash.slice(1);
+  if (h.startsWith('v-')) { const v = DATA.vehicles.find(x => x.slug === h.slice(2)); if (v) openVehicle(v.id, true); }
+}
+addEventListener('hashchange', fromHash);
+fromHash();
+
+/* ---------- structured data for search & AI ---------- */
+const ld = { "@context":"https://schema.org", "@type":"AutoDealer", "name":D.name, "telephone":D.phone, "address":D.address,
+  "makesOffer": DATA.vehicles.map(v => ({ "@type":"Offer", "price":v.price, "priceCurrency":"ZAR", "availability":"https://schema.org/InStock",
+    "url": "#v-" + v.slug,
+    "itemOffered": { "@type":"Car", "name":v.title + ' ' + v.sub, "brand":{"@type":"Brand","name":content(v).make || v.title.split(' ').find(w => !/^\d+$/.test(w))}, "vehicleModelDate":String(v.year),
+      "itemCondition": v.condition === 'used' ? "https://schema.org/UsedCondition" : "https://schema.org/NewCondition",
+      "mileageFromOdometer": {"@type":"QuantitativeValue","value":v.km||0,"unitCode":"KMT"}, "color":v.colour, "vehicleTransmission":v.transmission, "fuelType":v.fuel, "sku":v.stock, "image":IMG(v.images[0]) } })) };
+const s = document.createElement('script'); s.type = 'application/ld+json'; s.textContent = JSON.stringify(ld); document.head.appendChild(s);
+
+syncCmp();
+
+/* ---------- hooks for the built-in editor (not used by visitors) ---------- */
+window.CASite = { prelaunchCheck, calc, R, grp, parseExtras, PLACEHOLDERS,
+  openVehicle: id => openVehicle(id, true), current: () => cur && cur.id, closeVehicle };
+if (window.CAEditor && !window.__CA_PREVIEW) window.CAEditor.boot();
+/* the floating WhatsApp button steps aside while a layer is open */
+new MutationObserver(() => { const f = $('#wa-float'); if (f) f.classList.toggle('away', document.documentElement.style.overflow === 'hidden' || $('#ctray').classList.contains('on')); }).observe(document.documentElement, {attributes:true, attributeFilter:['style']});
+})();
+</script>
+</body></html>
